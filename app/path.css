@@ -1,0 +1,312 @@
+.hero-guides {
+  position: absolute;
+  z-index: 1;
+  right: clamp(-3rem, 1vw, 2rem);
+  bottom: -5%;
+  width: min(58vw, 780px);
+  max-height: 94%;
+  object-fit: contain;
+  object-position: bottom right;
+  filter: drop-shadow(0 18px 22px rgba(8, 32, 25, .34));
+  pointer-events: none;
+}
+
+.launch-scene {
+  position: relative;
+  min-height: calc(100vh - 72px);
+  overflow: hidden;
+  padding: 0;
+  background: url('/storypath-village.png') center/cover;
+}
+
+.launch-wash {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(233,250,250,.2), transparent 32%, rgba(8,44,34,.18)), radial-gradient(circle at 50% 45%, transparent 0 30%, rgba(13,52,41,.18) 80%);
+}
+
+.launch-title {
+  position: absolute;
+  z-index: 4;
+  top: clamp(1rem, 3vh, 2.4rem);
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff7cf;
+  text-align: center;
+  filter: drop-shadow(0 7px 0 #6d3614) drop-shadow(0 12px 15px rgba(0,0,0,.26));
+}
+
+.launch-title span {
+  font-size: clamp(3.2rem, 8vw, 7.2rem);
+  line-height: .78;
+  font-weight: 1000;
+  letter-spacing: -.08em;
+  color: #f7bb32;
+  -webkit-text-stroke: clamp(2px, .3vw, 5px) #7d3f16;
+}
+
+.launch-title strong {
+  margin-top: .7rem;
+  padding: .32rem 1.4rem .45rem;
+  font-family: Georgia, serif;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #65330d;
+  background: #fff0b7;
+  border: 3px solid #a86921;
+  border-radius: .35rem;
+  box-shadow: 0 5px 0 #784317;
+}
+
+.welcome-plaque {
+  position: absolute;
+  z-index: 5;
+  top: clamp(8.7rem, 19vh, 12.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: min(390px, calc(100% - 2rem));
+  padding: .65rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--ink);
+  background: rgba(255,253,248,.94);
+  border: 3px solid white;
+  border-radius: 1rem;
+  box-shadow: 0 9px 0 rgba(27,76,59,.48), 0 16px 30px rgba(0,0,0,.2);
+}
+.welcome-plaque small { font-family: Georgia, serif; font-size: 1rem; }
+.welcome-plaque strong { font-size: 1.25rem; }
+.welcome-plaque span { color: var(--muted); font-size: .84rem; }
+
+.launch-guides {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: -7%;
+  transform: translateX(-50%);
+  height: min(64vh, 650px);
+  width: auto;
+  max-width: 56vw;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 20px rgba(0,0,0,.3));
+}
+
+.launch-place {
+  position: absolute;
+  z-index: 3;
+  min-width: 165px;
+  padding: .65rem .8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,253,248,.91);
+  border: 3px solid rgba(255,255,255,.96);
+  border-radius: 1rem;
+  box-shadow: 0 8px 0 rgba(29,77,59,.55), 0 15px 25px rgba(0,0,0,.18);
+}
+.launch-place span { font-size: 2rem; }
+.launch-place small { color: var(--muted); font-weight: 700; }
+.launch-market { left: 7%; bottom: 26%; }
+.launch-library { right: 7%; bottom: 35%; }
+.launch-workshop { right: 11%; bottom: 9%; opacity: .82; }
+
+.launch-action {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  bottom: 1.2rem;
+  transform: translateX(-50%);
+  min-width: min(430px, calc(100% - 2rem));
+  padding: .75rem 1rem;
+  text-align: center;
+  background: rgba(255,253,248,.96);
+  border: 3px solid white;
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 0 rgba(24,71,54,.58), 0 18px 35px rgba(0,0,0,.24);
+}
+.launch-action p { margin: 0 0 .55rem; font-weight: 800; }
+.switch-user { display: block; margin: .7rem auto 0; border: 0; background: transparent; color: var(--leaf); text-decoration: underline; font-weight: 800; cursor: pointer; }
+
+.hero-content { z-index: 2; }
+.hero .speech { display: inline-block; margin: .6rem 0 1.5rem; font-size: 1rem; }
+
+.guide-scene {
+  grid-template-columns: minmax(180px, 330px) minmax(220px, 600px);
+}
+
+.orientation-guides {
+  width: 100%;
+  max-height: 440px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 18px rgba(31, 62, 52, .2));
+}
+
+.adventure-board {
+  position: relative;
+  min-height: max(880px, calc(100vh - 72px));
+  overflow: hidden;
+  background: url('/storypath-village.png') center/cover fixed;
+  padding: 1.5rem clamp(1rem, 4vw, 4rem) 4rem;
+}
+
+.adventure-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(12, 43, 34, .75), rgba(12, 43, 34, .18) 38%, rgba(12, 43, 34, .25)), linear-gradient(0deg, rgba(245, 236, 214, .22), rgba(255, 255, 255, .08));
+}
+
+.unit-banner {
+  position: relative;
+  z-index: 3;
+  width: min(720px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: white;
+  background: linear-gradient(135deg, #1d7658, #11513f);
+  border: 3px solid rgba(255, 255, 255, .8);
+  border-radius: 1.35rem;
+  box-shadow: 0 10px 0 rgba(8, 45, 34, .55), 0 18px 40px rgba(0, 0, 0, .22);
+}
+
+.unit-banner p { margin: 0; font-size: .75rem; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; color: #ffe09a; }
+.unit-banner h1 { margin: .15rem 0; font-size: clamp(1.8rem, 4vw, 3rem); letter-spacing: -.04em; }
+.unit-banner span { font-weight: 700; }
+.unit-progress { min-width: 90px; padding: .7rem; display: flex; flex-direction: column; align-items: center; background: rgba(255,255,255,.14); border-radius: 1rem; }
+.unit-progress strong { font-size: 1.45rem; }
+
+.path-guides {
+  position: absolute;
+  z-index: 2;
+  left: clamp(-7rem, -3vw, -1rem);
+  bottom: -1.5rem;
+  width: min(36vw, 470px);
+  max-height: 70%;
+  object-fit: contain;
+  object-position: bottom left;
+  filter: drop-shadow(0 18px 25px rgba(0, 0, 0, .28));
+  pointer-events: none;
+}
+
+.node-path {
+  position: relative;
+  z-index: 3;
+  width: min(600px, 62vw);
+  min-height: 660px;
+  margin: 1.2rem auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.node-path::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 55px;
+  width: 12px;
+  height: 530px;
+  transform: translateX(-50%);
+  background: repeating-linear-gradient(to bottom, rgba(255,255,255,.9) 0 13px, rgba(255,255,255,.2) 13px 24px);
+  border-radius: 999px;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,.18));
+}
+
+.node-path li { position: absolute; left: 50%; display: flex; align-items: center; gap: .8rem; transform: translateX(-50%); }
+.node-path .node-1 { top: 10px; margin-left: -35px; }
+.node-path .node-2 { top: 120px; margin-left: 55px; }
+.node-path .node-3 { top: 230px; margin-left: -65px; }
+.node-path .node-4 { top: 340px; margin-left: 60px; }
+.node-path .node-5 { top: 450px; margin-left: -45px; }
+.node-path .node-6 { top: 560px; margin-left: 50px; }
+
+.node-path button {
+  width: 88px;
+  height: 78px;
+  border: 6px solid rgba(255,255,255,.96);
+  border-radius: 50%;
+  color: white;
+  background: #b9bdb8;
+  box-shadow: 0 8px 0 #777d78, 0 13px 20px rgba(0,0,0,.2);
+  cursor: pointer;
+}
+
+.node-path .complete button { background: #277458; box-shadow: 0 8px 0 #104d3a, 0 13px 20px rgba(0,0,0,.2); }
+.node-path .current button { background: #f1ad2d; box-shadow: 0 8px 0 #ad6f0b, 0 0 0 9px rgba(255,255,255,.38), 0 18px 24px rgba(0,0,0,.23); animation: path-pulse 1.8s ease-in-out infinite; }
+.node-path .locked button { filter: grayscale(.5); cursor: not-allowed; }
+.node-icon { font-size: 1.75rem; font-weight: 1000; }
+.node-label { min-width: 145px; padding: .5rem .7rem; display: flex; flex-direction: column; color: var(--ink); background: rgba(255,253,248,.94); border: 2px solid white; border-radius: .8rem; box-shadow: 0 8px 18px rgba(0,0,0,.16); }
+.node-label strong { font-size: .82rem; }
+.node-label small { color: #8c5c08; font-weight: 900; text-transform: uppercase; }
+.locked .node-label { opacity: .72; }
+
+.path-mission {
+  position: absolute;
+  z-index: 4;
+  right: clamp(1rem, 4vw, 4rem);
+  bottom: 2rem;
+  width: min(330px, 30vw);
+  padding: 1.25rem;
+  background: rgba(255,253,248,.96);
+  border: 3px solid white;
+  border-radius: 1.35rem;
+  box-shadow: 0 16px 38px rgba(0,0,0,.24);
+}
+.path-mission h2 { margin-top: .1rem; }
+
+@keyframes path-pulse {
+  50% { transform: translateY(-5px); }
+}
+
+@media (max-width: 860px) {
+  .hero-guides { width: 72vw; opacity: .88; right: -16%; }
+  .hero-content { max-width: 72%; }
+  .adventure-board { min-height: 1000px; background-attachment: scroll; }
+  .path-guides { width: 44vw; opacity: .9; left: -10%; }
+  .node-path { width: 78vw; margin-left: 22%; }
+  .path-mission { position: absolute; left: 1rem; right: 1rem; bottom: 1rem; width: auto; }
+}
+
+@media (max-width: 600px) {
+  .launch-scene { min-height: calc(100vh - 64px); background-position: 47% center; }
+  .launch-title { top: 1rem; width: 100%; }
+  .launch-title span { font-size: clamp(3rem, 17vw, 5rem); }
+  .launch-title strong { font-size: .85rem; }
+  .welcome-plaque { top: 8.6rem; min-width: calc(100% - 2rem); }
+  .launch-guides { bottom: 6.8rem; height: 48vh; max-width: 88vw; }
+  .launch-place { min-width: 118px; padding: .45rem; font-size: .72rem; }
+  .launch-place span { font-size: 1.45rem; }
+  .launch-market { left: .5rem; bottom: 34%; }
+  .launch-library { right: .5rem; bottom: 39%; }
+  .launch-workshop { display: none; }
+  .launch-action { bottom: .65rem; }
+  .launch-action p { font-size: .82rem; }
+  .hero { min-height: calc(100vh - 64px); padding-top: 14rem; }
+  .hero-guides { top: .5rem; bottom: auto; width: 92vw; height: 48%; right: -8%; object-position: top right; }
+  .hero-content { max-width: 100%; }
+  .hero .speech { font-size: .9rem; }
+  .guide-scene { grid-template-columns: 1fr; }
+  .orientation-guides { max-height: 300px; }
+  .adventure-board { min-height: 1080px; padding-inline: .5rem; }
+  .unit-banner { width: calc(100% - 1rem); align-items: flex-start; }
+  .unit-progress { min-width: 72px; }
+  .path-guides { width: 58vw; left: -22%; bottom: 12rem; opacity: .82; }
+  .node-path { width: 100%; min-height: 690px; margin-left: 0; }
+  .node-path::before { left: 52%; }
+  .node-path li { left: 52%; }
+  .node-path .node-1 { margin-left: -35px; }
+  .node-path .node-2 { margin-left: 25px; }
+  .node-path .node-3 { margin-left: -45px; }
+  .node-path .node-4 { margin-left: 25px; }
+  .node-path .node-5 { margin-left: -35px; }
+  .node-path .node-6 { margin-left: 20px; }
+  .node-label { min-width: 120px; max-width: 135px; }
+  .node-path button { width: 76px; height: 70px; }
+}

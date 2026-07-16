@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Bridgepath guiding path mark</title>
+  <desc id="desc">A golden path crosses a teal bridge and rises toward a guiding star.</desc>
+  <path fill="#123F43" fill-rule="evenodd" d="M24 190C39 121 78 78 128 78s89 43 104 112h-35c-13-47-38-75-69-75s-56 28-69 75H24Zm34 0h140v28H58v-28Z"/>
+  <path fill="#F4B942" d="M111 218c2-38 7-70 17-97 10 27 15 59 17 97h-34Z"/>
+  <path fill="#F4B942" d="m128 26 8 21 22 8-22 8-8 21-8-21-22-8 22-8 8-21Z"/>
+</svg>
