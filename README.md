@@ -4,6 +4,10 @@
 
 Bridgepath is a responsive, story-led learning adventure for Trinidad and Tobago children in Standards 3–5. The repository currently contains an exploratory Market Day prototype plus the planning and discovery documents needed to define the first curriculum-validated Standard 3 Mathematics slice.
 
+## Shared project checkpoint
+
+See [PROJECT-STATUS.md](./PROJECT-STATUS.md) for the concise, living record of where the project stands, current decisions, blockers, and what the team plans to do next.
+
 ## Run locally
 
 ```bash
