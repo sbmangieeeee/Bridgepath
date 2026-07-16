@@ -29,4 +29,4 @@ npm run test:e2e
 
 ## Pilot blockers
 
-Production activation remains blocked on curriculum sign-off, cultural review, legal approval of adult verification, live authentication/Supabase policies, processor review, and child usability testing. See [PLAN.md](./PLAN.md).
+The current online curriculum has been reviewed through the complete 18-stop journey; no additional educator sign-off is required. Production activation remains blocked on cultural review, legal approval of adult verification, live authentication/Supabase policies, processor review, and child usability testing. See [PLAN.md](./PLAN.md).

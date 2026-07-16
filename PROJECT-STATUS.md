@@ -11,8 +11,8 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 - The full project has its first GitHub baseline on `main`.
 - A responsive Next.js Market Day prototype demonstrates the family, child, learning, and parent-reporting loop.
 - The prototype uses browser storage only; it is not a production account system.
-- Standard 3 Mathematics discovery proposes an 18-stop complete learning journey.
-- Corner Shop Challenge is the recommended first production vertical slice, pending founder and educator approval.
+- The current online Standard 3 Mathematics curriculum has been reviewed across the complete 18-stop learning journey.
+- Corner Shop Challenge is the recommended first production vertical slice, pending founder approval.
 - The Living Adventure World is the approved visual direction.
 - Niko and Zuri have proposed character bibles and a shared companion guide; final art and cultural review remain pending.
 - The engineering architecture is ready for founder approval and Phase 0 contract work.
@@ -22,6 +22,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | Area | Decision | Status |
 |---|---|---|
 | First curriculum area | Standard 3 Mathematics | Confirmed |
+| Curriculum basis | Current online curriculum reviewed through all 18 stops | Confirmed; no additional educator sign-off required |
 | Current prototype | Six-stop Market Day experience | Implemented, exploratory only |
 | Proposed production slice | Corner Shop Challenge | Approval needed |
 | Complete town | 18 curriculum-linked destinations | Proposed |
@@ -34,6 +35,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 
 - [x] Product discovery and CEO review
 - [x] Standard 3 Mathematics curriculum and experience discovery drafts
+- [x] Current curriculum reviewed across the complete 18-stop journey
 - [x] Complete-town learning journey proposal
 - [x] Product specification and engineering architecture proposal
 - [x] Approved high-level design direction
@@ -45,7 +47,6 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 ## Now
 
 - [ ] Founder approves or revises Corner Shop Challenge as the first production slice
-- [ ] Curriculum educator validates exact objectives, prerequisites, and evidence requirements
 - [ ] Name owners for curriculum, cultural, privacy/child-safety, and illustration review
 - [ ] Approve the Phase 0 engineering architecture and delivery boundary
 - [ ] Resolve final Niko/Zuri visual and cultural-review questions
@@ -61,7 +62,6 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 
 ## Pilot blockers
 
-- Signed curriculum mapping and mastery rules
 - Trinidad and Tobago cultural review
 - Adult-verification and legal/privacy approval
 - Secure authentication and cross-family authorization tests
@@ -75,7 +75,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | Area | State |
 |---|---|
 | Product direction | Strong, pending a few founder approvals |
-| Curriculum discovery | Substantial, pending educator sign-off |
+| Curriculum discovery | Complete for the 18-stop journey; no additional educator sign-off required |
 | Design direction | Approved at system level |
 | Character direction | Proposed; final visual/cultural approval pending |
 | Prototype | Working exploratory slice |
@@ -87,6 +87,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | Date | Checkpoint |
 |---|---|
 | 16 July 2026 | Created the first GitHub baseline and this shared project checkpoint. |
+| 16 July 2026 | Confirmed the current online curriculum was reviewed through all 18 stops; educator sign-off removed as a gate. |
 
 ## How to update this document
 
@@ -95,4 +96,3 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 3. Record decisions in **Current decisions** instead of leaving competing directions unresolved.
 4. Keep **Now** to roughly five active priorities.
 5. Add one short entry to the update log for meaningful checkpoint changes.
-
