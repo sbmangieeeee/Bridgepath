@@ -14,7 +14,8 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 - The current online Standard 3 Mathematics curriculum has been reviewed across the complete 18-stop learning journey.
 - Corner Shop Challenge is the recommended first production vertical slice, pending founder approval.
 - The Living Adventure World is the approved visual direction.
-- Niko and Zuri have proposed character bibles and a shared companion guide; final art and cultural review remain pending.
+- The exact 11-character Standard 3 Mathematics reusable cast and four adult working names are founder-approved.
+- `design/approved/bridgepath-master-cast-sheet.png` is the approved visual source of truth for the recurring adult cast; Niko and Zuri's bibles remain authoritative for their detailed construction.
 - The engineering architecture is ready for founder approval and Phase 0 contract work.
 
 ## Current decisions
@@ -28,6 +29,9 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | Complete town | 18 curriculum-linked destinations | Proposed |
 | Visual direction | Living Adventure World | Approved |
 | Core explorers | Child chooses Niko or Zuri; the other is the companion | Approved model |
+| Standard 3 reusable cast | Exactly 11 recurring characters | Founder-approved |
+| Adult working names | Ms. Leela Maharaj, Mr. Kareem Joseph, Ms. Alana Pierre, Ms. Keisha Ramoutar | Founder-approved |
+| Master cast direction | Approved multicultural representation in `design/approved/bridgepath-master-cast-sheet.png` | Founder-approved; adult visual source of truth |
 | Production data model | Server-authoritative evidence with family isolation | Planned |
 | Production platform | Next.js with Supabase-backed persistence and authorization | Recommended |
 
@@ -40,6 +44,9 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 - [x] Product specification and engineering architecture proposal
 - [x] Approved high-level design direction
 - [x] Niko and Zuri character documentation
+- [x] Authoritative Standard 3 Mathematics reusable-cast guide
+- [x] Founder-approved adult working names and multicultural cast representation
+- [x] Master recurring-cast sheet established under `design/approved/`
 - [x] Exploratory family-to-learning prototype
 - [x] Initial unit and browser test coverage
 - [x] First GitHub baseline
@@ -77,7 +84,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | Product direction | Strong, pending a few founder approvals |
 | Curriculum discovery | Complete for the 18-stop journey; no additional educator sign-off required |
 | Design direction | Approved at system level |
-| Character direction | Proposed; final visual/cultural approval pending |
+| Character direction | Reusable cast, working names, and master cast direction founder-approved; detailed continuity rules active |
 | Prototype | Working exploratory slice |
 | Production engineering | Architecture planned; implementation not started |
 | Pilot readiness | Blocked |
@@ -88,6 +95,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 |---|---|
 | 16 July 2026 | Created the first GitHub baseline and this shared project checkpoint. |
 | 16 July 2026 | Confirmed the current online curriculum was reviewed through all 18 stops; educator sign-off removed as a gate. |
+| 16 July 2026 | Approved the 11-character reusable cast, four adult working names, multicultural representation, and master cast sheet. |
 
 ## How to update this document
 

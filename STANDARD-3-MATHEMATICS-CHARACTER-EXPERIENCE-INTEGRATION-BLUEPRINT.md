@@ -2,7 +2,7 @@
 
 ## Status and authority
 
-The destination and game-flow integration remains proposed for review. The **Authoritative reusable-cast guide** in this document is the controlling Standard 3 Mathematics cast system; no code or artwork implementation is authorised by this document.
+The destination and game-flow integration remains proposed for review. The **Authoritative reusable-cast guide** in this document and `design/approved/bridgepath-master-cast-sheet.png` are founder-approved as the controlling Standard 3 Mathematics recurring-cast system. No code implementation is authorised by this document.
 
 This blueprint preserves:
 
@@ -14,7 +14,7 @@ This blueprint preserves:
 - a small recurring cast whose community roles exist independently of curriculum delivery; and
 - the evidence rule that one successful mission cannot establish mastery.
 
-Destination and unapproved resident names remain working names until founder decision and appropriate Trinidad and Tobago cultural review. Niko and Zuri's proposed full identities and production language are defined in `NIKO-CHARACTER-BIBLE.md`, `ZURI-CHARACTER-BIBLE.md`, and `BRIDGEPATH-CORE-COMPANION-CHARACTER-GUIDE.md`; their proposed surnames remain subject to local naming review.
+The 11-character recurring cast, the adult working names in this guide, and the multicultural visual representation in the master cast sheet were approved by the founder on 16 July 2026. Niko and Zuri's proposed full identities and detailed construction remain defined in `NIKO-CHARACTER-BIBLE.md`, `ZURI-CHARACTER-BIBLE.md`, and `BRIDGEPATH-CORE-COMPANION-CHARACTER-GUIDE.md`; their proposed surnames remain subject to local naming review.
 
 ## Integrated experience model
 
@@ -45,8 +45,8 @@ Their differences are complementary rather than a permanent “careless child/co
 
 ### School staff summary
 
-- **Main Mathematics Teacher — Ms. Leela Maharaj, proposed pending founder approval:** leads most concept introductions, maintains representation and language continuity, and explicitly connects new ideas to earlier learning.
-- **Supporting Teacher — Mr. Kareem Joseph, proposed pending founder approval:** leads selected pattern, design, time, and inquiry experiences and supports small-group remediation. This teacher is not a sidekick or easier version of the main teacher.
+- **Main Mathematics Teacher — Ms. Leela Maharaj, founder-approved working name:** leads most concept introductions, maintains representation and language continuity, and explicitly connects new ideas to earlier learning.
+- **Supporting Teacher — Mr. Kareem Joseph, founder-approved working name:** leads selected pattern, design, time, and inquiry experiences and supports small-group remediation. This teacher is not a sidekick or easier version of the main teacher.
 
 The authoritative cast guide below controls their identity, appearance, dialogue, and boundaries.
 
@@ -60,14 +60,14 @@ The authoritative cast guide below controls their identity, appearance, dialogue
 
 ### Additional recurring residents summary
 
-- **Community Librarian — Ms. Alana Pierre, proposed pending founder approval:** anchors the library and later helps turn town information into a responsible community report.
-- **Postal and Delivery Coordinator — Ms. Keisha Ramoutar, proposed pending founder approval:** anchors the parcel mystery and delivery depot, allowing one logistics relationship to develop across two stops.
+- **Community Librarian — Ms. Alana Pierre, founder-approved working name:** anchors the library and later helps turn town information into a responsible community report.
+- **Postal and Delivery Coordinator — Ms. Keisha Ramoutar, founder-approved working name:** anchors the parcel mystery and delivery depot, allowing one logistics relationship to develop across two stops.
 
 These two roles fill genuine gaps the approved five cannot cover without feeling artificial. The authoritative cast guide below controls their identity, appearance, dialogue, and boundaries.
 
 ### Functional minor residents
 
-A wharf coordinator, maxi driver, water-park operations worker, and mangrove guide may appear where safety or occupational credibility requires them. They support the scene but do not each require a full recurring-character arc. The familiar resident connected to the need remains the child's relational anchor whenever possible.
+A maxi driver, water-park operations worker or lifeguard, and mangrove guide may appear only where safety or occupational credibility requires them. They support the scene but do not receive a recurring-character arc. The familiar resident connected to the need remains the child's relational anchor whenever possible.
 
 # Complete destination blueprint
 
@@ -149,7 +149,7 @@ Place value to 9,999; expanded and symbolic forms; digit value; constrained larg
 ### Town application
 
 - **Destination:** The Harbour Storehouse.
-- **Community character:** Mr. Thomas, supported by a functional wharf coordinator.
+- **Community character:** Mr. Thomas.
 - **Character's real need:** his supplies must be identified and unloaded in the correct order while the storehouse estimates bay space for all arrivals.
 - **Learner's role:** repair labels, represent quantities, compare shipments, direct unloading, and create both exact and rounded records.
 - **Interactive mechanic:** regroup animated crate stacks across place-value bays and position shipments on an unloading lane.
@@ -1106,13 +1106,39 @@ This section is the authoritative reusable-cast guide for Standard 3 Mathematics
 1. `NIKO-CHARACTER-BIBLE.md` and `ZURI-CHARACTER-BIBLE.md` for Niko and Zuri;
 2. `BRIDGEPATH-CORE-COMPANION-CHARACTER-GUIDE.md` for their shared relationship and educational behaviour;
 3. `DESIGN.md` for the Living Adventure World visual system; and
-4. this section for the Standard 3 Mathematics adult cast, recurring destinations, dialogue functions, and boundaries.
+4. `design/approved/bridgepath-master-cast-sheet.png` for the approved adult faces, skin tones, facial features, hairstyles, body types, proportions, everyday outfits, wardrobe colour anchors, and overall visual identities; and
+5. this section for the Standard 3 Mathematics adult roles, personalities, occupations, educational functions, recurring destinations, dialogue, and boundaries.
 
-The recurring cast is capped at these eleven characters: Niko, Zuri, two teachers, Miss Maria, Mr. Ali, Auntie Joy, Coach Devon, Mr. Thomas, the Community Librarian, and the Postal and Delivery Coordinator. A recurring character appears because a relationship or responsibility develops across destinations, never merely to decorate a screen.
+Founder approval recorded 16 July 2026: the recurring cast is exactly these eleven characters—Niko, Zuri, Ms. Leela Maharaj, Mr. Kareem Joseph, Miss Maria, Mr. Ali, Auntie Joy, Coach Devon, Mr. Thomas, Ms. Alana Pierre, and Ms. Keisha Ramoutar. A recurring character appears because a relationship or responsibility develops across destinations, never merely to decorate a screen.
 
 The cast should look like contemporary people who could plausibly meet through a Trinidad and Tobago primary school and its surrounding communities. Trinidadian identity comes through relationships, institutions, skilled work, language rhythm, materials, transport, recreation, and everyday dress. Do not assign each character a cultural symbol, turn ordinary clothing into costume, make every line dialect-heavy, or use food, Carnival, beaches, flags, tropical prints, and steelpan as shorthand for belonging.
 
-Names proposed below for the two teachers, librarian, and postal coordinator are working production names only. They are deliberately varied without asking any one character to represent an ethnic, religious, geographic, or class group. All four require founder approval before public use.
+The founder-approved working names **Ms. Leela Maharaj**, **Mr. Kareem Joseph**, **Ms. Alana Pierre**, and **Ms. Keisha Ramoutar** are controlling names for Standard 3 Mathematics production work. The approved multicultural representation is the natural, contemporary community shown in the master cast sheet: diversity is communicated through individual faces, complexions, hair textures, ages, body types, and personal styles—not costume, religious shorthand, stereotypical props, or exaggerated ethnic features.
+
+## Visual-continuity rule
+
+All future artwork must preserve each approved character's face, skin tone, facial features, hairstyle, body type, proportions, wardrobe colour anchor, and overall identity. Pose, expression, practical layer, and one task-relevant prop may change when the story requires them; those changes must not redesign the character.
+
+Cultural identity must remain natural and contemporary. It must never be communicated through costume, flags, generic “island” styling, religious markers added as shorthand, exaggerated features, occupation caricature, or stereotypical accessories.
+
+The master cast sheet controls adult appearance. The Niko and Zuri character bibles remain authoritative for their detailed face and body construction, silhouette, palette, wardrobe logic, carry lines, expressions, poses, and educational behaviour. The master cast sheet shows their approved everyday cast-sheet appearance but does not supersede those detailed construction rules.
+
+### Approved multicultural representation
+
+| Character | Approved visual representation |
+|---|---|
+| Niko and Zuri | Established master identities preserved |
+| Ms. Leela Maharaj | Indo-Trinidadian |
+| Mr. Kareem Joseph | Mixed-heritage Trinidadian, visually distinct from the other adults |
+| Miss Maria | Mixed-heritage Trinidadian, with her established fuller practical body type |
+| Mr. Ali | Indo-Trinidadian, visually distinct from Ms. Maharaj |
+| Auntie Joy | Afro-Trinidadian |
+| Coach Devon | Afro-Trinidadian |
+| Mr. Thomas | White Trinidadian |
+| Ms. Alana Pierre | Chinese-Trinidadian or mixed Chinese-Trinidadian |
+| Ms. Keisha Ramoutar | Mixed Afro- and Indo-Trinidadian |
+
+These descriptions record visual continuity, not personality, belief, accent, class, or story behaviour. No future artwork may make cultural identity more “obvious” by adding stereotypical features, costume, religious markers, or symbolic props.
 
 ## Core learner companions
 
@@ -1140,7 +1166,7 @@ Names proposed below for the two teachers, librarian, and postal coordinator are
 
 ## Storypath Primary School staff
 
-### Main Mathematics Teacher — proposed name: Ms. Leela Maharaj [FOUNDER APPROVAL REQUIRED]
+### Main Mathematics Teacher — Ms. Leela Maharaj [FOUNDER-APPROVED WORKING NAME]
 
 - **Role:** primary instructional anchor at Storypath Primary School and the adult who maintains conceptual continuity across the town journey.
 - **Personality:** calm, intellectually lively, observant, direct without severity, and genuinely interested in children's explanations. She treats a wrong answer as evidence about a model, not a lapse in character.
@@ -1151,7 +1177,7 @@ Names proposed below for the two teachers, librarian, and postal coordinator are
 - **Dialogue style:** precise, warm, economical, and question-led: “Show me what the four represents here.” She uses standard Trinidad and Tobago English naturally, allowing local rhythm and familiar terms where authentic without scripted dialect performance.
 - **Boundaries:** does not praise speed, announce mastery, turn every error into a speech, solve the community mission, or become the all-knowing moral centre. She teaches mathematics; residents retain authority over their own work and needs.
 
-### Supporting Teacher — proposed name: Mr. Kareem Joseph [FOUNDER APPROVAL REQUIRED]
+### Supporting Teacher — Mr. Kareem Joseph [FOUNDER-APPROVED WORKING NAME]
 
 - **Role:** equal professional colleague whose recurring strengths are pattern, design, time, inquiry, field preparation, and small-group remediation.
 - **Personality:** patient, inventive, quietly funny, attentive to materials and alternative methods, and comfortable saying when a first model needs revision.
@@ -1219,7 +1245,7 @@ Names proposed below for the two teachers, librarian, and postal coordinator are
 - **Dialogue style:** measured and consequence-led: “The drawing fits the boundary; now account for the gate.” He values clear labels, safe allowances, and reasons rather than praising neatness alone.
 - **Boundaries:** not silent muscle, an old-fashioned handyman stereotype, or the town's universal repairman. He owns building judgement and safety, while teachers own mathematical instruction and specialist workers own their sites.
 
-### Community Librarian — proposed name: Ms. Alana Pierre [FOUNDER APPROVAL REQUIRED]
+### Community Librarian — Ms. Alana Pierre [FOUNDER-APPROVED WORKING NAME]
 
 - **Role:** community librarian who develops from collection steward into a trusted organiser of evidence and responsible public information.
 - **Personality:** lively, welcoming, curious, orderly without fussiness, and careful about the difference between a record, an inference, and a claim.
@@ -1230,7 +1256,7 @@ Names proposed below for the two teachers, librarian, and postal coordinator are
 - **Dialogue style:** curious and evidence-aware: “The chart is clear, but does the record support that sentence?” She invites the child to locate and justify rather than demanding silence or perfect order.
 - **Boundaries:** not a shushing stereotype, exposition machine, schoolteacher substitute, or automatic radio expert. A functional producer owns station operations; she owns the information relationship.
 
-### Postal and Delivery Coordinator — proposed name: Ms. Keisha Ramoutar [FOUNDER APPROVAL REQUIRED]
+### Postal and Delivery Coordinator — Ms. Keisha Ramoutar [FOUNDER-APPROVED WORKING NAME]
 
 - **Role:** coordinator linking parcel records, sorting, packing, routes, vehicles, and community deliveries across the first phase and final fair.
 - **Personality:** brisk but patient, systems-minded, dependable, good-humoured under changing conditions, and attentive to both people and parcels.
@@ -1239,14 +1265,13 @@ Names proposed below for the two teachers, librarian, and postal coordinator are
 - **Visual identifiers:** forward-moving posture, compact route board or rugged tablet, labelled key/tag loop, and maroon-and-sand wardrobe blocks. Her silhouette must not depend on a foreign-style postal uniform.
 - **Wardrobe:** locally plausible modern logistics clothing—breathable collared work shirt, durable trousers, closed shoes, and high-visibility or weather layer only where operationally required. Branding should belong to the fictional town service, not imitate TTPost or a real courier.
 - **Dialogue style:** concise, sequential, and calm: “The count balances, but this load still needs one more trip. What does the remainder mean here?” She names real operational constraints without turning them into disguised instructions.
-- **Boundaries:** not a frantic courier, bureaucratic obstacle, delivery-driver stereotype, or catch-all transport expert. The maxi driver, wharf coordinator, and site workers retain their own operational authority.
+- **Boundaries:** not a frantic courier, bureaucratic obstacle, delivery-driver stereotype, or catch-all transport expert. Functional site workers retain their own safety and operational authority only where the story requires them.
 
 ## Functional background characters, not mentors
 
-The **maxi driver, wharf coordinator, mangrove guide, and water-park operations worker or lifeguard** are functional background characters. They provide site-specific terminology, safeguarding, occupational credibility, and visible consequences. They may give a safety instruction, state a fact from their work, or confirm whether a plan is operationally possible. They do not introduce mathematics, run remediation, own a multi-stop relationship arc, award progress, or join the recurring-cast roster.
+The **maxi driver, mangrove guide, and water-park operations worker or lifeguard** are functional background characters used only where safety or occupational credibility requires them. They may give a safety instruction, state a fact from their work, or confirm whether a plan is operationally possible. They do not introduce mathematics, run remediation, own a multi-stop relationship arc, award progress, or join the recurring-cast roster.
 
 - **Maxi driver:** appears at Stop 11; owns vehicle operation, road safety, and locally credible transport practice while Coach Devon owns the community route need.
-- **Wharf coordinator:** appears at Stop 2; owns harbour procedure and safe unloading while Mr. Thomas owns the material need.
 - **Mangrove guide:** appears at Stop 16; owns ecological and site knowledge while the Supporting Teacher owns safeguarding and the learning structure.
 - **Water-park worker or lifeguard:** appears at Stop 14; owns venue rules and water safety while Coach Devon owns the recreation plan.
 
@@ -1257,15 +1282,15 @@ A functional radio producer or host may support Stop 17 but remains unnamed unle
 | Character | Active stops | Relationship continuity |
 |---|---|---|
 | Niko and Zuri | All | Equal learner companions; active presence varies by scene |
-| Ms. Leela Maharaj, proposed | 1–2, 4–7, 9, 11–14, 17–18 | Meaning, representation, language, and concept connections |
-| Mr. Kareem Joseph, proposed | 3, 8, 10, 15–16, 18 | Pattern/design/inquiry variation and dignified remediation |
+| Ms. Leela Maharaj | 1–2, 4–7, 9, 11–14, 17–18 | Meaning, representation, language, and concept connections |
+| Mr. Kareem Joseph | 3, 8, 10, 15–16, 18 | Pattern/design/inquiry variation and dignified remediation |
 | Miss Maria | 7, 13 connection, 18 | Fair sharing, preparation, and measured supply |
 | Mr. Ali | 5, 13, 18 | Value, records, goods, suppliers, and customers |
 | Auntie Joy | 3, 8, 10, 18 | Design planning and coordinated making |
 | Coach Devon | 11–12, 14–15, 18 | Routes, shared spaces, recreation, access, and time |
 | Mr. Thomas | 2, 9, 12, 18 | Materials, fit, construction, and public-space continuity |
-| Ms. Alana Pierre, proposed | 1, 17, 18 | Collections, evidence, and responsible public information |
-| Ms. Keisha Ramoutar, proposed | 4, 6, 18 | Records, packing, routes, and delivery systems |
+| Ms. Alana Pierre | 1, 17, 18 | Collections, evidence, and responsible public information |
+| Ms. Keisha Ramoutar | 4, 6, 18 | Records, packing, routes, and delivery systems |
 
 Background appearances may create recognition, but an active appearance requires a real stake, changed responsibility, or relationship beat. Do not arrange the full cast in every celebration image; the final fair should show distributed work rather than a character roll call.
 
@@ -1374,16 +1399,21 @@ Because Stop 5 normally depends on earlier place-value and equality work, the pr
 
 This blueprint is sufficiently structured to review the character model, school-to-town rhythm, mission variety, continuity, remediation philosophy, evidence intent, and first-slice recommendation. The current online Standard 3 Mathematics curriculum has already been reviewed across the complete 18-stop journey; no additional educator sign-off is required. Remaining work is Trinidad and Tobago child, cultural, and occupational review; character and story testing for role credibility and repetition; founder selection of the Corner Shop vertical-slice boundary; and a detailed evidence rubric and misconception map for that slice.
 
-Engineering review should begin after the founder decisions below with the reusable activity/evidence contract, content schema, safe-boundary model, and one vertical-slice flow. Full production implementation should not begin from this blueprint alone.
+Engineering review should begin after the remaining founder decisions below with the reusable activity/evidence contract, content schema, safe-boundary model, and one vertical-slice flow. Full production implementation should not begin from this blueprint alone.
 
-# Founder decisions — Angie only
+# Founder approval record
 
-| Choice | Proposed default | Angie approves |
+| Approved item | Founder decision | Date |
 |---|---|---|
-| Main Mathematics Teacher public name | **Ms. Leela Maharaj** | Approve / revise |
-| Supporting Teacher public name | **Mr. Kareem Joseph** | Approve / revise |
-| Community Librarian public name | **Ms. Alana Pierre** | Approve / revise |
-| Postal and Delivery Coordinator public name | **Ms. Keisha Ramoutar** | Approve / revise |
+| Recurring-cast ceiling and membership | Exactly the 11 characters in the authoritative reusable-cast guide | 16 July 2026 |
+| Working names | **Ms. Leela Maharaj**, **Mr. Kareem Joseph**, **Ms. Alana Pierre**, and **Ms. Keisha Ramoutar** | 16 July 2026 |
+| Multicultural visual representation | Approved as depicted in `design/approved/bridgepath-master-cast-sheet.png` | 16 July 2026 |
+| Adult appearance authority | The master cast sheet is the visual source of truth for all recurring adults | 16 July 2026 |
+
+# Remaining founder decisions — Angie only
+
+| Choice | Current default | Angie decides |
+|---|---|---|
 | Auntie Joy's recurring scope | Keep one design-planning/maker relationship across Stops 3, 8, 10, and 18; functional specialists retain specialist craft authority | Approve / narrow |
 | Coach Devon at the water park | Keep him as the recreation-planning relationship; functional worker or lifeguard retains operations and safety authority | Approve / remove connection |
 | Librarian at the Radio Station | Keep her as the evidence/public-information relationship; functional producer owns station operations | Approve / add a recurring radio character |
