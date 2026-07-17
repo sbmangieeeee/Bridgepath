@@ -6,9 +6,9 @@ Product stage: Pre-pilot discovery
 
 ## Product decision
 
-Bridgepath will be a parent-first curriculum mastery adventure for children in Standards 3–5. Children explore a fictional Caribbean country in which each town represents one Standard-and-subject curriculum. Inside a town, curriculum units become locations, concepts become mission paths, and learning activities become steps along those paths.
+Bridgepath will be a parent-first curriculum mastery adventure for children in Standards 3–5. Children explore Kairana, a fictional Caribbean country with six towns. Arouca Grove is the current playable Standard 3 Mathematics town and contains all 18 curriculum-derived stops. The remaining towns are reserved for future learning journeys and have no approved curriculum assignments yet.
 
-The first validated release will be one complete Standard 3 Mathematics town. Standards 4–5 and English remain part of the product vision, but they will not dilute the first content release.
+The first validated release will be the complete 18-stop Standard 3 Mathematics journey inside Arouca Grove. Standards 4–5 and English remain part of the product vision, but their future town assignments are not yet approved.
 
 ## Problem
 
@@ -95,7 +95,7 @@ Market Day should prove the whole product thesis:
 - The final mission uses a budget and worded context to test transfer.
 - The parent sees the objective, evidence level, misconception, and one household activity.
 
-One excellent town and one complete evidence loop are more valuable than thin content across six Standard-and-subject towns.
+One excellent 18-stop Arouca Grove journey and one complete evidence loop are more valuable than prematurely assigning thin content across Kairana's five future towns.
 
 ## Visual reference assessment
 

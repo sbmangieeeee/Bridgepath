@@ -18,7 +18,7 @@ Bridgepath uses memorable models to reveal meaning, not replace it. A story, obj
 
 ## Pilot scope
 
-The responsive-web pilot contains family setup, child entry, playable orientation, Storypath country and town navigation, one complete curriculum-validated vertical slice, teaching, guided use, practice, remediation, independent application, saved progress, and parent reporting. The exact application context is selected after Curriculum Discovery approval; Market Day remains a brainstorming example rather than an approved slice.
+The responsive-web pilot contains family setup, child entry, playable orientation, Kairana country navigation, the Arouca Grove journey, one complete curriculum-validated vertical slice, teaching, guided use, practice, remediation, independent application, saved progress, and parent reporting. Arouca Grove is the current playable Standard 3 Mathematics town and contains all 18 stops; Market Day remains a brainstorming example rather than the overall world or town.
 
 The production pilot additionally requires real parent authentication, approved adult verification, consent records, Supabase persistence and authorization, export/deletion operations, support, and monitoring.
 
