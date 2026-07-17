@@ -2,7 +2,7 @@
 
 ## Status and authority
 
-Proposed character-and-game-flow integration for review. No implementation is authorised by this document.
+The destination and game-flow integration remains proposed for review. The **Authoritative reusable-cast guide** in this document is the controlling Standard 3 Mathematics cast system; no code or artwork implementation is authorised by this document.
 
 This blueprint preserves:
 
@@ -14,7 +14,7 @@ This blueprint preserves:
 - a small recurring cast whose community roles exist independently of curriculum delivery; and
 - the evidence rule that one successful mission cannot establish mastery.
 
-Destination and resident names remain working names until child, educator, and Trinidad and Tobago cultural review. Niko and Zuri's proposed full identities and production language are now defined in `NIKO-CHARACTER-BIBLE.md`, `ZURI-CHARACTER-BIBLE.md`, and `BRIDGEPATH-CORE-COMPANION-CHARACTER-GUIDE.md`; their proposed surnames remain subject to local naming review.
+Destination and unapproved resident names remain working names until founder decision and appropriate Trinidad and Tobago cultural review. Niko and Zuri's proposed full identities and production language are defined in `NIKO-CHARACTER-BIBLE.md`, `ZURI-CHARACTER-BIBLE.md`, and `BRIDGEPATH-CORE-COMPANION-CHARACTER-GUIDE.md`; their proposed surnames remain subject to local naming review.
 
 ## Integrated experience model
 
@@ -43,12 +43,12 @@ The school segment should normally take about four to six minutes and the town a
 
 Their differences are complementary rather than a permanent “careless child/correct child” pairing. Both make plausible mistakes, change their minds, and learn from the learner.
 
-### School staff
+### School staff summary
 
-- **Main Mathematics Teacher:** leads most concept introductions, maintains representation and language continuity, and explicitly connects new ideas to earlier learning.
-- **Supporting Teacher:** leads selected pattern, design, time, and inquiry experiences and supports small-group remediation. This teacher is not a sidekick or easier version of the main teacher.
+- **Main Mathematics Teacher — Ms. Leela Maharaj, proposed pending founder approval:** leads most concept introductions, maintains representation and language continuity, and explicitly connects new ideas to earlier learning.
+- **Supporting Teacher — Mr. Kareem Joseph, proposed pending founder approval:** leads selected pattern, design, time, and inquiry experiences and supports small-group remediation. This teacher is not a sidekick or easier version of the main teacher.
 
-Final names, appearance, family background, and speech require later character design and local review.
+The authoritative cast guide below controls their identity, appearance, dialogue, and boundaries.
 
 ### Approved recurring residents
 
@@ -58,12 +58,12 @@ Final names, appearance, family background, and speech require later character d
 - **Coach Devon:** sports and recreation organiser who coordinates people, spaces, routes, and time.
 - **Mr. Thomas:** builder and carpenter involved in supplies, construction, repair, and community projects.
 
-### Additional recurring residents recommended
+### Additional recurring residents summary
 
-- **Community Librarian:** anchors the library and later helps turn town information into a responsible community report.
-- **Postal and Delivery Coordinator:** anchors the parcel mystery and delivery depot, allowing one logistics relationship to develop across two stops.
+- **Community Librarian — Ms. Alana Pierre, proposed pending founder approval:** anchors the library and later helps turn town information into a responsible community report.
+- **Postal and Delivery Coordinator — Ms. Keisha Ramoutar, proposed pending founder approval:** anchors the parcel mystery and delivery depot, allowing one logistics relationship to develop across two stops.
 
-These two roles fill genuine gaps the approved five cannot cover without feeling artificial. Names remain open.
+These two roles fill genuine gaps the approved five cannot cover without feeling artificial. The authoritative cast guide below controls their identity, appearance, dialogue, and boundaries.
 
 ### Functional minor residents
 
@@ -1064,7 +1064,7 @@ Independent integration across N1–N13, G1–G4, M1–M7, and S1–S4 using acc
 - **Introduced:** no new objective is marked introduced merely by appearing in the finale.
 - **Practised:** optional check activities can record practice but do not replace existing evidence.
 - **Applied independently:** each objective sampled records its own context, support level, strategy, version, and success; no single aggregate score is the academic record.
-- **Mastered or needs support:** the derived service combines this mission with independent evidence across earlier stops, contexts, time, recency, and educator-approved rules. Unsupported concepts remain “insufficient evidence” or “needs support,” never silently mastered by overall mission completion.
+- **Mastered or needs support:** the derived service combines this mission with independent evidence across earlier stops, contexts, time, recency, and versioned evidence rules. Unsupported concepts remain “insufficient evidence” or “needs support,” never silently mastered by overall mission completion.
 - **Parent-facing summary:** “Your child coordinated several kinds of Mathematics to plan a community event, adapted when a condition changed, and explained the decisions. The detailed view separates demonstrated strengths from concepts that still need practice.”
 
 ### Character continuity
@@ -1097,48 +1097,177 @@ The learner connects places and balances competing needs across routes, public s
 
 The learner moves from collecting reliable evidence to communicating and acting on it. The Librarian's return closes a relationship loop from simple records to responsible public information. At the fair, residents do not line up to deliver new tasks; their needs form one interconnected situation the learner must organise.
 
-# Final recurring cast recommendation
+# Authoritative reusable-cast guide
 
-## Keep as named recurring cast
+## Authority and cast ceiling
 
-1. Niko
-2. Zuri
-3. Main Mathematics Teacher
-4. Supporting Teacher
-5. Miss Maria
-6. Mr. Ali
-7. Auntie Joy
-8. Coach Devon
-9. Mr. Thomas
-10. Community Librarian
-11. Postal and Delivery Coordinator
+This section is the authoritative reusable-cast guide for Standard 3 Mathematics. It replaces the earlier short cast recommendation in this blueprint; it does not replace the Niko and Zuri character bibles. When details conflict, authority is:
 
-This is the recommended upper bound for the Standard 3 Mathematics recurring cast. Final teacher and additional-resident names should be developed as one culturally reviewed naming set rather than independently.
+1. `NIKO-CHARACTER-BIBLE.md` and `ZURI-CHARACTER-BIBLE.md` for Niko and Zuri;
+2. `BRIDGEPATH-CORE-COMPANION-CHARACTER-GUIDE.md` for their shared relationship and educational behaviour;
+3. `DESIGN.md` for the Living Adventure World visual system; and
+4. this section for the Standard 3 Mathematics adult cast, recurring destinations, dialogue functions, and boundaries.
 
-## Appearance frequency
+The recurring cast is capped at these eleven characters: Niko, Zuri, two teachers, Miss Maria, Mr. Ali, Auntie Joy, Coach Devon, Mr. Thomas, the Community Librarian, and the Postal and Delivery Coordinator. A recurring character appears because a relationship or responsibility develops across destinations, never merely to decorate a screen.
 
-| Character | Active stops | Role in town arc |
+The cast should look like contemporary people who could plausibly meet through a Trinidad and Tobago primary school and its surrounding communities. Trinidadian identity comes through relationships, institutions, skilled work, language rhythm, materials, transport, recreation, and everyday dress. Do not assign each character a cultural symbol, turn ordinary clothing into costume, make every line dialect-heavy, or use food, Carnival, beaches, flags, tropical prints, and steelpan as shorthand for belonging.
+
+Names proposed below for the two teachers, librarian, and postal coordinator are working production names only. They are deliberately varied without asking any one character to represent an ethnic, religious, geographic, or class group. All four require founder approval before public use.
+
+## Core learner companions
+
+### Niko
+
+- **Role:** selectable nine-year-old explorer or, when Zuri is selected, equal adventure companion. He helps the group begin and makes a problem feel approachable.
+- **Personality:** warm, socially confident, practical, curious about how things work, and willing to estimate or test a first move. His energy is generous rather than reckless; he can slow down, notice correctly, and accept help.
+- **Educational function:** identifies a possible starting point, estimate, route, object, or person to ask; makes plausible mistakes that expose units, conditions, reasonableness, and incomplete patterns. He never teaches the concept or supplies an evidentiary answer.
+- **Recurring destinations:** all 18 stops, with active story presence used selectively so the learner and resident retain the interaction space.
+- **Visual identifiers:** governed by the Niko bible—high rounded natural curl mass, compact child proportions, coral side blocks around a teal centre, diagonal field-pouch line, and one foot ready without looking frantic.
+- **Wardrobe:** governed by the Niko bible. Everyday coral/teal outfit and diagonal pouch remain the recognition master; destination changes are practical layers or safety items, not themed costumes. No tourist, superhero, explorer-costume, or festival-default styling.
+- **Dialogue style:** short, warm, action-oriented observations: “We could test one group first.” He uses natural Trinidad and Tobago English without performed accent spelling, catchphrases, or constant slang.
+- **Boundaries:** never reckless comic relief, a mascot, a teacher, permanently wrong, dominant over Zuri, or rewarded for rushing. Never use tongue-out expressions or make his bag contain answers.
+
+### Zuri
+
+- **Role:** selectable nine-year-old explorer or, when Niko is selected, equal adventure companion. She helps the group notice relationships, conditions, and who or what a plan may have missed.
+- **Personality:** observant, composed, imaginative, quietly expressive, playful, and willing to revise. She can initiate action, take risks, miss a simpler test, and accept another person's valid approach.
+- **Educational function:** reveals a mismatch, arranges two representations, names a changed condition, or asks a fairness question; makes plausible mistakes involving categories, diagrams, equal shares, and over-planning. She never teaches or pre-solves the learner's task.
+- **Recurring destinations:** all 18 stops, with active story presence used selectively rather than placing her decoratively on every map or activity.
+- **Visual identifiers:** governed by the Zuri bible—twin textured puff silhouette, grounded child proportions, violet upper and mango lower colour blocks, and compact vertical roll-top backpack.
+- **Wardrobe:** governed by the Zuri bible. Everyday violet/mango outfit and vertical backpack remain the recognition master; contextual changes must be practical and quiet. Jewellery, textile details, and final everyday styling remain subject to the existing founder-review decisions.
+- **Dialogue style:** concise, attentive, and invitational: “These two labels tell different stories. Which one fits the record?” Her speech is contemporary and locally natural without phonetic accent writing or making formality her entire personality.
+- **Boundaries:** never perfect, parental, timid, humourless, “bossy,” Niko's supervisor, or the default correct child. Never use her to deliver instructions the teacher or interface should own.
+
+## Storypath Primary School staff
+
+### Main Mathematics Teacher — proposed name: Ms. Leela Maharaj [FOUNDER APPROVAL REQUIRED]
+
+- **Role:** primary instructional anchor at Storypath Primary School and the adult who maintains conceptual continuity across the town journey.
+- **Personality:** calm, intellectually lively, observant, direct without severity, and genuinely interested in children's explanations. She treats a wrong answer as evidence about a model, not a lapse in character.
+- **Educational function:** introduces concepts through concrete and pictorial meaning before procedure; connects new learning to earlier representations; models precise vocabulary; fades prompts; distinguishes guided practice from independent evidence.
+- **Recurring destinations:** active school segments for Stops 1–2, 4–7, 9, 11–14, and 17; co-leads Stop 18. She may be referenced between stops but does not follow the learner around town as a narrator.
+- **Visual identifiers:** a confident open stance, expressive hands used to compare or connect representations, a slim reusable teaching folio, and one recognisable deep-teal wardrobe anchor. Her silhouette must remain distinct from Zuri and the residents without relying on spectacles as a “teacher” code.
+- **Wardrobe:** contemporary professional clothing suitable for a Trinidad and Tobago primary classroom—breathable blouse or structured top, straight or softly tailored trousers or below-knee skirt, and practical closed or supportive shoes. Patterns are restrained; no uniform-like colonial formality, madras-as-costume, or perpetual blazer.
+- **Dialogue style:** precise, warm, economical, and question-led: “Show me what the four represents here.” She uses standard Trinidad and Tobago English naturally, allowing local rhythm and familiar terms where authentic without scripted dialect performance.
+- **Boundaries:** does not praise speed, announce mastery, turn every error into a speech, solve the community mission, or become the all-knowing moral centre. She teaches mathematics; residents retain authority over their own work and needs.
+
+### Supporting Teacher — proposed name: Mr. Kareem Joseph [FOUNDER APPROVAL REQUIRED]
+
+- **Role:** equal professional colleague whose recurring strengths are pattern, design, time, inquiry, field preparation, and small-group remediation.
+- **Personality:** patient, inventive, quietly funny, attentive to materials and alternative methods, and comfortable saying when a first model needs revision.
+- **Educational function:** leads Stops 3, 8, 10, 15, and 16; co-leads Stop 18; builds alternative representations and lower-load re-entry points without making support feel like easier or lesser mathematics.
+- **Recurring destinations:** school and supervised field-learning segments tied to Stops 3, 8, 10, 15–16, and 18. At the mangrove stop he owns safeguarding and the educational field structure while the guide owns ecological expertise.
+- **Visual identifiers:** relaxed upright posture, rolled reusable planning sheet or tablet sleeve, small material swatches or measuring tools only when relevant, and a warm rust wardrobe anchor. He must not read as an assistant through smaller scale, deferential placement, or less visual finish.
+- **Wardrobe:** modern school-professional separates—lightweight collared shirt or neat knit polo, tailored trousers, practical shoes, and a field overshirt or sun/rain layer when the activity genuinely requires it. Avoid sports-coach coding, novelty maths prints, or “creative teacher” costume clutter.
+- **Dialogue style:** exploratory and specific: “Let's change one thing and see what the pattern keeps.” His humour releases tension but never targets a child or turns him into entertainment.
+- **Boundaries:** not the main teacher's sidekick, substitute, disciplinarian, technology person, or universally “fun” teacher. He does not own all creative topics, take over resident expertise, or imply that supported learners have lower expectations.
+
+## Recurring community residents
+
+### Miss Maria
+
+- **Role:** baker and food preparer whose work connects fair sharing, measured preparation, produce supply, and the final community fair.
+- **Personality:** warm, organised, hospitable, exacting about fairness, and candid when a plan will not serve everyone properly.
+- **Educational function:** states quantities, group needs, portion constraints, and visible consequences; invites the learner to apply already-taught grouping and fraction ideas. She validates whether a result works in her kitchen or serving plan but never introduces the rule.
+- **Recurring destinations:** Stop 7 Big Bakehouse; a supply connection at Stop 13 Farmers' Market; active contribution at Stop 18 Grand Community Fair.
+- **Visual identifiers:** strong practical stance, tied-back or safely covered hair as appropriate to the task, a clean half-apron with a simple solid trim, and labelled reusable containers. Her identity must remain readable when she is not holding food.
+- **Wardrobe:** contemporary blouse or T-shirt and comfortable trousers or below-knee skirt beneath task-appropriate food-preparation protection; closed non-slip shoes in work areas. No “Caribbean cook” costume, exaggerated headwrap, or permanent tray prop.
+- **Dialogue style:** concrete, caring, and constraint-led: “Each table must receive the same share, and we still need one tray for later.” She may use familiar local food or household terms when context requires them, never as a string of cultural references.
+- **Boundaries:** not a grandmother stereotype, magical feeder, domestic-service caricature, or substitute fractions teacher. Food is skilled work and one part of her life, not her entire comic identity.
+
+### Mr. Ali
+
+- **Role:** corner-shop keeper and market vendor whose recurring arc connects household value, trustworthy records, produce, suppliers, and customers.
+- **Personality:** practical, attentive, fair, dryly humorous, and proud of a well-run shop without being suspicious or miserly.
+- **Educational function:** supplies authentic prices, bills, stock constraints, comparison needs, and reasonableness checks. He confirms whether an order and record reconcile; teaching addition, subtraction, money notation, or best-buy strategy remains with school staff.
+- **Recurring destinations:** Stop 5 Corner Shop Challenge; Stop 13 Farmers' Market; Stop 18 Grand Community Fair.
+- **Visual identifiers:** neat counter-ready silhouette, compact waist or counter apron used only while working, pencil or digital stock device, reusable shopping bags, and a muted green wardrobe anchor. Avoid using religion, surname, or facial hair as a visual shortcut.
+- **Wardrobe:** modern short-sleeve shirt or polo, practical trousers, supportive shoes, and task apron when handling stock. No generic “shopkeeper vest,” ethnic costume, or permanently rolled banknotes.
+- **Dialogue style:** brief, observant, and grounded in the customer's need: “The total must match the list, not just come under the budget.” His language is contemporary and locally plausible without catchphrase commerce banter.
+- **Boundaries:** not greedy, haggling comic relief, an ethnic type, or a teacher in disguise. He never equates spending more with success or shames a child for a calculation error.
+
+### Auntie Joy
+
+- **Role:** respected community artist, maker, and event collaborator whose skills connect kite construction, fabric measurement, Mas Camp production, and final-fair coordination. “Auntie” signals an established community relationship, not necessarily kinship or age.
+- **Personality:** inventive, energetic, exacting about craft, generous with materials, and willing to revise a beautiful idea when it will not function.
+- **Educational function:** provides design rules, material limits, symmetry and measurement constraints, and craft consequences. She demonstrates safe tool or material handling but does not teach the underlying mathematics.
+- **Recurring destinations:** Stop 3 Kite-Maker's Yard; Stop 8 Tailor's Loft; Stop 10 Mas Camp; coordinating role at Stop 18 Grand Community Fair.
+- **Visual identifiers:** bold angular work silhouette, modular tool roll, a distinctive mango-yellow work overshirt, and one repeatable geometric earring or pin subject to cultural review. Materials in hand change by destination; her body and wardrobe do not become a themed costume.
+- **Wardrobe:** modern maker clothing—solid base top, durable trousers or skirt, practical shoes, and task-specific overshirt/apron. Mas work may add protective or workshop items, never place her in a masquerader costume by default.
+- **Dialogue style:** vivid but exact: “The repeat is strong; now check whether the material reaches the final panel.” She names craft processes accurately and celebrates care, fit, balance, and revision rather than generic creativity.
+- **Boundaries:** not a mystical artist, Carnival shorthand, eccentric comic, or implausible expert in every craft. Her credible through-line is design planning and coordinated making; specialist functional workers may own techniques beyond that line.
+
+### Coach Devon
+
+- **Role:** community sports and recreation organiser who coordinates how people use routes, spaces, equipment, water activities, and time.
+- **Personality:** encouraging, prepared, safety-minded, energetic without being loud, and skilled at hearing competing access needs.
+- **Educational function:** presents route, space, schedule, capacity, and equipment constraints; validates whether a plan is safe and usable. He does not teach units, perimeter, area, capacity conversion, or elapsed-time procedures.
+- **Recurring destinations:** Stop 11 Maxi Route Adventure; Stop 12 Playground Project; Stop 14 Water Park Adventure; Stop 15 Sports Day at the Savannah; Stop 18 Grand Community Fair.
+- **Visual identifiers:** open athletic stance, compact clipboard or schedule sleeve, whistle stored rather than constantly worn or blown, and cobalt-blue wardrobe anchor. His identity must survive without sports equipment.
+- **Wardrobe:** contemporary recreation-professional polo or breathable top, practical trousers or tailored athletic bottoms, supportive trainers, cap or sun protection when appropriate, and venue-specific safety gear only when required.
+- **Dialogue style:** clear, inclusive, and plan-focused: “This route works for the first group. What changes when the equipment arrives late?” He encourages explanation and team consideration rather than chanting motivation.
+- **Boundaries:** not a shouting PE stereotype, disciplinarian, elite-athlete fantasy, or automatic owner of every outdoor setting. Functional maxi and water-park workers retain transport and operational safety authority.
+
+### Mr. Thomas
+
+- **Role:** builder and carpenter whose long-horizon projects connect material shipments, construction, repair, public space, and the final fair.
+- **Personality:** steady, methodical, resource-conscious, quietly proud of sound work, and open about measuring twice or changing a plan.
+- **Educational function:** provides dimensions, material limits, build order, fit, area, perimeter, and structural consequences; checks whether the learner's applied plan can be built. He does not introduce place value, measurement formulas, or geometry vocabulary.
+- **Recurring destinations:** Stop 2 Harbour Storehouse; Stop 9 Builders' Yard; Stop 12 Playground Project; Stop 18 Grand Community Fair.
+- **Visual identifiers:** broad stable stance, carpenter's pencil, folding rule or tape used accurately, simple tool belt only when working, and clay-red wardrobe anchor. Tools must contact hands and materials believably.
+- **Wardrobe:** modern work shirt, durable trousers, closed safety footwear, and correctly used protective gear for the task. No generic hard hat in scenes that do not require one and no rustic “old-time craftsman” styling.
+- **Dialogue style:** measured and consequence-led: “The drawing fits the boundary; now account for the gate.” He values clear labels, safe allowances, and reasons rather than praising neatness alone.
+- **Boundaries:** not silent muscle, an old-fashioned handyman stereotype, or the town's universal repairman. He owns building judgement and safety, while teachers own mathematical instruction and specialist workers own their sites.
+
+### Community Librarian — proposed name: Ms. Alana Pierre [FOUNDER APPROVAL REQUIRED]
+
+- **Role:** community librarian who develops from collection steward into a trusted organiser of evidence and responsible public information.
+- **Personality:** lively, welcoming, curious, orderly without fussiness, and careful about the difference between a record, an inference, and a claim.
+- **Educational function:** presents collection quantities, labels, records, categories, and later public-information constraints; checks whether information can be found and responsibly communicated. She does not teach counting systems or data analysis procedures.
+- **Recurring destinations:** Stop 1 Grand Library Book Hunt; Stop 17 Community Radio Station; Stop 18 Grand Community Fair.
+- **Visual identifiers:** mobile, welcoming silhouette; book-return scanner or slim record tablet; distinctive plum lanyard with a simple library mark; and a cropped light jacket or overshirt. Glasses are optional, not her primary identity.
+- **Wardrobe:** contemporary smart-casual separates suitable for moving books and meeting the public—breathable top, trousers or comfortable skirt, flat shoes, and optional light layer. Avoid cardigan-and-bun shorthand, colonial library formality, or novelty book prints.
+- **Dialogue style:** curious and evidence-aware: “The chart is clear, but does the record support that sentence?” She invites the child to locate and justify rather than demanding silence or perfect order.
+- **Boundaries:** not a shushing stereotype, exposition machine, schoolteacher substitute, or automatic radio expert. A functional producer owns station operations; she owns the information relationship.
+
+### Postal and Delivery Coordinator — proposed name: Ms. Keisha Ramoutar [FOUNDER APPROVAL REQUIRED]
+
+- **Role:** coordinator linking parcel records, sorting, packing, routes, vehicles, and community deliveries across the first phase and final fair.
+- **Personality:** brisk but patient, systems-minded, dependable, good-humoured under changing conditions, and attentive to both people and parcels.
+- **Educational function:** provides manifests, dispatch constraints, group sizes, load limits, rates, remainders, and route consequences; validates whether deliveries reconcile and can leave safely. She never teaches inverse operations, multiplication, division, or rate procedures.
+- **Recurring destinations:** Stop 4 Parcel Post Mystery; Stop 6 Busy Delivery Depot; Stop 18 Grand Community Fair.
+- **Visual identifiers:** forward-moving posture, compact route board or rugged tablet, labelled key/tag loop, and maroon-and-sand wardrobe blocks. Her silhouette must not depend on a foreign-style postal uniform.
+- **Wardrobe:** locally plausible modern logistics clothing—breathable collared work shirt, durable trousers, closed shoes, and high-visibility or weather layer only where operationally required. Branding should belong to the fictional town service, not imitate TTPost or a real courier.
+- **Dialogue style:** concise, sequential, and calm: “The count balances, but this load still needs one more trip. What does the remainder mean here?” She names real operational constraints without turning them into disguised instructions.
+- **Boundaries:** not a frantic courier, bureaucratic obstacle, delivery-driver stereotype, or catch-all transport expert. The maxi driver, wharf coordinator, and site workers retain their own operational authority.
+
+## Functional background characters, not mentors
+
+The **maxi driver, wharf coordinator, mangrove guide, and water-park operations worker or lifeguard** are functional background characters. They provide site-specific terminology, safeguarding, occupational credibility, and visible consequences. They may give a safety instruction, state a fact from their work, or confirm whether a plan is operationally possible. They do not introduce mathematics, run remediation, own a multi-stop relationship arc, award progress, or join the recurring-cast roster.
+
+- **Maxi driver:** appears at Stop 11; owns vehicle operation, road safety, and locally credible transport practice while Coach Devon owns the community route need.
+- **Wharf coordinator:** appears at Stop 2; owns harbour procedure and safe unloading while Mr. Thomas owns the material need.
+- **Mangrove guide:** appears at Stop 16; owns ecological and site knowledge while the Supporting Teacher owns safeguarding and the learning structure.
+- **Water-park worker or lifeguard:** appears at Stop 14; owns venue rules and water safety while Coach Devon owns the recreation plan.
+
+A functional radio producer or host may support Stop 17 but remains unnamed unless later story evidence establishes a genuine recurring relationship. None of these roles should be reassigned to a recurring resident merely to reduce the visible headcount.
+
+## Appearance and continuity matrix
+
+| Character | Active stops | Relationship continuity |
 |---|---|---|
-| Niko and Zuri | All | Learner companions and contrasting thinking habits |
-| Main Mathematics Teacher | 1–2, 4–7, 9, 11–14, 17–18 | Instructional continuity and concept connections |
-| Supporting Teacher | 3, 8, 10, 15–16, 18 | Variation, design/inquiry strengths, remediation |
-| Auntie Joy | 3, 8, 10, 18 | Strongest maker relationship and visible creative continuity |
-| Coach Devon | 11–12, 14–15, 18 | Strongest coordination relationship across public spaces |
-| Mr. Thomas | 2, 9, 12, 18 | Long-horizon material and construction continuity |
-| Mr. Ali | 5, 13, 18 | Commerce, value, goods, and producer/customer continuity |
-| Miss Maria | 7, 13 connection, 18 | Fairness, preparation, food, and measured supply continuity |
-| Community Librarian | 1, 17, 18 | Records-to-public-information relationship arc |
-| Postal/Delivery Coordinator | 4, 6, 18 | Logistics, systems, and route continuity |
+| Niko and Zuri | All | Equal learner companions; active presence varies by scene |
+| Ms. Leela Maharaj, proposed | 1–2, 4–7, 9, 11–14, 17–18 | Meaning, representation, language, and concept connections |
+| Mr. Kareem Joseph, proposed | 3, 8, 10, 15–16, 18 | Pattern/design/inquiry variation and dignified remediation |
+| Miss Maria | 7, 13 connection, 18 | Fair sharing, preparation, and measured supply |
+| Mr. Ali | 5, 13, 18 | Value, records, goods, suppliers, and customers |
+| Auntie Joy | 3, 8, 10, 18 | Design planning and coordinated making |
+| Coach Devon | 11–12, 14–15, 18 | Routes, shared spaces, recreation, access, and time |
+| Mr. Thomas | 2, 9, 12, 18 | Materials, fit, construction, and public-space continuity |
+| Ms. Alana Pierre, proposed | 1, 17, 18 | Collections, evidence, and responsible public information |
+| Ms. Keisha Ramoutar, proposed | 4, 6, 18 | Records, packing, routes, and delivery systems |
 
-Background appearances may create warmth but must not turn residents into decorative collectibles. An active appearance means the character has a real stake in the situation.
-
-## Minor characters genuinely necessary
-
-- **Wharf coordinator:** validates harbour operations while Mr. Thomas anchors the relationship.
-- **Maxi driver:** validates terminology, road use, and transport safety while Coach Devon owns the route need.
-- **Water-park operations worker or lifeguard:** retains adult responsibility for real safety systems while Coach Devon anchors recreation continuity.
-- **Mangrove guide:** provides ecological credibility and safeguarding. This role should not be reassigned to an unrelated resident merely to reduce headcount.
-- **Radio producer/host:** may remain an unnamed functional colleague if the Librarian credibly leads the public-information segment; promote only if later story testing reveals a genuine recurring need.
+Background appearances may create recognition, but an active appearance requires a real stake, changed responsibility, or relationship beat. Do not arrange the full cast in every celebration image; the final fair should show distributed work rather than a character roll call.
 
 # Reusable Bridgepath game-flow template
 
@@ -1149,7 +1278,7 @@ Background appearances may create warmth but must not turn residents into decora
 - Concept meaning, representations, vocabulary, and symbols
 - Likely misconceptions
 - Independent evidence requirement
-- Educator approval state
+- Curriculum source and review state
 
 ## B. School experience
 
@@ -1214,7 +1343,7 @@ The Corner Shop Challenge remains the strongest product-validation slice because
 - the parent summary is easy to understand; and
 - the shop visibly changes when the order and record are resolved.
 
-The slice must use an educator-approved subset of Stop 5 rather than attempt every addition, subtraction, bill, best-buy, profit/loss, and money objective at once. Recommended initial evidence scope: multi-item totals, budget/difference or change, estimation, and one inverse check. Profit/loss should wait unless the signed content brief shows it can fit without overloading the adventure.
+The slice must use a curriculum-validated subset of Stop 5 rather than attempt every addition, subtraction, bill, best-buy, profit/loss, and money objective at once. Recommended initial evidence scope: multi-item totals, budget/difference or change, estimation, and one inverse check. Profit/loss should wait unless the signed content brief shows it can fit without overloading the adventure.
 
 Because Stop 5 normally depends on earlier place-value and equality work, the prototype must either recruit learners with those prerequisites, include a short non-labelling readiness check, or treat missing prerequisite knowledge as support evidence. It must not claim to validate the entire path sequence from a standalone slice.
 
@@ -1228,29 +1357,33 @@ Because Stop 5 normally depends on earlier place-value and equality work, the pr
 6. **Explanation:** independent missions require the child to select, build, order, match, or briefly state why an answer works. Voice capture is unnecessary; accessible choice, sequencing, and construction alternatives remain valid.
 7. **Final mission:** the fair is a constraint-coordination performance with multiple valid plans and a changed condition, not a quiz reel or one aggregate score.
 
-# Unresolved decisions
+# Remaining production follow-ups
 
-1. Final names, identities, visual silhouettes, and relationship details for both teachers, the Librarian, and the Postal/Delivery Coordinator.
-2. Whether the Harbour Storehouse is geographically credible once the Standard 3 Mathematics town map is finalised.
-3. Whether the Community Librarian's Radio Station role feels natural in child/local testing or needs a recurring radio character.
-4. Whether Auntie Joy can credibly span kite-making, tailoring/fabric work, Mas Camp, and event coordination without becoming unrealistically universal; character research may separate one function while preserving a small cast.
-5. Whether Coach Devon's water-park connection feels organic enough or should be anchored entirely by a named recreation/operations resident.
-6. Exact number and duration of learning sessions within each destination; 18 destinations do not necessarily equal 18 single sessions.
-7. Educator-approved mastery thresholds, observation counts, recency rules, and required transfer pairs for every objective.
-8. Final vertical-slice objective subset and prerequisite handling.
-9. Cultural and occupational review for Mas Camp, maxi transport, harbour work, mangrove ecology, market practice, and water-park safety.
-10. How the final fair relates to the town's long-form story without making every earlier stop feel like compulsory event preparation.
+- Validate Harbour Storehouse geography against the final town map.
+- Test whether the Community Librarian's public-information role reads clearly at the Radio Station without promoting the functional producer to recurring cast.
+- Validate Auntie Joy's maker through-line across kite, fabric, Mas, and event work without implying mastery of every specialist craft.
+- Validate Coach Devon's recreation-planning relationship at the water park while the functional worker retains operational and safety authority.
+- Determine the exact number and duration of learning sessions within each destination; 18 destinations do not necessarily equal 18 single sessions.
+- Finalise mastery thresholds, observation counts, recency rules, required transfer pairs, vertical-slice scope, and prerequisite handling from the reviewed curriculum and evidence model.
+- Complete cultural and occupational review for Mas Camp, maxi transport, harbour work, mangrove ecology, market practice, and water-park safety.
+- Connect the final fair to the long-form story without making every earlier stop feel like compulsory event preparation.
 
 # Readiness for engineering review
 
 ## Recommendation: not yet ready for implementation; ready for content and experience review
 
-This blueprint is sufficiently structured to review the character model, school-to-town rhythm, mission variety, continuity, remediation philosophy, evidence intent, and first-slice recommendation. It should now receive:
+This blueprint is sufficiently structured to review the character model, school-to-town rhythm, mission variety, continuity, remediation philosophy, evidence intent, and first-slice recommendation. The current online Standard 3 Mathematics curriculum has already been reviewed across the complete 18-stop journey; no additional educator sign-off is required. Remaining work is Trinidad and Tobago child, cultural, and occupational review; character and story testing for role credibility and repetition; founder selection of the Corner Shop vertical-slice boundary; and a detailed evidence rubric and misconception map for that slice.
 
-1. Standard 3 Mathematics educator review against the locked objective/evidence register;
-2. Trinidad and Tobago child, cultural, and occupational review;
-3. character and story review for role credibility and repetition;
-4. selection and signing of the Corner Shop vertical-slice curriculum brief; and
-5. a detailed evidence rubric and misconception map for that slice.
+Engineering review should begin after the founder decisions below with the reusable activity/evidence contract, content schema, safe-boundary model, and one vertical-slice flow. Full production implementation should not begin from this blueprint alone.
 
-Engineering review should begin after those approvals with the reusable activity/evidence contract, content schema, safe-boundary model, and one vertical-slice flow. Full production implementation should not begin from this blueprint alone.
+# Founder decisions — Angie only
+
+| Choice | Proposed default | Angie approves |
+|---|---|---|
+| Main Mathematics Teacher public name | **Ms. Leela Maharaj** | Approve / revise |
+| Supporting Teacher public name | **Mr. Kareem Joseph** | Approve / revise |
+| Community Librarian public name | **Ms. Alana Pierre** | Approve / revise |
+| Postal and Delivery Coordinator public name | **Ms. Keisha Ramoutar** | Approve / revise |
+| Auntie Joy's recurring scope | Keep one design-planning/maker relationship across Stops 3, 8, 10, and 18; functional specialists retain specialist craft authority | Approve / narrow |
+| Coach Devon at the water park | Keep him as the recreation-planning relationship; functional worker or lifeguard retains operations and safety authority | Approve / remove connection |
+| Librarian at the Radio Station | Keep her as the evidence/public-information relationship; functional producer owns station operations | Approve / add a recurring radio character |
