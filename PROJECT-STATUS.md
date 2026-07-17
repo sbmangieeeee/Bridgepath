@@ -1,6 +1,6 @@
 # Bridgepath Project Checkpoint
 
-> **Last updated:** 16 July 2026  
+> **Last updated:** 17 July 2026  
 > **Current phase:** Phase 0 — contracts and governance  
 > **Overall status:** Planning is mature; the production build has not started.
 
@@ -16,6 +16,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 - The Living Adventure World is the approved visual direction.
 - The exact 11-character Standard 3 Mathematics reusable cast and four adult working names are founder-approved.
 - `design/approved/bridgepath-master-cast-sheet.png` is the approved visual source of truth for the recurring adult cast; Niko and Zuri's bibles remain authoritative for their detailed construction.
+- The reusable environment library and two screen-composition references are founder-approved and documented in `ASSET-MANIFEST.md`.
 - The engineering architecture is ready for founder approval and Phase 0 contract work.
 
 ## Current decisions
@@ -32,6 +33,8 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | Standard 3 reusable cast | Exactly 11 recurring characters | Founder-approved |
 | Adult working names | Ms. Leela Maharaj, Mr. Kareem Joseph, Ms. Alana Pierre, Ms. Keisha Ramoutar | Founder-approved |
 | Master cast direction | Approved multicultural representation in `design/approved/bridgepath-master-cast-sheet.png` | Founder-approved; adult visual source of truth |
+| Reusable environment library | Classroom, market, bakery, Mas workshop, community centre and recreation grounds | Founder-approved backgrounds; dynamic-layer rule applies |
+| Reusable screen references | School instruction and guided exercise compositions | Founder-approved design references; baked controls are non-production |
 | Production data model | Server-authoritative evidence with family isolation | Planned |
 | Production platform | Next.js with Supabase-backed persistence and authorization | Recommended |
 
@@ -47,6 +50,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 - [x] Authoritative Standard 3 Mathematics reusable-cast guide
 - [x] Founder-approved adult working names and multicultural cast representation
 - [x] Master recurring-cast sheet established under `design/approved/`
+- [x] Reusable production environment backgrounds and screen-composition references approved and manifested
 - [x] Exploratory family-to-learning prototype
 - [x] Initial unit and browser test coverage
 - [x] First GitHub baseline
@@ -85,6 +89,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | Curriculum discovery | Complete for the 18-stop journey; no additional educator sign-off required |
 | Design direction | Approved at system level |
 | Character direction | Reusable cast, working names, and master cast direction founder-approved; detailed continuity rules active |
+| Environment direction | Six reusable backgrounds and two screen-composition references founder-approved; dynamic content remains layered |
 | Prototype | Working exploratory slice |
 | Production engineering | Architecture planned; implementation not started |
 | Pilot readiness | Blocked |
@@ -96,6 +101,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | 16 July 2026 | Created the first GitHub baseline and this shared project checkpoint. |
 | 16 July 2026 | Confirmed the current online curriculum was reviewed through all 18 stops; educator sign-off removed as a gate. |
 | 16 July 2026 | Approved the 11-character reusable cast, four adult working names, multicultural representation, and master cast sheet. |
+| 17 July 2026 | Approved the reusable environment library and school-instruction/guided-exercise composition references; documented background-only and dynamic-layer rules. |
 
 ## How to update this document
 
