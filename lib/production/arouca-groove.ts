@@ -44,11 +44,11 @@ export const AROUCA_GROOVE_STOPS: readonly LearningStop[] = STOP_NAMES.map((name
 }));
 
 export const CORNER_SHOP_ACTIVITIES: readonly Activity[] = [
-  { id: "corner-shop-school-introduction", phase: "school-introduction", title: "Teacher lesson", placeholder: "Placeholder: an approved teacher will introduce and teach the mathematics concept here." },
-  { id: "corner-shop-guided-exercise", phase: "guided-exercise", title: "Notebook exercise", placeholder: "Placeholder: the learner will complete an approved guided exercise in their notebook here." },
-  { id: "corner-shop-community-transition", phase: "community-transition", title: "Journey to the mission", placeholder: "Placeholder: the approved transition will connect the school learning to a real need in Arouca Groove." },
-  { id: "corner-shop-community-mission", phase: "community-mission", title: "Mentor mission", placeholder: "Placeholder: the learner will meet the approved mentor and apply the concept in a practical mission here." },
-  { id: "corner-shop-reflection-results", phase: "reflection-results", title: "Reflection and results", placeholder: "Placeholder: approved reflection and results content will be added here." },
+  { id: "corner-shop-school-introduction", phase: "school-introduction", title: "Teacher lesson", placeholder: "Meet your teacher and get ready to learn." },
+  { id: "corner-shop-guided-exercise", phase: "guided-exercise", title: "Notebook exercise", placeholder: "Open your notebook and get ready to practise." },
+  { id: "corner-shop-community-transition", phase: "community-transition", title: "Journey into the community", placeholder: "Get ready to carry what you learned into Arouca Groove." },
+  { id: "corner-shop-community-mission", phase: "community-mission", title: "Community mission", placeholder: "Meet your community mentor and get ready for the mission." },
+  { id: "corner-shop-reflection-results", phase: "reflection-results", title: "Reflection and results", placeholder: "Look back on your journey and see your results." },
 ];
 
 export const AROUCA_GROOVE: Town = {
