@@ -33,7 +33,7 @@ These systems repeatedly use more than one strand. A shopkeeper uses Number, Mea
 
 Therefore:
 
-- Standard 3 Mathematics occupies one coherent town—Arouca Grove—within Kairana and includes all 18 stops.
+- Standard 3 Mathematics occupies one coherent town—Arouca Groove—within Karina and includes all 18 stops.
 - The town should contain several interconnected districts and recurring locations rather than curriculum departments.
 - The town's final name should remain open until the structure, cultural review, and broader country naming system are approved.
 - Progression should be a braided route: concepts are introduced in one context, strengthened in another, and combined later.
@@ -401,7 +401,7 @@ One town is supported because:
 - returning to familiar locations with more sophisticated problems supports transfer and learner attachment; and
 - multiple Mathematics towns would imply false curriculum boundaries and increase art, navigation, and production complexity.
 
-Under the founder-approved geography, Kairana contains six towns and Arouca Grove is the current playable town containing all 18 Standard 3 Mathematics stops. Gasparillo, Lopinot, Barataria, Masara, and Chaconia remain unassigned future learning journeys.
+Under the founder-approved geography, Karina contains six towns and Arouca Groove is the current playable town containing all 18 Standard 3 Mathematics stops. Gasparillo, Lopinot, Barataria, Masara, and Chaconia remain unassigned future learning journeys.
 
 ### Town identity
 

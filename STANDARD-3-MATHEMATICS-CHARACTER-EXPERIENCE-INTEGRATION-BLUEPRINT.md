@@ -8,7 +8,7 @@ This blueprint preserves:
 
 - the curriculum objectives, dependencies, order, and evidence requirements in `STANDARD-3-MATHEMATICS-TOWN-LEARNING-JOURNEY.md`;
 - the approved child-facing destinations in `STANDARD-3-MATHEMATICS-TOWN-EXPERIENCE-DESIGN.md`, including **Water Park Adventure** at Stop 14;
-- Kairana as one country containing six named towns, with all 18 current Standard 3 Mathematics stops inside Arouca Grove and the other five towns reserved for future journeys;
+- Karina as one country containing six named towns, with all 18 current Standard 3 Mathematics stops inside Arouca Groove and the other five towns reserved for future journeys;
 - one complete Standard 3 Mathematics town;
 - explicit teaching at Storypath Primary School followed by application in the town;
 - a small recurring cast whose community roles exist independently of curriculum delivery; and

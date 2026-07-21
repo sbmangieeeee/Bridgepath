@@ -96,7 +96,7 @@ function Launch({ setScreen, returning, hasParent, childName }: { setScreen: (s:
   const [preview, setPreview] = useState<HubDestination | null>(null);
 
   function enter(destination: HubDestination) {
-    if (destination.id === "adventure") setScreen(returning ? "village" : "roles");
+    if (destination.id === "adventure") window.location.assign("/karina");
     else if (destination.id === "parent") setScreen(hasParent ? "dashboard" : "parent-setup");
     else setPreview(destination);
   }

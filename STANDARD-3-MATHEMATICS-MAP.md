@@ -6,7 +6,7 @@
 
 Historical first curriculum-aligned story hypothesis. It is retained for traceability, not as current direction.
 
-In this superseded hypothesis, Market Village represented the complete Standard 3 Mathematics curriculum. The controlling geography now places all 18 stops in Arouca Grove; Market Village survives only as an earlier map-composition concept.
+In this superseded hypothesis, Market Village represented the complete Standard 3 Mathematics curriculum. The controlling geography now places all 18 stops in Arouca Groove; Market Village survives only as an earlier map-composition concept.
 
 ## Curriculum coverage
 

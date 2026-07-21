@@ -17,9 +17,9 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 - The exact 11-character Standard 3 Mathematics reusable cast and four adult working names are founder-approved.
 - `design/approved/bridgepath-master-cast-sheet.png` is the approved visual source of truth for the recurring adult cast; Niko and Zuri's bibles remain authoritative for their detailed construction.
 - The reusable environment library and two screen-composition references are founder-approved and documented in `ASSET-MANIFEST.md`.
-- Kairana is the approved country; its six towns are Arouca Grove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia.
-- Arouca Grove is the current playable Standard 3 Mathematics town and contains all 18 curriculum-derived stops.
-- The Kairana Country Map and Arouca Grove Journey Map are required but remain pending design work.
+- Karina is the approved country; its six towns are Arouca Groove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia.
+- Arouca Groove is the current playable Standard 3 Mathematics town and contains all 18 curriculum-derived stops.
+- The Arouca Groove 18-stop Journey Map is an approved production asset; the Karina Country Map remains pending design, and neither map screen has been implemented.
 - The engineering architecture is ready for founder approval and Phase 0 contract work.
 
 ## Current decisions
@@ -38,10 +38,11 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | Master cast direction | Approved multicultural representation in `design/approved/bridgepath-master-cast-sheet.png` | Founder-approved; adult visual source of truth |
 | Reusable environment library | Classroom, market, bakery, Mas workshop, community centre and recreation grounds | Founder-approved backgrounds; dynamic-layer rule applies |
 | Reusable screen references | School instruction and guided exercise compositions | Founder-approved design references; baked controls are non-production |
-| Canonical geography | Kairana country → six named towns → reusable town locations | Founder-approved in `BRIDGEPATH-CANONICAL-GEOGRAPHY.md` |
-| Current playable town | Arouca Grove contains all 18 Standard 3 Mathematics stops | Confirmed |
+| Canonical geography | Karina country → six named towns → reusable town locations | Founder-approved in `BRIDGEPATH-CANONICAL-GEOGRAPHY.md` |
+| Current playable town | Arouca Groove contains all 18 Standard 3 Mathematics stops | Confirmed |
 | Future towns | Gasparillo, Lopinot, Barataria, Masara and Chaconia | Reserved; no curriculum stops assigned |
-| Required maps | Kairana Country Map and 18-stop Arouca Grove Journey Map | Pending design; not generated or implemented |
+| Karina Country Map | Six-town country navigation with Arouca Groove available | Pending design; not implemented |
+| Arouca Groove Journey Map | Approved 18-stop production asset at `public/assets/maps/arouca-grove-journey-map.png` | Founder-approved asset; screen implementation pending |
 | Production data model | Server-authoritative evidence with family isolation | Planned |
 | Production platform | Next.js with Supabase-backed persistence and authorization | Recommended |
 
@@ -64,8 +65,8 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 
 ## Now
 
-- [ ] Design the Kairana Country Map with six towns and Arouca Grove as the available journey
-- [ ] Design the Arouca Grove Journey Map with all 18 stops, dynamic progress, and a country-map return control
+- [ ] Design the Karina Country Map with six towns and Arouca Groove as the available journey
+- [ ] Plan the accessible Arouca Groove map screen using the approved asset, dynamic progress, and a country-map return control
 - [ ] Founder approves or revises Corner Shop Challenge as the first production slice
 - [ ] Name owners for curriculum, cultural, privacy/child-safety, and illustration review
 - [ ] Approve the Phase 0 engineering architecture and delivery boundary
@@ -99,7 +100,7 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | Design direction | Approved at system level |
 | Character direction | Reusable cast, working names, and master cast direction founder-approved; detailed continuity rules active |
 | Environment direction | Six reusable backgrounds and two screen-composition references founder-approved; dynamic content remains layered |
-| Geography | Kairana and its six towns approved; Arouca Grove holds all 18 current stops; both map levels pending design |
+| Geography | Karina and its six towns approved; Arouca Groove holds all 18 current stops; Arouca Groove map asset approved and Karina map pending design |
 | Prototype | Working exploratory slice |
 | Production engineering | Architecture planned; implementation not started |
 | Pilot readiness | Blocked |
@@ -112,7 +113,8 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | 16 July 2026 | Confirmed the current online curriculum was reviewed through all 18 stops; educator sign-off removed as a gate. |
 | 16 July 2026 | Approved the 11-character reusable cast, four adult working names, multicultural representation, and master cast sheet. |
 | 17 July 2026 | Approved the reusable environment library and school-instruction/guided-exercise composition references; documented background-only and dynamic-layer rules. |
-| 17 July 2026 | Corrected the geography: Kairana contains six named towns; Arouca Grove contains all 18 Standard 3 Mathematics stops; both map levels remain pending design. |
+| 17 July 2026 | Corrected the geography: Karina contains six named towns; Arouca Groove contains all 18 Standard 3 Mathematics stops; both map levels remain pending design. |
+| 17 July 2026 | Approved the official Arouca Groove 18-stop journey-map asset with its fixed town title, corrected Stop 6 delivery van, and blank plaque reserved for dynamic progress. |
 
 ## How to update this document
 

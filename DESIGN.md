@@ -25,7 +25,7 @@ The welcome-direction image remains a composition and mood reference, not a mode
 ## Product Context
 
 - **What this is:** A Caribbean educational adventure that helps children in Standards 3–5 understand and complete the Mathematics and English curriculum while giving parents clear evidence of progress.
-- **Primary child structure:** Kairana is one fictional Caribbean country containing six towns: Arouca Grove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia. Arouca Grove is the current playable Standard 3 Mathematics town and contains all 18 stops; the other five towns are reserved for future learning journeys.
+- **Primary child structure:** Karina is one fictional Caribbean country containing six towns: Arouca Groove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia. Arouca Groove is the current playable Standard 3 Mathematics town and contains all 18 stops; the other five towns are reserved for future learning journeys.
 - **First curriculum area:** Standard 3 Mathematics. Its final town name and identity remain open pending Curriculum Discovery approval.
 - **First vertical slice:** Not yet selected. Market Day remains a brainstorming example, not an approved content boundary.
 - **Primary users:** Children and parents. School progress views may follow, but do not shape the family-first alpha experience.
@@ -56,8 +56,8 @@ Avoid floating cards, generic circular app icons, detached destination cut-outs,
 The child moves through a consistent zoom hierarchy:
 
 1. **Welcome crossroads:** Niko and Zuri at the centre of the village, with launch destinations at the ends of branching paths.
-2. **Kairana Country Map:** A high aerial view showing all six towns in one frame, with Arouca Grove available and the other towns reserved for future journeys.
-3. **Arouca Grove Journey Map:** A closer aerial view where roads and stepping stones connect all 18 Standard 3 Mathematics stops.
+2. **Karina Country Map:** A high aerial view showing all six towns in one frame, with Arouca Groove available and the other towns reserved for future journeys.
+3. **Arouca Groove Journey Map:** A closer aerial view where roads and stepping stones connect all 18 Standard 3 Mathematics stops.
 4. **Mission location:** A close environmental scene such as the market, bakery, garden, or workshop.
 5. **Learning activity:** A focused interaction stage that retains environmental context without visual distraction.
 
@@ -67,7 +67,7 @@ Lighting, architecture, vegetation, materials, marker design, and colour must re
 
 Children see places, residents, missions, and progress along a path. Parents see the formal curriculum edition, strand, concept, objective, evidence, support level, and next action.
 
-Child labels use fiction-first language such as “Arouca Grove,” “Help prepare the orders,” and “Final mission.” Formal curriculum terminology belongs in parent views and optional adult detail.
+Child labels use fiction-first language such as “Arouca Groove,” “Help prepare the orders,” and “Final mission.” Formal curriculum terminology belongs in parent views and optional adult detail.
 
 ### 4. Clarity is designed into the scenery
 
@@ -241,23 +241,23 @@ Avoid game currencies, child-map clutter, unexplained percentages, and SEA score
 - No welcome plaque, login card, bottom menu, or floating destination cards.
 - Parent Area remains reachable regardless of child progress.
 
-### 2. Kairana Country Map — pending design
+### 2. Karina Country Map — pending design
 
-- Show exactly six towns in one frame: Arouca Grove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia.
-- Arouca Grove is bright and available; the five future towns remain visible but subdued, locked, or marked as future journeys.
-- Selecting Arouca Grove opens its detailed 18-stop journey map.
+- Show exactly six towns in one frame: Arouca Groove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia.
+- Arouca Groove is bright and available; the five future towns remain visible but subdued, locked, or marked as future journeys.
+- Selecting Arouca Groove opens its detailed 18-stop journey map.
 - Country and town names, states, and availability labels remain dynamic accessible UI layers.
 - Do not expose Standard or subject names on the child map unless needed during onboarding or selection confirmation.
 - Distinguish towns through geography and landmark silhouettes while preserving one coherent country.
 - Country geography must remain stable across future artwork.
 
-### 3. Arouca Grove Journey Map — pending design
+### 3. Arouca Groove Journey Map — pending design
 
-- The approved image previously labelled Market Village is a visual composition reference only. The current town is Arouca Grove; Market Village is not the world or town name.
+- The approved image previously labelled Market Village is a visual composition reference only. The current town is Arouca Groove; Market Village is not the world or town name.
 - Do not place Niko and Zuri on the map by default; let the map, landmarks, and route remain clear.
 - Use a closer aerial view with a connected stepping-stone curriculum path.
 - Display all 18 curriculum-derived Standard 3 Mathematics stops and replace every twelve-stop reference.
-- Show dynamic progress such as `0/18` and provide a dynamic accessible control that returns to the Kairana Country Map.
+- Show dynamic progress such as `0/18` and provide a dynamic accessible control that returns to the Karina Country Map.
 - Keep country, town, subject, stop, and progress labels as dynamic UI layers rather than baked background text.
 - Small markers represent lessons or practice. Larger landmarks represent chapter missions and checkpoints.
 - The first vertical-slice landmark and context remain open pending curriculum and educator validation.
