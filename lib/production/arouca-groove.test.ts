@@ -15,8 +15,8 @@ describe("Arouca Groove definition", () => {
   it("uses the approved child-facing lesson phase labels", () => {
     expect(CORNER_SHOP_ACTIVITIES.map(({ title }) => title)).toEqual([
       "Teacher lesson",
-      "Notebook exercise",
-      "Journey into the community",
+      "Class Challenge",
+      "Mission choice",
       "Community mission",
       "Reflection and results",
     ]);

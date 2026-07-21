@@ -1,6 +1,6 @@
 # Bridgepath Product Specification — Approval Draft
 
-> **Geography correction (17 July 2026):** `BRIDGEPATH-CANONICAL-GEOGRAPHY.md` controls. Kairana contains six named towns; Arouca Grove is the current playable town and contains all 18 Standard 3 Mathematics stops. Earlier Market Village, Storypath Country, twelve-stop, and one-town-per-Standard-and-subject assumptions are superseded.
+> **Geography correction (17 July 2026):** `BRIDGEPATH-CANONICAL-GEOGRAPHY.md` controls. Karina contains six named towns; Arouca Groove is the current playable town and contains all 18 Standard 3 Mathematics stops. Earlier Market Village, Storypath Country, twelve-stop, and one-town-per-Standard-and-subject assumptions are superseded.
 
 **Status:** Product discovery draft for founder approval  
 **Date:** 14 July 2026  
@@ -10,7 +10,7 @@
 
 Bridgepath is a Caribbean educational adventure platform for children in Standards 3–5. Its purpose is not simply to prepare children to answer SEA-style questions. It should help a child understand curriculum concepts early, use them in unfamiliar situations, and give parents a trustworthy view of what the child has covered, can apply independently, and may need help with before the end-of-term report.
 
-The child experiences one persistent fictional country called Kairana. Its country map shows Arouca Grove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia together in one frame. Arouca Grove is the current playable Standard 3 Mathematics town and contains all 18 curriculum-derived stops. The other five towns are reserved for future learning journeys and have no approved curriculum assignments yet.
+The child experiences one persistent fictional country called Karina. Its country map shows Arouca Groove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia together in one frame. Arouca Groove is the current playable Standard 3 Mathematics town and contains all 18 curriculum-derived stops. The other five towns are reserved for future learning journeys and have no approved curriculum assignments yet.
 
 The initial product boundary is Mathematics and English across Standards 3–5 for children, parents, and eventually schools. The first content boundary is the Standard 3 Mathematics town. The first vertical slice is one complete Market Day adventure inside that town, focused on money and multi-step problem solving, subject to exact Ministry objective mapping and local educator approval. Town names, including the prototype name Riverside, remain provisional.
 
@@ -33,8 +33,8 @@ The following decisions are treated as approved unless explicitly revised:
 - Storypath is a fictional Caribbean country, not a recreation of Trinidad and Tobago and not a collection of real towns.
 - The child sees fiction-first town names once approved. The parent sees the formal Standard, subject, strand, objectives, evidence, and coverage.
 - The world is shown at three levels: country overview, detailed town map, and sequential adventure path.
-- The Kairana Country Map shows six named towns together in one frame.
-- Arouca Grove is the current playable Standard 3 Mathematics town and contains all 18 stops.
+- The Karina Country Map shows six named towns together in one frame.
+- Arouca Groove is the current playable Standard 3 Mathematics town and contains all 18 stops.
 - Gasparillo, Lopinot, Barataria, Masara, and Chaconia remain reserved for future learning journeys without Standard, subject, or stop assignments.
 - Future towns are visible but unavailable. They may be muted or closed, but should not create pressure or expose unfinished curriculum promises as if they were complete.
 - A parent can create and manage multiple child profiles.
@@ -46,8 +46,8 @@ The following decisions are treated as approved unless explicitly revised:
 ### Superseded or reconciled directions
 
 - **Superseded:** Storypath Country and one-town-per-Standard-and-subject geography.  
-  **Current:** Kairana contains six named towns; Arouca Grove holds the complete current 18-stop journey and the other towns are unassigned future journeys.
-- **Clarified:** the six approved environment backgrounds are reusable locations inside Arouca Grove, not towns.
+  **Current:** Karina contains six named towns; Arouca Groove holds the complete current 18-stop journey and the other towns are unassigned future journeys.
+- **Clarified:** the six approved environment backgrounds are reusable locations inside Arouca Groove, not towns.
 - **Reconciled:** “the child can choose a path” does not mean unrestricted curriculum skipping. The child can choose where to look and, later, which available side activity to take, while core prerequisite learning retains a clear recommended sequence.
 - **Deferred:** Caribbean recorded voice. The pilot is text-first and silent-capable.
 
@@ -55,7 +55,7 @@ The following decisions are treated as approved unless explicitly revised:
 
 ### Long-term Bridgepath product boundary
 
-- Standards 3–5 Mathematics and English remain the long-term learning scope, but future journeys are not yet assigned to Kairana's five reserved towns.
+- Standards 3–5 Mathematics and English remain the long-term learning scope, but future journeys are not yet assigned to Karina's five reserved towns.
 - One persistent Caribbean-inspired fictional country.
 - Child learning experience, parent reporting and controls, and later read-only school/class progress visibility.
 - Curriculum coverage, instruction, guided practice, application, remediation, and longitudinal evidence.
@@ -66,7 +66,7 @@ The long-term boundary does not imply that all of this ships in the pilot.
 ### First content boundary
 
 - Standard 3 Mathematics only.
-- Arouca Grove as the container for all 18 Standard 3 Mathematics stops.
+- Arouca Groove as the container for all 18 Standard 3 Mathematics stops.
 - Enough curriculum and story planning to demonstrate how multiple adventures could eventually form the town, without claiming the town is complete.
 
 ### First vertical slice
@@ -163,13 +163,13 @@ Curriculum reviewer, writer, editor, illustrator, support agent, privacy adminis
 
 ### Child-facing hierarchy
 
-`Kairana Country Map → Arouca Grove Journey Map → Town location → Curriculum stop → Mission → Activity`
+`Karina Country Map → Arouca Groove Journey Map → Town location → Curriculum stop → Mission → Activity`
 
 ### Proposed geography
 
-Kairana is one country joined by rivers, roads, hills, coast, bridges, and recurring characters. Its six named towns are visible together on the Kairana Country Map. Arouca Grove contains the complete current 18-stop Standard 3 Mathematics journey; the other five towns remain unassigned future journeys.
+Karina is one country joined by rivers, roads, hills, coast, bridges, and recurring characters. Its six named towns are visible together on the Karina Country Map. Arouca Groove contains the complete current 18-stop Standard 3 Mathematics journey; the other five towns remain unassigned future journeys.
 
-The country overview shows all six towns. Arouca Grove is available and the other five are muted, locked, or marked as future journeys with accessible state descriptions and no launch promises. Selecting Arouca Grove opens its detailed 18-stop journey map.
+The country overview shows all six towns. Arouca Groove is available and the other five are muted, locked, or marked as future journeys with accessible state descriptions and no launch promises. Selecting Arouca Groove opens its detailed 18-stop journey map.
 
 ### Why this model
 
@@ -278,7 +278,7 @@ Historical evidence remains tied to its original version. A child with an active
 
 ### Child adventure hierarchy
 
-`Kairana Country Map → Arouca Grove Journey Map → Location → Curriculum stop → Mission → Activity`
+`Karina Country Map → Arouca Groove Journey Map → Location → Curriculum stop → Mission → Activity`
 
 ### Mapping rules
 
@@ -589,7 +589,7 @@ The official Ministry Mathematics curriculum guide for Standard 3 includes one- 
 
 - FR-06 Launch hub exposes five accessible destinations; three future modes are previews only.
 - FR-07 Adventure routes new families to adult setup and returning children to their saved state.
-- FR-08 Kairana Country Map shows all six named towns together, with Arouca Grove available and the other five reserved for future journeys.
+- FR-08 Karina Country Map shows all six named towns together, with Arouca Groove available and the other five reserved for future journeys.
 - FR-09 The available town opens a detailed town map and a sequential adventure path.
 - FR-10 Maps have equivalent semantic/list navigation.
 
@@ -750,7 +750,7 @@ The official Ministry Mathematics curriculum guide for Standard 3 includes one- 
 ### Ready for review
 
 - The core problem, audience, world hierarchy, product/content/slice boundaries, parent value, learning philosophy, first adventure, and major safety principles are defined.
-- The country model is now explicit: Kairana has six named towns; Arouca Grove contains all 18 current stops; future towns remain unassigned; the Kairana Country Map and Arouca Grove Journey Map are separate pending designs.
+- The country model is now explicit: Karina has six named towns; Arouca Groove contains all 18 current stops; future towns remain unassigned; the Karina Country Map and Arouca Groove Journey Map are separate pending designs.
 - The official Standard 3 Mathematics guide provides a credible basis for Market Day.
 - The specification states what the child sees versus what the parent sees.
 

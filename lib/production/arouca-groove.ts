@@ -45,8 +45,8 @@ export const AROUCA_GROOVE_STOPS: readonly LearningStop[] = STOP_NAMES.map((name
 
 export const CORNER_SHOP_ACTIVITIES: readonly Activity[] = [
   { id: "corner-shop-school-introduction", phase: "school-introduction", title: "Teacher lesson", placeholder: "Meet your teacher and get ready to learn." },
-  { id: "corner-shop-guided-exercise", phase: "guided-exercise", title: "Notebook exercise", placeholder: "Open your notebook and get ready to practise." },
-  { id: "corner-shop-community-transition", phase: "community-transition", title: "Journey into the community", placeholder: "Get ready to carry what you learned into Arouca Groove." },
+  { id: "corner-shop-guided-exercise", phase: "guided-exercise", title: "Class Challenge", placeholder: "Use the open class book to practise." },
+  { id: "corner-shop-community-transition", phase: "community-transition", title: "Mission choice", placeholder: "Choose whether to return to class or start the mission." },
   { id: "corner-shop-community-mission", phase: "community-mission", title: "Community mission", placeholder: "Meet your community mentor and get ready for the mission." },
   { id: "corner-shop-reflection-results", phase: "reflection-results", title: "Reflection and results", placeholder: "Look back on your journey and see your results." },
 ];

@@ -17,6 +17,7 @@ export type EvidenceEvent = {
   stopId: string;
   activityId: string;
   phase: LessonPhase;
+  stage: "introduced" | "guided" | "applied";
   outcome: "completed" | "needs-support";
   occurredAt: string;
 };

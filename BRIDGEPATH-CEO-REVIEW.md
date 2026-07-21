@@ -12,15 +12,15 @@ This is the working record of the founder-level review of the Bridgepath Product
 
 ## Vision
 
-Bridgepath gives parents an earlier, clearer answer to three questions: what their child should be learning, what the child can use independently, and what should happen next. Children experience that curriculum through Kairana, a persistent fictional Caribbean country containing six towns and future learning journeys.
+Bridgepath gives parents an earlier, clearer answer to three questions: what their child should be learning, what the child can use independently, and what should happen next. Children experience that curriculum through Karina, a persistent fictional Caribbean country containing six towns and future learning journeys.
 
 The product must be more than curriculum questions placed inside game artwork. Teaching, practice, and the application mission form one causal adventure: the child learns a concept because the community problem requires it, then uses it across connected situations to produce a visible outcome.
 
 ## Confirmed product structure
 
-`Welcome hub → Kairana Country Map → Arouca Grove Journey Map → curriculum stop → structured learning path → multi-scene final mission → parent evidence and next action`
+`Welcome hub → Karina Country Map → Arouca Groove Journey Map → curriculum stop → structured learning path → multi-scene final mission → parent evidence and next action`
 
-Kairana's towns are Arouca Grove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia. Arouca Grove contains all 18 Standard 3 Mathematics stops. The other five towns are reserved for future learning journeys and do not yet represent specific Standards, subjects, or curriculum stops.
+Karina's towns are Arouca Groove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia. Arouca Groove contains all 18 Standard 3 Mathematics stops. The other five towns are reserved for future learning journeys and do not yet represent specific Standards, subjects, or curriculum stops.
 
 ## Approach decision
 
@@ -38,7 +38,7 @@ Use a staged complete family loop:
 ## First audience and conditions
 
 - First jurisdiction and curriculum: Trinidad and Tobago Ministry of Education, Standard 3 Mathematics.
-- The Kairana Country Map shows all six towns. Arouca Grove is the only available town; the other five are visibly muted, locked, or marked as future journeys, with no launch dates or curriculum promises.
+- The Karina Country Map shows all six towns. Arouca Groove is the only available town; the other five are visibly muted, locked, or marked as future journeys, with no launch dates or curriculum promises.
 - First learner: a child currently enrolled in Standard 3, using a parent-managed profile.
 - Target buyer and initial account owner: a Trinidad and Tobago parent or guardian who wants earlier curriculum visibility and a clear next action.
 - Initial devices: shared-family Android phones/tablets, iPhone/iPad Safari, Chromebook-class laptops, and Windows laptops, including constrained connections.
