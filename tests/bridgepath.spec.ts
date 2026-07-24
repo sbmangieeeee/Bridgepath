@@ -6,10 +6,10 @@ test.beforeEach(async ({ page }) => {
   await page.reload();
 });
 
-test("production route connects Welcome, Karina, Arouca Groove, and Corner Shop", async ({ page }) => {
+test("production route connects Welcome, StoryPath, Arouca Groove, and Corner Shop", async ({ page }) => {
   await page.getByRole("link", { name: "Enter the adventure through the map hut" }).click();
   await expect(page).toHaveURL(/\/karina$/);
-  await expect(page.getByRole("heading", { name: "Karina country map" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "StoryPath map" })).toBeVisible();
   await page.getByRole("link", { name: "Arouca Groove. Available." }).click();
   await expect(page).toHaveURL(/\/arouca-groove$/);
   await expect(page.getByRole("heading", { name: "Arouca Groove" })).toBeVisible();
@@ -32,7 +32,7 @@ test("Arouca Groove exposes all 18 canonical hotspots and the accessible stop li
   await expect(dialog.getByText("5. The Corner Shop Challenge")).toBeVisible();
 });
 
-test("Corner Shop completes every phase and persists progress after refresh", async ({ page }) => {
+test("Corner Shop reaches the approved market compositions and reports missing customer art", async ({ page }, testInfo) => {
   await page.goto("/arouca-groove/corner-shop-challenge");
   await expect(page.getByRole("heading", { name: "$12 + $8" })).toBeVisible();
   await page.getByRole("button", { name: "Continue" }).click();
@@ -45,20 +45,18 @@ test("Corner Shop completes every phase and persists progress after refresh", as
 
   await expect(page.getByRole("heading", { name: "Would you like to go back to class, or are you ready for a mission?" })).toBeVisible();
   await page.getByRole("button", { name: "Start mission" }).click();
-  await page.getByRole("button", { name: "Rice $12" }).click();
-  await expect(page.getByText("Rice costs $12.")).toBeVisible();
-  await page.getByLabel("Order total ($)").fill("25");
-  await page.getByLabel("Change from $30 ($)").fill("5");
-  await page.getByRole("button", { name: "Check", exact: true }).click();
-  await page.getByRole("button", { name: "Finish" }).click();
-
-  await expect(page.getByRole("heading", { name: "Mission complete!" })).toBeVisible();
-  await expect(page.getByRole("navigation", { name: "Lesson controls" })).toBeVisible();
-  await page.getByRole("button", { name: "Back to Arouca Groove" }).click();
-  await expect(page.getByText("1/18")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Mr. Ali needs help serving customers" })).toBeVisible();
+  await page.screenshot({ path: testInfo.outputPath("market-introduction.png"), fullPage: true });
+  await page.getByRole("button", { name: "Take over the counter" }).click();
+  await expect(page.getByRole("heading", { name: "Niko and Zuri are ready" })).toBeVisible();
+  await page.screenshot({ path: testInfo.outputPath("market-child-handoff.png"), fullPage: true });
+  await page.getByRole("button", { name: "Serve first customer" }).click();
+  await expect(page.getByRole("heading", { name: "Customer 0 of 5" })).toBeVisible();
+  await expect(page.getByRole("status")).toContainText("blocked until the five approved transparent customer layers are supplied");
+  await expect(page.getByText("market-customer-01.png")).toBeVisible();
+  await page.screenshot({ path: testInfo.outputPath("market-serving-customer.png"), fullPage: true });
   await page.reload();
-  await expect(page.getByRole("link", { name: "The Corner Shop Challenge. Completed. Play again" })).toBeVisible();
-  await expect(page.getByText("1/18")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "$12 + $8" })).toBeVisible();
 });
 
 test("navigation controls and keyboard focus remain available", async ({ page }) => {

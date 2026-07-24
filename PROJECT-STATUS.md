@@ -2,146 +2,73 @@
 
 > **Last updated:** 24 July 2026
 > **Current phase:** Production walking-skeleton verification
-> **Overall status:** A production walking skeleton exists in draft PR #1; it is not pilot-ready.
+> **Overall status:** Draft PR #1 contains the current production implementation; it is not pilot-ready.
 
-## Production implementation checkpoint — 24 July 2026
+## Production implementation
 
-- Draft PR #1, `Establish Bridgepath visual learning foundation`, is the current production implementation. Its branch is `agent/update-bridgepath-visual-environments`; do not create a competing production route.
-- Implemented route: Welcome → Karina → Arouca Groove → Corner Shop Challenge.
-- Implemented experience: all 18 semantic map hotspots; Teacher Lesson; Class Challenge; mission choice; Corner Shop mission; reflection/results; back, home, help and settings controls; browser-local progress persistence.
-- Canonical names in production are **Karina** (country) and **Arouca Groove** (current town).
-- Incomplete: production authentication and server persistence, full settings/help, Welcome utility controls, and approved transparent mentor, customer and grocery artwork.
-- Present art blockers: transparent production sprites are absent for Mr. Ali, Ms. Leela, the Corner Shop customer, rice, fruit and juice. Model sheets are not approved runtime cut-outs and must not be cropped into sprites.
-- Draft PR #1 must remain a draft and must not be merged without explicit founder approval.
+Draft PR #1, “Establish Bridgepath visual learning foundation,” on `agent/update-bridgepath-visual-environments` is the production walking skeleton. Do not create a competing implementation, merge it, or mark it ready without explicit founder approval.
 
-This is the shared, living checkpoint for Bridgepath. Keep it concise and update it whenever a decision changes, a milestone is completed, or the immediate priorities move.
+The implemented route is:
 
-## Where we are
+Welcome → StoryPath → Arouca Groove → Corner Shop Challenge
 
-- The full project has its first GitHub baseline on `main`.
-- A responsive Next.js Market Day prototype demonstrates the family, child, learning, and parent-reporting loop.
-- The prototype uses browser storage only; it is not a production account system.
-- The current online Standard 3 Mathematics curriculum has been reviewed across the complete 18-stop learning journey.
-- Corner Shop Challenge is the recommended first production vertical slice, pending founder approval.
-- The Living Adventure World is the approved visual direction.
-- The exact 11-character Standard 3 Mathematics reusable cast and four adult working names are founder-approved.
-- `design/approved/bridgepath-master-cast-sheet.png` is the approved visual source of truth for the recurring adult cast; Niko and Zuri's bibles remain authoritative for their detailed construction.
-- The reusable environment library and two screen-composition references are founder-approved and documented in `ASSET-MANIFEST.md`.
-- Karina is the approved country; its six towns are Arouca Groove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia.
-- Arouca Groove is the current playable Standard 3 Mathematics town and contains all 18 curriculum-derived stops.
-- The Arouca Groove 18-stop Journey Map is an approved production asset; the Karina Country Map remains pending design, and neither map screen has been implemented.
-- The engineering architecture is ready for founder approval and Phase 0 contract work.
+Implemented:
 
-## Current decisions
+- Welcome, country and town navigation.
+- All 18 semantic Arouca Groove hotspots plus the accessible 18-stop list.
+- Teacher Lesson, Class Challenge and mission choice.
+- Corner Shop introduction, child-handoff and serving-customer composition states.
+- Back, home, help and settings controls.
+- Keyboard focus styles and browser-local progress storage.
+- Responsive production routes for mobile, tablet and desktop.
+- Approved Scene Designer market backgrounds and transparent counter foreground layers.
 
-| Area | Decision | Status |
-|---|---|---|
-| First curriculum area | Standard 3 Mathematics | Confirmed |
-| Curriculum basis | Current online curriculum reviewed through all 18 stops | Confirmed; no additional educator sign-off required |
-| Current prototype | Six-stop Market Day experience | Implemented, exploratory only |
-| Proposed production slice | Corner Shop Challenge | Approval needed |
-| Complete town | 18 curriculum-linked destinations | Proposed |
-| Visual direction | Living Adventure World | Approved |
-| Core explorers | Child chooses Niko or Zuri; the other is the companion | Approved model |
-| Standard 3 reusable cast | Exactly 11 recurring characters | Founder-approved |
-| Adult working names | Ms. Leela Maharaj, Mr. Kareem Joseph, Ms. Alana Pierre, Ms. Keisha Ramoutar | Founder-approved |
-| Master cast direction | Approved multicultural representation in `design/approved/bridgepath-master-cast-sheet.png` | Founder-approved; adult visual source of truth |
-| Reusable environment library | Classroom, market, bakery, Mas workshop, community centre and recreation grounds | Founder-approved backgrounds; dynamic-layer rule applies |
-| Reusable screen references | School instruction and guided exercise compositions | Founder-approved design references; baked controls are non-production |
-| Canonical geography | Karina country → six named towns → reusable town locations | Founder-approved in `BRIDGEPATH-CANONICAL-GEOGRAPHY.md` |
-| Current playable town | Arouca Groove contains all 18 Standard 3 Mathematics stops | Confirmed |
-| Future towns | Gasparillo, Lopinot, Barataria, Masara and Chaconia | Reserved; no curriculum stops assigned |
-| Karina Country Map | Six-town country navigation with Arouca Groove available | Pending design; not implemented |
-| Arouca Groove Journey Map | Approved 18-stop production asset at `public/assets/maps/arouca-grove-journey-map.png` | Founder-approved asset; screen implementation pending |
-| Production data model | Server-authoritative evidence with family isolation | Planned |
-| Production platform | Next.js with Supabase-backed persistence and authorization | Recommended |
+Current user-facing names are **StoryPath** and **Arouca Groove**. The authoritative geography documents and internal map asset retain **Karina** as the canonical country data name; changing that canonical geography requires founder approval.
 
-## Completed
+## Incomplete work and blockers
 
-- [x] Product discovery and CEO review
-- [x] Standard 3 Mathematics curriculum and experience discovery drafts
-- [x] Current curriculum reviewed across the complete 18-stop journey
-- [x] Complete-town learning journey proposal
-- [x] Product specification and engineering architecture proposal
-- [x] Approved high-level design direction
-- [x] Niko and Zuri character documentation
-- [x] Authoritative Standard 3 Mathematics reusable-cast guide
-- [x] Founder-approved adult working names and multicultural cast representation
-- [x] Master recurring-cast sheet established under `design/approved/`
-- [x] Reusable production environment backgrounds and screen-composition references approved and manifested
-- [x] Exploratory family-to-learning prototype
-- [x] Initial unit and browser test coverage
-- [x] First GitHub baseline
+- The five-customer Corner Shop sequence is typed and structurally tested, but runtime serving and mission completion are blocked because no approved customer layers exist.
+- `mr-ali-transparent.png` is absent. The available model sheet is opaque and cannot be cropped into a runtime sprite.
+- `market-customer-01.png` through `market-customer-05.png` are absent.
+- Approved separate transparent grocery/product layers and approved per-customer task content are absent.
+- Authentication, server persistence, production settings/help, privacy controls and family isolation are not implemented.
+- Cultural, child-safety, accessibility and production illustration review remain pilot gates.
 
-## Now
+Exact asset requirements and placements are recorded in `ASSET-MANIFEST.md`.
 
-- [ ] Design the Karina Country Map with six towns and Arouca Groove as the available journey
-- [ ] Plan the accessible Arouca Groove map screen using the approved asset, dynamic progress, and a country-map return control
-- [ ] Founder approves or revises Corner Shop Challenge as the first production slice
-- [ ] Name owners for curriculum, cultural, privacy/child-safety, and illustration review
-- [ ] Approve the Phase 0 engineering architecture and delivery boundary
-- [ ] Resolve final Niko/Zuri visual and cultural-review questions
+## Decisions requiring founder approval
 
-## Next
-
-- [ ] Write and approve curriculum, content-bundle, activity-plugin, evidence, and progression schemas
-- [ ] Complete the threat model, data inventory, retention policy, and deletion model
-- [ ] Select adult verification, authentication, hosting-region, email, and monitoring providers
-- [ ] Implement parent authentication, child sessions, Supabase persistence, and RLS tests
-- [ ] Build the production Corner Shop learning loop using reusable activity contracts
-- [ ] Validate the flow with children and parents under approved research consent
-
-## Pilot blockers
-
-- Trinidad and Tobago cultural review
-- Adult-verification and legal/privacy approval
-- Secure authentication and cross-family authorization tests
-- Retention, export, deletion, and incident procedures
-- Reviewed production illustration and accessible content
-- Device, network, accessibility, security, and recovery testing
-- Child and parent usability evidence
-
-## Health snapshot
-
-| Area | State |
-|---|---|
-| Product direction | Strong, pending a few founder approvals |
-| Curriculum discovery | Complete for the 18-stop journey; no additional educator sign-off required |
-| Design direction | Approved at system level |
-| Character direction | Reusable cast, working names, and master cast direction founder-approved; detailed continuity rules active |
-| Environment direction | Six reusable backgrounds and two screen-composition references founder-approved; dynamic content remains layered |
-| Geography | Karina and its six towns approved; Arouca Groove holds all 18 current stops; Arouca Groove map asset approved and Karina map pending design |
-| Prototype | Working exploratory slice |
-| Production engineering | Architecture planned; implementation not started |
-| Pilot readiness | Blocked |
-
-## Update log
-
-| Date | Checkpoint |
-|---|---|
-| 16 July 2026 | Created the first GitHub baseline and this shared project checkpoint. |
-| 16 July 2026 | Confirmed the current online curriculum was reviewed through all 18 stops; educator sign-off removed as a gate. |
-| 16 July 2026 | Approved the 11-character reusable cast, four adult working names, multicultural representation, and master cast sheet. |
-| 17 July 2026 | Approved the reusable environment library and school-instruction/guided-exercise composition references; documented background-only and dynamic-layer rules. |
-| 17 July 2026 | Corrected the geography: Karina contains six named towns; Arouca Groove contains all 18 Standard 3 Mathematics stops; both map levels remain pending design. |
-| 17 July 2026 | Approved the official Arouca Groove 18-stop journey-map asset with its fixed town title, corrected Stop 6 delivery van, and blank plaque reserved for dynamic progress. |
+- Whether StoryPath is only the current user-facing product label or should replace Karina in canonical geography, route names and baked map art.
+- Customer identities, dialogue, task/product sets and artwork for the five-customer sequence.
+- Final approved transparent Mr. Ali layer.
+- Any change to the supplied Scene Designer compositions.
 
 ## Verification — 24 July 2026
 
 | Check | Result |
 |---|---|
-| `npm install` | Passed; 448 packages installed, four high-severity audit findings reported |
-| `npm run lint` | Passed |
-| `npm test` | Passed: 7 files, 11 tests |
+| `npm install` | Previously passed on this branch; 448 packages installed and four high-severity audit findings reported |
+| `npm run lint` | Passed with no warnings or errors |
+| `npm test` | Passed: 8 files, 14 tests |
 | `npm run build` | Passed; all production routes statically generated |
-| Initial `npm run test:e2e` | Failed: 10 stale Storypath Village prototype tests |
-| Production browser review | Welcome, Karina, all 18 Arouca Groove hotspots, all five Corner Shop phases and progress refresh verified at mobile, tablet and desktop widths |
-| Asset audit | Only `public/niko-zuri-v2.png` and `public/design-lab/niko-zuri-pair.png` have genuine transparency; approved mentor/customer/product runtime cut-outs are absent |
+| `npm run test:e2e` | Passed: 12/12 across desktop, tablet and mobile projects |
+| Browser widths | Introduction, handoff and serving compositions reviewed at desktop, tablet and mobile widths; no horizontal overflow, clipped controls or unreadable DOM text found |
+| Asset audit | Only Niko/Zuri and the normalized counter layers used here have genuine transparency; mentor, customer and task-product cut-outs remain absent |
 
-## How to update this document
+## Asset update — 24 July 2026
 
-1. Change the date and current phase at the top.
-2. Move completed work from **Now** or **Next** into **Completed**.
-3. Record decisions in **Current decisions** instead of leaving competing directions unresolved.
-4. Keep **Now** to roughly five active priorities.
-5. Add one short entry to the update log for meaningful checkpoint changes.
+- Preserved the four untouched Scene Designer exports in `design/approved/scene-designer/market/`.
+- Added `market-env-structure.png` and `market-cashier-view.png` as clean runtime backgrounds.
+- Added `market-counter.png` and `market-counter-child-view.png` as transparent foreground furniture layers by removing only the supplied green matte.
+- Archived the superseded market background under `design/archive/superseded-market/`.
+- Kept all dialogue, status, customer count and controls as accessible DOM content.
+
+## Pilot blockers
+
+- Approved production characters, customer art and grocery/task layers.
+- Trinidad and Tobago cultural review.
+- Adult-verification and legal/privacy approval.
+- Secure authentication and cross-family authorization tests.
+- Retention, export, deletion and incident procedures.
+- Child and parent usability evidence.
+- Device, network, accessibility, security and recovery testing.

@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { CANONICAL_ASSETS } from "@/lib/production/assets";
+import { CANONICAL_ASSETS, PENDING_MARKET_CHARACTER_ASSETS } from "@/lib/production/assets";
+import { APPROVED_MARKET_CUSTOMERS, type MarketStage } from "@/lib/production/market";
 import { CharacterLayer, ExplorerPairLayer } from "./CharacterLayer";
 
 export function TeacherLessonStage({ onContinue }: { onContinue: () => void }) {
@@ -48,36 +49,52 @@ export function CommunityTransitionStage({ onGoBack, onContinue }: { onGoBack: (
 }
 
 export function CommunityMissionStage({ onContinue }: { onContinue: () => void }) {
-  const [total, setTotal] = useState("");
-  const [change, setChange] = useState("");
-  const [feedback, setFeedback] = useState("");
-  const [productNotice, setProductNotice] = useState("");
-  const products = [
-    { name: "Rice", price: 12 },
-    { name: "Fruit", price: 8 },
-    { name: "Juice", price: 5 },
-  ] as const;
-  const correct = Number(total) === 25 && Number(change) === 5;
-  function check() {
-    if (!total || !change) setFeedback("Enter both the order total and the change.");
-    else if (Number(total) !== 25) setFeedback("Check the total first. Combine $12 and $8 to make $20, then add $5.");
-    else if (Number(change) < 0) setFeedback("The $30 budget is more than the $25 total, so the change cannot be negative.");
-    else if (Number(change) !== 5) setFeedback("The total is correct. Count from $25 up to the $30 budget to find the change.");
-    else setFeedback("Order checked: $25 total, within the $30 budget, with $5 change.");
-  }
-  return <section className="visual-stage market-stage" style={{ backgroundImage: `url(${CANONICAL_ASSETS.market.runtimePath})` }} aria-labelledby="mission-title">
-    <div className="mentor-behind-register"><CharacterLayer name="Mr. Ali" position="left" /></div>
-    <section className="cash-register" aria-label="Corner Shop cash register">
-      <div className="register-display"><p className="stage-kicker">Mr. Ali’s order</p><h2 id="mission-title">Check the order</h2><p>Budget: <strong>$30</strong></p>
-        <ul className="product-list" aria-label="Corner Shop products">{products.map((product) => <li key={product.name}><button type="button" className="product-layer" onClick={() => setProductNotice(`${product.name} costs $${product.price}.`)}><span>{product.name}</span><strong>${product.price}</strong></button></li>)}</ul>
-        <p className="product-notice" aria-live="polite">{productNotice}</p>
-        <div className="answer-fields"><label>Order total ($)<input inputMode="numeric" value={total} onChange={(event) => setTotal(event.target.value)} /></label><label>Change from $30 ($)<input inputMode="numeric" value={change} onChange={(event) => setChange(event.target.value)} /></label></div>
-        <p className="feedback" aria-live="polite">{feedback}</p>
-      </div>
-      <div className="register-keypad" aria-hidden="true">{[7,8,9,4,5,6,1,2,3,0].map((key) => <i key={key}>{key}</i>)}</div>
-      <div className="register-controls"><button onClick={check}>Check</button><button className="primary" disabled={!correct} onClick={onContinue}>Finish</button></div>
-    </section>
-    <ExplorerPairLayer />
+  const [marketStage, setMarketStage] = useState<MarketStage>("introduction");
+  const [activeCustomerIndex] = useState(0);
+  const background = marketStage === "serving-customer" ? CANONICAL_ASSETS.marketCashierView : CANONICAL_ASSETS.marketEnvironmentStructure;
+  const counter = marketStage === "introduction" ? CANONICAL_ASSETS.marketCounter : CANONICAL_ASSETS.marketCounterChildView;
+  const mrAliRequirement = PENDING_MARKET_CHARACTER_ASSETS[0];
+  const missingCustomers = PENDING_MARKET_CHARACTER_ASSETS.slice(1);
+
+  return <section className="market-mission-stage" aria-labelledby="mission-title" data-market-stage={marketStage}>
+    <div className="market-scene-frame">
+      {/* Approved full-scene art must preserve its source aspect ratio rather than use an optimizing crop. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="market-scene-background" src={background.runtimePath} alt="" />
+      {marketStage !== "mission-complete" && <>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className={`market-counter-layer market-counter-${marketStage}`} src={counter.runtimePath} alt="" />
+      </>}
+      {marketStage === "child-handoff" && <ExplorerPairLayer />}
+      <section className="market-dialogue-panel">
+        {marketStage === "introduction" && <>
+          <p className="stage-kicker">Corner Shop Challenge</p>
+          <h2 id="mission-title">Mr. Ali needs help serving customers</h2>
+          <p>Niko and Zuri are ready to take over the counter.</p>
+          <p className="asset-status" role="status">Mr. Ali’s approved transparent character layer is pending: <code>{mrAliRequirement.filename}</code>.</p>
+          <button className="primary" onClick={() => setMarketStage("child-handoff")}>Take over the counter</button>
+        </>}
+        {marketStage === "child-handoff" && <>
+          <p className="stage-kicker">Counter handoff</p>
+          <h2 id="mission-title">Niko and Zuri are ready</h2>
+          <p>They move behind the counter and get ready to serve.</p>
+          <button className="primary" onClick={() => setMarketStage("serving-customer")}>Serve first customer</button>
+        </>}
+        {marketStage === "serving-customer" && <>
+          <p className="stage-kicker">Serving customers</p>
+          <h2 id="mission-title">Customer {APPROVED_MARKET_CUSTOMERS.length ? activeCustomerIndex + 1 : 0} of 5</h2>
+          <p className="asset-status" role="status">The customer sequence is ready, but serving is blocked until the five approved transparent customer layers are supplied.</p>
+          <ul className="missing-asset-list">{missingCustomers.map((asset) => <li key={asset.filename}><code>{asset.filename}</code></li>)}</ul>
+          <button onClick={() => setMarketStage("child-handoff")}>Back to handoff</button>
+        </>}
+        {marketStage === "mission-complete" && <>
+          <p className="stage-kicker">Corner Shop Challenge</p>
+          <h2 id="mission-title">All customers served</h2>
+          <p>Niko and Zuri have completed the shift.</p>
+          <button className="primary" onClick={onContinue}>See results</button>
+        </>}
+      </section>
+    </div>
   </section>;
 }
 

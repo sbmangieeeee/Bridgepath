@@ -55,5 +55,28 @@ button:focus-visible,a:focus-visible,input:focus-visible,.journey-map-scroll:foc
   .market-stage{display:flex;align-items:flex-end;min-height:720px;padding:72px .75rem 1rem;overflow:auto;background-position:center}.mentor-behind-register{left:0;bottom:17%;width:29%;height:34%}.mentor-behind-register .character-layer{bottom:-32%;width:110px}.cash-register{position:relative;z-index:5;left:auto;bottom:auto;width:100%;max-height:76dvh;margin:0;padding:.65rem;border-width:5px}.register-display{max-height:56dvh;padding:.6rem}.product-list{grid-template-columns:repeat(3,minmax(0,1fr))}.product-layer{flex-direction:column;align-items:flex-start}.register-keypad{display:none}.register-controls button{min-height:48px}.market-stage>.explorer-pair-layer{z-index:4;right:0;bottom:0;width:150px;opacity:.96}
 }
 @media(min-width:761px) and (max-width:1100px){.teaching-board{top:14%;left:19%;width:61%;height:71%}.notebook-paper{top:27%;left:11%;width:78%;height:54%}.cash-register{left:5%;width:66%}.mentor-behind-register{left:0;width:24%}.explorer-pair-layer{right:0;width:31vw}}
+
+/* Approved Scene Designer Corner Shop compositions. Dynamic copy and controls stay in the DOM. */
+.market-mission-stage{min-height:100dvh;padding-top:64px;background:#173d35;display:grid;place-items:center;overflow-x:hidden}
+.market-scene-frame{position:relative;width:min(100vw,1672px);aspect-ratio:1672/941;overflow:hidden;background:#f2d49b}
+.market-scene-background{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.market-counter-layer{position:absolute;z-index:3;inset:auto 0 0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.market-counter-introduction{transform:translateY(6%)}
+.market-counter-child-handoff,.market-counter-serving-customer{transform:translateY(8%)}
+.market-scene-frame>.explorer-pair-layer{z-index:4;right:3%;bottom:12%;width:clamp(180px,24vw,390px)}
+.market-dialogue-panel{position:absolute;z-index:6;top:5%;left:4%;width:min(440px,43%);max-height:88%;overflow:auto;padding:clamp(.8rem,2vw,1.4rem);border:3px solid #173d35;border-radius:1rem;background:#fffaf0f2;color:#173d35;box-shadow:0 12px 30px #0005}
+.market-dialogue-panel h2{margin:.2rem 0 .55rem;font-size:clamp(1.25rem,2.5vw,2rem);line-height:1.1}
+.market-dialogue-panel p{margin:.4rem 0}.market-dialogue-panel button{min-height:44px;margin-top:.6rem;padding:.7rem 1rem}
+.asset-status{font-size:.88rem}.missing-asset-list{max-height:8rem;overflow:auto;margin:.45rem 0;padding-left:1.3rem;font-size:.78rem}
+.missing-asset-list code,.asset-status code{overflow-wrap:anywhere}
+
+@media(max-width:760px){
+  .market-mission-stage{display:block;padding-top:64px;overflow-y:auto;background:#f7e8c8}
+  .market-scene-frame{display:flex;flex-direction:column;width:100%;min-height:calc(100dvh - 64px);aspect-ratio:auto;overflow:visible}
+  .market-scene-background{position:relative;width:100%;height:auto;aspect-ratio:1672/941}
+  .market-counter-layer{top:0;bottom:auto;height:auto;aspect-ratio:1672/941}
+  .market-scene-frame>.explorer-pair-layer{top:4%;right:2%;bottom:auto;width:30%}
+  .market-dialogue-panel{position:relative;top:auto;left:auto;width:auto;max-height:none;margin:.75rem;border-width:2px;background:#fffaf0}
+}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important}}
 @media(min-width:1800px){.map-hotspot{width:82px;height:82px}}

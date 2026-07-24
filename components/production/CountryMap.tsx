@@ -14,14 +14,14 @@ const TOWN_PINS = [
 export function CountryMap() {
   const [notice, setNotice] = useState("");
   return <main className="country-stage">
-    <h1 className="sr-only">Karina country map</h1>
+    <h1 className="sr-only">StoryPath map</h1>
     <nav className="scene-hud" aria-label="Country controls">
       <Link href="/" aria-label="Back to Bridgepath">←</Link>
       <Link href="/" aria-label="Bridgepath home">⌂</Link>
       <button type="button" aria-label="Help" onClick={() => setNotice("Choose a town pin. Arouca Groove is open now.")}>?</button>
       <button type="button" aria-label="Settings" onClick={() => setNotice("Settings are coming later.")}>⚙</button>
     </nav>
-    <div className="country-pan" tabIndex={0} aria-label="Scrollable Karina country map">
+    <div className="country-pan" tabIndex={0} aria-label="Scrollable StoryPath map">
       <div className="country-artboard">
         <img className="country-background" src={CANONICAL_ASSETS.country.runtimePath} alt="" />
         {KARINA.towns.map((town, index) => {
