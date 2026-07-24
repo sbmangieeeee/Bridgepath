@@ -51,6 +51,12 @@ export function CommunityMissionStage({ onContinue }: { onContinue: () => void }
   const [total, setTotal] = useState("");
   const [change, setChange] = useState("");
   const [feedback, setFeedback] = useState("");
+  const [productNotice, setProductNotice] = useState("");
+  const products = [
+    { name: "Rice", price: 12 },
+    { name: "Fruit", price: 8 },
+    { name: "Juice", price: 5 },
+  ] as const;
   const correct = Number(total) === 25 && Number(change) === 5;
   function check() {
     if (!total || !change) setFeedback("Enter both the order total and the change.");
@@ -60,15 +66,18 @@ export function CommunityMissionStage({ onContinue }: { onContinue: () => void }
     else setFeedback("Order checked: $25 total, within the $30 budget, with $5 change.");
   }
   return <section className="visual-stage market-stage" style={{ backgroundImage: `url(${CANONICAL_ASSETS.market.runtimePath})` }} aria-labelledby="mission-title">
-    <CharacterLayer name="Mr. Ali" position="left" /><ExplorerPairLayer />
+    <div className="mentor-behind-register"><CharacterLayer name="Mr. Ali" position="left" /></div>
     <section className="cash-register" aria-label="Corner Shop cash register">
-      <div className="register-display"><p className="stage-kicker">Mr. Ali’s order</p><h2 id="mission-title">Check the order</h2><p>Budget: <strong>$30</strong></p><ul className="product-list"><li><span>Rice</span><strong>$12</strong></li><li><span>Fruit</span><strong>$8</strong></li><li><span>Juice</span><strong>$5</strong></li></ul>
+      <div className="register-display"><p className="stage-kicker">Mr. Ali’s order</p><h2 id="mission-title">Check the order</h2><p>Budget: <strong>$30</strong></p>
+        <ul className="product-list" aria-label="Corner Shop products">{products.map((product) => <li key={product.name}><button type="button" className="product-layer" onClick={() => setProductNotice(`${product.name} costs $${product.price}.`)}><span>{product.name}</span><strong>${product.price}</strong></button></li>)}</ul>
+        <p className="product-notice" aria-live="polite">{productNotice}</p>
         <div className="answer-fields"><label>Order total ($)<input inputMode="numeric" value={total} onChange={(event) => setTotal(event.target.value)} /></label><label>Change from $30 ($)<input inputMode="numeric" value={change} onChange={(event) => setChange(event.target.value)} /></label></div>
         <p className="feedback" aria-live="polite">{feedback}</p>
       </div>
       <div className="register-keypad" aria-hidden="true">{[7,8,9,4,5,6,1,2,3,0].map((key) => <i key={key}>{key}</i>)}</div>
       <div className="register-controls"><button onClick={check}>Check</button><button className="primary" disabled={!correct} onClick={onContinue}>Finish</button></div>
     </section>
+    <ExplorerPairLayer />
   </section>;
 }
 

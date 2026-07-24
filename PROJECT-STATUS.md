@@ -1,8 +1,18 @@
 # Bridgepath Project Checkpoint
 
-> **Last updated:** 17 July 2026  
-> **Current phase:** Phase 0 — contracts and governance  
-> **Overall status:** Planning is mature; the production build has not started.
+> **Last updated:** 24 July 2026
+> **Current phase:** Production walking-skeleton verification
+> **Overall status:** A production walking skeleton exists in draft PR #1; it is not pilot-ready.
+
+## Production implementation checkpoint — 24 July 2026
+
+- Draft PR #1, `Establish Bridgepath visual learning foundation`, is the current production implementation. Its branch is `agent/update-bridgepath-visual-environments`; do not create a competing production route.
+- Implemented route: Welcome → Karina → Arouca Groove → Corner Shop Challenge.
+- Implemented experience: all 18 semantic map hotspots; Teacher Lesson; Class Challenge; mission choice; Corner Shop mission; reflection/results; back, home, help and settings controls; browser-local progress persistence.
+- Canonical names in production are **Karina** (country) and **Arouca Groove** (current town).
+- Incomplete: production authentication and server persistence, full settings/help, Welcome utility controls, and approved transparent mentor, customer and grocery artwork.
+- Present art blockers: transparent production sprites are absent for Mr. Ali, Ms. Leela, the Corner Shop customer, rice, fruit and juice. Model sheets are not approved runtime cut-outs and must not be cropped into sprites.
+- Draft PR #1 must remain a draft and must not be merged without explicit founder approval.
 
 This is the shared, living checkpoint for Bridgepath. Keep it concise and update it whenever a decision changes, a milestone is completed, or the immediate priorities move.
 
@@ -115,6 +125,18 @@ This is the shared, living checkpoint for Bridgepath. Keep it concise and update
 | 17 July 2026 | Approved the reusable environment library and school-instruction/guided-exercise composition references; documented background-only and dynamic-layer rules. |
 | 17 July 2026 | Corrected the geography: Karina contains six named towns; Arouca Groove contains all 18 Standard 3 Mathematics stops; both map levels remain pending design. |
 | 17 July 2026 | Approved the official Arouca Groove 18-stop journey-map asset with its fixed town title, corrected Stop 6 delivery van, and blank plaque reserved for dynamic progress. |
+
+## Verification — 24 July 2026
+
+| Check | Result |
+|---|---|
+| `npm install` | Passed; 448 packages installed, four high-severity audit findings reported |
+| `npm run lint` | Passed |
+| `npm test` | Passed: 7 files, 11 tests |
+| `npm run build` | Passed; all production routes statically generated |
+| Initial `npm run test:e2e` | Failed: 10 stale Storypath Village prototype tests |
+| Production browser review | Welcome, Karina, all 18 Arouca Groove hotspots, all five Corner Shop phases and progress refresh verified at mobile, tablet and desktop widths |
+| Asset audit | Only `public/niko-zuri-v2.png` and `public/design-lab/niko-zuri-pair.png` have genuine transparency; approved mentor/customer/product runtime cut-outs are absent |
 
 ## How to update this document
 

@@ -19,14 +19,14 @@ export function LessonRunner({ title, activities }: { title: string; activities:
 
   return <section className="lesson-runner" aria-labelledby="lesson-title">
     <h1 className="sr-only" id="lesson-title">{title}</h1>
-    {phase !== "reflection-results" && <nav className="lesson-hud" aria-label="Lesson controls">
+    <nav className="lesson-hud" aria-label="Lesson controls">
       {previous
         ? <button className="phase-back" onClick={() => setPhase(previous)} aria-label={`Back to ${activities.find((entry) => entry.phase === previous)?.title}`}>←</button>
         : <Link className="phase-back" href="/arouca-groove" aria-label="Back to Arouca Groove">←</Link>}
       <Link href="/" aria-label="Bridgepath home">⌂</Link>
       <button type="button" aria-label="Help" onClick={() => setHudNotice("Use the controls in the illustrated scene to continue.")}>?</button>
       <button type="button" aria-label="Settings" onClick={() => setHudNotice("Settings are coming later.")}>⚙</button>
-    </nav>}
+    </nav>
     <p className="lesson-hud-notice" aria-live="polite">{hudNotice}</p>
     {phase === "school-introduction" && <TeacherLessonStage onContinue={() => advance("introduced")} />}
     {phase === "guided-exercise" && <NotebookStage onContinue={() => advance("guided")} />}

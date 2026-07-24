@@ -43,6 +43,9 @@ export function AroucaGrooveMap() {
       <div className="journey-map-scroll" tabIndex={0} aria-label="Scrollable map containing all 18 Arouca Groove stops">
         <div className="journey-map-art">
           <img className="journey-map-background" src={CANONICAL_ASSETS.town.runtimePath} alt="" />
+          <p className="map-progress" aria-label={`${progress.completedStopIds.length} of ${AROUCA_GROOVE_STOPS.length} stops completed`}>
+            {progress.completedStopIds.length}/{AROUCA_GROOVE_STOPS.length}
+          </p>
           {AROUCA_GROOVE_STOPS.map((stop, index) => {
             const completed = progress.completedStopIds.includes(stop.id);
             const available = stop.order === 5;
