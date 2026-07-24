@@ -34,9 +34,15 @@ export const CANONICAL_ASSETS: Readonly<Record<CanonicalAssetRole, CanonicalAsse
 
 export const PENDING_MARKET_CHARACTER_ASSETS = [
   { role: "mrAli", filename: "mr-ali-transparent.png", dimensions: "minimum 1200 px tall", transparency: "genuine RGBA transparency", placement: "behind the left side of market-counter.png, visible approximately waist-up" },
-  ...Array.from({ length: 5 }, (_, index) => ({
-    role: `customer${index + 1}`,
-    filename: `market-customer-${String(index + 1).padStart(2, "0")}.png`,
+  ...[
+    ["missMaria", "miss-maria-transparent.png"],
+    ["auntieJoy", "auntie-joy-transparent.png"],
+    ["coachDevon", "coach-devon-transparent.png"],
+    ["mrThomas", "mr-thomas-transparent.png"],
+    ["msLeelaMaharaj", "ms-leela-maharaj-transparent.png"],
+  ].map(([role, filename]) => ({
+    role,
+    filename,
     dimensions: "minimum 1200 px tall",
     transparency: "genuine RGBA transparency",
     placement: "opposite the counter in market-cashier-view.png, full figure grounded on the floor",

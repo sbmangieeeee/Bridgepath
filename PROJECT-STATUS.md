@@ -27,9 +27,9 @@ Current user-facing names are **StoryPath** and **Arouca Groove**. The authorita
 
 ## Incomplete work and blockers
 
-- The five-customer Corner Shop sequence is typed and structurally tested, but runtime serving and mission completion are blocked because no approved customer layers exist.
+- The five Corner Shop customers are approved recurring mentors: Miss Maria, Auntie Joy, Coach Devon, Mr. Thomas and Ms. Leela Maharaj. The sequence is typed and structurally tested, but runtime serving and mission completion remain blocked because their approved transparent layers do not exist.
 - `mr-ali-transparent.png` is absent. The available model sheet is opaque and cannot be cropped into a runtime sprite.
-- `market-customer-01.png` through `market-customer-05.png` are absent.
+- Transparent runtime cut-outs are absent for Miss Maria, Auntie Joy, Coach Devon, Mr. Thomas and Ms. Leela Maharaj.
 - Approved separate transparent grocery/product layers and approved per-customer task content are absent.
 - Authentication, server persistence, production settings/help, privacy controls and family isolation are not implemented.
 - Cultural, child-safety, accessibility and production illustration review remain pilot gates.
@@ -39,7 +39,7 @@ Exact asset requirements and placements are recorded in `ASSET-MANIFEST.md`.
 ## Decisions requiring founder approval
 
 - Whether StoryPath is only the current user-facing product label or should replace Karina in canonical geography, route names and baked map art.
-- Customer identities, dialogue, task/product sets and artwork for the five-customer sequence.
+- Dialogue and task/product sets for the five approved mentor-customers.
 - Final approved transparent Mr. Ali layer.
 - Any change to the supplied Scene Designer compositions.
 

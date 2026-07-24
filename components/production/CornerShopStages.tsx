@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { CANONICAL_ASSETS, PENDING_MARKET_CHARACTER_ASSETS } from "@/lib/production/assets";
-import { APPROVED_MARKET_CUSTOMERS, type MarketStage } from "@/lib/production/market";
+import { MARKET_CUSTOMERS, type MarketStage } from "@/lib/production/market";
 import { CharacterLayer, ExplorerPairLayer } from "./CharacterLayer";
 
 export function TeacherLessonStage({ onContinue }: { onContinue: () => void }) {
@@ -51,6 +51,7 @@ export function CommunityTransitionStage({ onGoBack, onContinue }: { onGoBack: (
 export function CommunityMissionStage({ onContinue }: { onContinue: () => void }) {
   const [marketStage, setMarketStage] = useState<MarketStage>("introduction");
   const [activeCustomerIndex] = useState(0);
+  const activeCustomer = MARKET_CUSTOMERS[activeCustomerIndex];
   const background = marketStage === "serving-customer" ? CANONICAL_ASSETS.marketCashierView : CANONICAL_ASSETS.marketEnvironmentStructure;
   const counter = marketStage === "introduction" ? CANONICAL_ASSETS.marketCounter : CANONICAL_ASSETS.marketCounterChildView;
   const mrAliRequirement = PENDING_MARKET_CHARACTER_ASSETS[0];
@@ -82,8 +83,9 @@ export function CommunityMissionStage({ onContinue }: { onContinue: () => void }
         </>}
         {marketStage === "serving-customer" && <>
           <p className="stage-kicker">Serving customers</p>
-          <h2 id="mission-title">Customer {APPROVED_MARKET_CUSTOMERS.length ? activeCustomerIndex + 1 : 0} of 5</h2>
-          <p className="asset-status" role="status">The customer sequence is ready, but serving is blocked until the five approved transparent customer layers are supplied.</p>
+          <h2 id="mission-title">Customer {activeCustomerIndex + 1} of {MARKET_CUSTOMERS.length}: {activeCustomer.name}</h2>
+          <p>Today’s customers are Miss Maria, Auntie Joy, Coach Devon, Mr. Thomas and Ms. Leela Maharaj.</p>
+          <p className="asset-status" role="status">The mentor sequence is ready, but serving is blocked until their approved transparent character layers are supplied.</p>
           <ul className="missing-asset-list">{missingCustomers.map((asset) => <li key={asset.filename}><code>{asset.filename}</code></li>)}</ul>
           <button onClick={() => setMarketStage("child-handoff")}>Back to handoff</button>
         </>}

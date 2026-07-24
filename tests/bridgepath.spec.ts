@@ -51,9 +51,9 @@ test("Corner Shop reaches the approved market compositions and reports missing c
   await expect(page.getByRole("heading", { name: "Niko and Zuri are ready" })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath("market-child-handoff.png"), fullPage: true });
   await page.getByRole("button", { name: "Serve first customer" }).click();
-  await expect(page.getByRole("heading", { name: "Customer 0 of 5" })).toBeVisible();
-  await expect(page.getByRole("status")).toContainText("blocked until the five approved transparent customer layers are supplied");
-  await expect(page.getByText("market-customer-01.png")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Customer 1 of 5: Miss Maria" })).toBeVisible();
+  await expect(page.getByRole("status")).toContainText("blocked until their approved transparent character layers are supplied");
+  await expect(page.getByText("miss-maria-transparent.png")).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath("market-serving-customer.png"), fullPage: true });
   await page.reload();
   await expect(page.getByRole("heading", { name: "$12 + $8" })).toBeVisible();

@@ -1,11 +1,17 @@
 import { describe, expect, it } from "vitest";
-import { advanceMarketCustomer, MARKET_CUSTOMER_SLOTS } from "./market";
+import { advanceMarketCustomer, MARKET_CUSTOMERS } from "./market";
 
 describe("Corner Shop customer sequence", () => {
-  it("reserves five distinct approved-asset slots without inventing customers", () => {
-    expect(MARKET_CUSTOMER_SLOTS).toHaveLength(5);
-    expect(new Set(MARKET_CUSTOMER_SLOTS.map((customer) => customer.id)).size).toBe(5);
-    expect(MARKET_CUSTOMER_SLOTS.every((customer) => !customer.approved && customer.assetPath === null)).toBe(true);
+  it("uses five distinct approved mentors as customers", () => {
+    expect(MARKET_CUSTOMERS.map((customer) => customer.name)).toEqual([
+      "Miss Maria",
+      "Auntie Joy",
+      "Coach Devon",
+      "Mr. Thomas",
+      "Ms. Leela Maharaj",
+    ]);
+    expect(new Set(MARKET_CUSTOMERS.map((customer) => customer.id)).size).toBe(5);
+    expect(MARKET_CUSTOMERS.every((customer) => customer.assetPath === null)).toBe(true);
   });
 
   it("advances to the next customer", () => {

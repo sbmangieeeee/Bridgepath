@@ -2,24 +2,18 @@ export type MarketStage = "introduction" | "child-handoff" | "serving-customer" 
 
 export type MarketCustomer = {
   readonly id: `customer-${string}`;
+  readonly name: string;
   readonly assetPath: `/${string}` | null;
-  readonly dialogue: string | null;
-  readonly approved: boolean;
+  readonly requiredAssetFilename: `${string}.png`;
 };
 
-export const MARKET_CUSTOMER_SLOTS: readonly MarketCustomer[] = Array.from(
-  { length: 5 },
-  (_, index) => ({
-    id: `customer-${String(index + 1).padStart(2, "0")}` as const,
-    assetPath: null,
-    dialogue: null,
-    approved: false,
-  }),
-);
-
-export const APPROVED_MARKET_CUSTOMERS = MARKET_CUSTOMER_SLOTS.filter(
-  (customer) => customer.approved && customer.assetPath !== null,
-);
+export const MARKET_CUSTOMERS: readonly MarketCustomer[] = [
+  { id: "customer-01", name: "Miss Maria", assetPath: null, requiredAssetFilename: "miss-maria-transparent.png" },
+  { id: "customer-02", name: "Auntie Joy", assetPath: null, requiredAssetFilename: "auntie-joy-transparent.png" },
+  { id: "customer-03", name: "Coach Devon", assetPath: null, requiredAssetFilename: "coach-devon-transparent.png" },
+  { id: "customer-04", name: "Mr. Thomas", assetPath: null, requiredAssetFilename: "mr-thomas-transparent.png" },
+  { id: "customer-05", name: "Ms. Leela Maharaj", assetPath: null, requiredAssetFilename: "ms-leela-maharaj-transparent.png" },
+];
 
 export function advanceMarketCustomer(activeCustomerIndex: number, customerCount: number) {
   if (customerCount <= 0 || activeCustomerIndex >= customerCount - 1) {

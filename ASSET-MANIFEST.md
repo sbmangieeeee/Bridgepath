@@ -44,10 +44,16 @@ Other approved reusable backgrounds remain in `public/assets/environments/`: bak
 ## Exact missing Corner Shop assets
 
 - `mr-ali-transparent.png`: minimum 1200 px tall, genuine RGBA transparency; behind the left side of `market-counter.png`, visible approximately waist-up.
-- `market-customer-01.png` through `market-customer-05.png`: each minimum 1200 px tall with genuine RGBA transparency; render one at a time opposite the counter, full figure grounded on the cashier-view floor.
+- `miss-maria-transparent.png`
+- `auntie-joy-transparent.png`
+- `coach-devon-transparent.png`
+- `mr-thomas-transparent.png`
+- `ms-leela-maharaj-transparent.png`
+
+Each customer layer must be minimum 1200 px tall with genuine RGBA transparency and render one at a time opposite the counter, full figure grounded on the cashier-view floor. The approved production model sheets establish character appearance but are opaque reference sheets, not runtime cut-outs.
 - Separate transparent grocery/product layers for every approved customer task. Filenames, products and dimensions require founder-approved task content and therefore are not invented here.
 
-The existing Mr. Ali model sheet is opaque and is not an approved runtime cut-out. No approved customer layers or task-product layers are present.
+The existing mentor model sheets are opaque and are not approved runtime cut-outs. No approved mentor-customer layers or task-product layers are present.
 
 ## Production rules
 
