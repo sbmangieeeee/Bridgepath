@@ -10,6 +10,13 @@ export type Activity = {
   phase: LessonPhase;
   title: string;
   placeholder: string;
+  lesson?: {
+    topic: string;
+    equation: string;
+    estimate: string;
+    exactTotal: string;
+    inverseCheck: string;
+  };
 };
 
 export type EvidenceEvent = {

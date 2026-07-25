@@ -35,6 +35,10 @@ test("Arouca Groove exposes all 18 canonical hotspots and the accessible stop li
 test("Corner Shop reaches the approved market compositions and reports missing customer art", async ({ page }, testInfo) => {
   await page.goto("/arouca-groove/corner-shop-challenge");
   await expect(page.getByRole("heading", { name: "$12 + $8" })).toBeVisible();
+  const teacher = page.locator(".character-ms-leela .approved-character-sprite");
+  await expect(teacher).toBeVisible();
+  await expect(teacher).toHaveAttribute("src", "/assets/characters/ms-leela-maharaj-teacher-standing-transparent.png");
+  await page.screenshot({ path: testInfo.outputPath("teacher-lesson.png"), fullPage: true });
   await page.getByRole("button", { name: "Continue" }).click();
 
   await expect(page.getByText("Class Challenge", { exact: true })).toBeVisible();

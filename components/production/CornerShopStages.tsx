@@ -3,16 +3,17 @@
 import { useState } from "react";
 import { CANONICAL_ASSETS, PENDING_MARKET_CHARACTER_ASSETS } from "@/lib/production/assets";
 import { MARKET_CUSTOMERS, type MarketStage } from "@/lib/production/market";
+import type { Activity } from "@/lib/production/types";
 import { CharacterLayer, ExplorerPairLayer } from "./CharacterLayer";
 
-export function TeacherLessonStage({ onContinue }: { onContinue: () => void }) {
+export function TeacherLessonStage({ lesson, onContinue }: { lesson: NonNullable<Activity["lesson"]>; onContinue: () => void }) {
   const [replay, setReplay] = useState(0);
   return <section className="visual-stage template-stage classroom-stage" style={{ backgroundImage: `url(${CANONICAL_ASSETS.schoolInstruction.runtimePath})` }} aria-labelledby="teacher-stage-title">
     <CharacterLayer name="Ms. Leela" position="left" />
     <div className="teaching-board" key={replay}>
-      <p className="stage-kicker">Estimate first. Then find the exact total.</p>
-      <h2 id="teacher-stage-title">$12 + $8</h2>
-      <div className="math-demo"><p><strong>Estimate:</strong> $12 is close to $10. $10 + $8 is about <strong>$18</strong>.</p><p><strong>Exact total:</strong> $12 + $8 = <strong>$20</strong>.</p><p><strong>Inverse check:</strong> $20 − $8 = <strong>$12</strong>.</p></div>
+      <p className="stage-kicker">{lesson.topic}</p>
+      <h2 id="teacher-stage-title">{lesson.equation}</h2>
+      <div className="math-demo"><p><strong>Estimate:</strong> {lesson.estimate}</p><p><strong>Exact total:</strong> {lesson.exactTotal}</p><p><strong>Inverse check:</strong> {lesson.inverseCheck}</p></div>
     </div>
     <div className="template-controls teacher-template-controls"><button className="template-replay" onClick={() => setReplay((value) => value + 1)}>Replay</button><button className="template-continue" onClick={onContinue}>Continue</button></div>
   </section>;

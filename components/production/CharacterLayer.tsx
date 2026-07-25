@@ -13,8 +13,13 @@ export function ExplorerPairLayer() {
 
 export function CharacterLayer({ name, position = "left" }: { name: CharacterName; position?: "left" | "right" | "centre" }) {
   const explorer = name === "Niko" || name === "Zuri";
+  const msLeela = name === "Ms. Leela";
   return <figure className={`character-layer character-${name.toLowerCase().replace(/[^a-z]+/g, "-")} position-${position}`}>
-    {explorer ? <div className={`explorer-sprite ${name.toLowerCase()}`}><img src={CANONICAL_ASSETS.explorers.runtimePath} alt="" /></div> : <div className="character-placeholder" aria-hidden="true"><span>{name === "Ms. Leela" ? "ML" : "MA"}</span></div>}
+    {explorer
+      ? <div className={`explorer-sprite ${name.toLowerCase()}`}><img src={CANONICAL_ASSETS.explorers.runtimePath} alt="" /></div>
+      : msLeela
+        ? <img className="approved-character-sprite" src={CANONICAL_ASSETS.msLeela.runtimePath} alt="" />
+        : <div className="character-placeholder" aria-hidden="true"><span>MA</span></div>}
     <figcaption>{name}</figcaption>
   </figure>;
 }

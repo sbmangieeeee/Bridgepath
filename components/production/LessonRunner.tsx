@@ -28,7 +28,7 @@ export function LessonRunner({ title, activities }: { title: string; activities:
       <button type="button" aria-label="Settings" onClick={() => setHudNotice("Settings are coming later.")}>⚙</button>
     </nav>
     <p className="lesson-hud-notice" aria-live="polite">{hudNotice}</p>
-    {phase === "school-introduction" && <TeacherLessonStage onContinue={() => advance("introduced")} />}
+    {phase === "school-introduction" && activity.lesson && <TeacherLessonStage lesson={activity.lesson} onContinue={() => advance("introduced")} />}
     {phase === "guided-exercise" && <NotebookStage onContinue={() => advance("guided")} />}
     {phase === "community-transition" && <CommunityTransitionStage onGoBack={() => setPhase("school-introduction")} onContinue={() => next && setPhase(next)} />}
     {phase === "community-mission" && <CommunityMissionStage onContinue={() => advance("applied")} />}

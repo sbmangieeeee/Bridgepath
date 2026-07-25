@@ -9,6 +9,7 @@ export type CanonicalAssetRole =
   | "marketCounter"
   | "marketCounterChildView"
   | "marketCashierView"
+  | "msLeela"
   | "explorers";
 
 export type CanonicalAsset = {
@@ -29,6 +30,7 @@ export const CANONICAL_ASSETS: Readonly<Record<CanonicalAssetRole, CanonicalAsse
   marketCounter: { role: "marketCounter", runtimePath: "/assets/foregrounds/market-counter.png", sourcePath: "design/approved/scene-designer/market/market-counter.png", description: "Transparent Corner Shop counter and register foreground" },
   marketCounterChildView: { role: "marketCounterChildView", runtimePath: "/assets/foregrounds/market-counter-child-view.png", sourcePath: "design/approved/scene-designer/market/market-counter-child-view.png", description: "Transparent child-handoff counter and register foreground" },
   marketCashierView: { role: "marketCashierView", runtimePath: "/assets/environments/market-cashier-view.png", sourcePath: "design/approved/scene-designer/market/market-cashier-view.png", description: "Corner Shop serving-customer environment" },
+  msLeela: { role: "msLeela", runtimePath: "/assets/characters/ms-leela-maharaj-teacher-standing-transparent.png", sourcePath: "design/characters/ms-leela-maharaj/ms-leela-maharaj-production-model-sheet-v2.png", description: "Transparent standing Ms. Leela classroom layer derived from the approved model sheet" },
   explorers: { role: "explorers", runtimePath: "/niko-zuri-v2.png", sourcePath: "public/niko-zuri-v2.png", description: "Transparent Niko and Zuri pair" },
 } as const;
 

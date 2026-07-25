@@ -44,7 +44,19 @@ export const AROUCA_GROOVE_STOPS: readonly LearningStop[] = STOP_NAMES.map((name
 }));
 
 export const CORNER_SHOP_ACTIVITIES: readonly Activity[] = [
-  { id: "corner-shop-school-introduction", phase: "school-introduction", title: "Teacher lesson", placeholder: "Meet your teacher and get ready to learn." },
+  {
+    id: "corner-shop-school-introduction",
+    phase: "school-introduction",
+    title: "Teacher lesson",
+    placeholder: "Meet your teacher and get ready to learn.",
+    lesson: {
+      topic: "Estimate first. Then find the exact total.",
+      equation: "$12 + $8",
+      estimate: "$12 is close to $10. $10 + $8 is about $18.",
+      exactTotal: "$12 + $8 = $20.",
+      inverseCheck: "$20 − $8 = $12.",
+    },
+  },
   { id: "corner-shop-guided-exercise", phase: "guided-exercise", title: "Class Challenge", placeholder: "Use the open class book to practise." },
   { id: "corner-shop-community-transition", phase: "community-transition", title: "Mission choice", placeholder: "Choose whether to return to class or start the mission." },
   { id: "corner-shop-community-mission", phase: "community-mission", title: "Community mission", placeholder: "Meet your community mentor and get ready for the mission." },
