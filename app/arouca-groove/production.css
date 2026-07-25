@@ -58,14 +58,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,.journey-map-scroll:foc
 
 /* Teacher Lesson: approved Ms. Leela remains an independent, ground-anchored scene layer. */
 .classroom-stage{min-height:100dvh;overflow:hidden;background-position:center;background-size:cover}
-.classroom-stage>.character-ms-leela{left:4.8%;bottom:2.2%;width:clamp(112px,11vw,165px);pointer-events:none}
+.classroom-stage>.character-ms-leela{left:1.5%;bottom:2.2%;width:clamp(170px,17vw,230px);pointer-events:none}
 .approved-character-sprite{display:block;width:100%;height:auto;object-fit:contain}
 .classroom-stage>.character-ms-leela figcaption{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 
 @media(max-width:760px){
   .classroom-stage{background-size:auto 100%}
-  .classroom-stage>.character-ms-leela{left:.5%;bottom:8%;width:clamp(84px,20vw,104px)}
-  .classroom-stage .teaching-board{left:22%;width:74%;padding:.85rem;background:#fffdf5ed}
+  .classroom-stage>.character-ms-leela{left:.5%;bottom:8%;width:clamp(100px,24vw,125px)}
+  .classroom-stage .teaching-board{left:25%;width:71%;padding:.85rem;background:#fffdf5ed}
   .classroom-stage .teaching-board h2{font-size:clamp(2rem,11vw,3.4rem)}
   .classroom-stage .math-demo{font-size:.95rem}
 }
