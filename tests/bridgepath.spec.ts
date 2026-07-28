@@ -32,12 +32,12 @@ test("Arouca Groove exposes all 18 canonical hotspots and the accessible stop li
   await expect(dialog.getByText("5. The Corner Shop Challenge")).toBeVisible();
 });
 
-test("Corner Shop reaches the approved market compositions and reports missing customer art", async ({ page }, testInfo) => {
+test("Corner Shop completes Auntie Joy’s layered customer transaction", async ({ page }, testInfo) => {
   await page.goto("/arouca-groove/corner-shop-challenge");
   await expect(page.getByRole("heading", { name: "$12 + $8" })).toBeVisible();
   const teacher = page.locator(".character-ms-leela .approved-character-sprite");
   await expect(teacher).toBeVisible();
-  await expect(teacher).toHaveAttribute("src", "/assets/characters/ms-leela-maharaj-teacher-standing-transparent.png");
+  await expect(teacher).toHaveAttribute("src", "/assets/characters/mentors/ms-leela-maharaj.png");
   await page.screenshot({ path: testInfo.outputPath("teacher-lesson.png"), fullPage: true });
   await page.getByRole("button", { name: "Continue" }).click();
 
@@ -50,15 +50,30 @@ test("Corner Shop reaches the approved market compositions and reports missing c
   await expect(page.getByRole("heading", { name: "Would you like to go back to class, or are you ready for a mission?" })).toBeVisible();
   await page.getByRole("button", { name: "Start mission" }).click();
   await expect(page.getByRole("heading", { name: "Mr. Ali needs help serving customers" })).toBeVisible();
+  const sceneFrame = page.locator(".scene-frame");
+  const sceneBox = await sceneFrame.boundingBox();
+  const viewport = page.viewportSize();
+  expect(sceneBox).not.toBeNull();
+  expect(viewport).not.toBeNull();
+  expect(sceneBox!.width).toBeGreaterThanOrEqual(viewport!.width);
+  expect(sceneBox!.height).toBeGreaterThanOrEqual(viewport!.height);
+  await expect(page.locator(".scene-environment")).toHaveCSS("object-fit", "cover");
   await page.screenshot({ path: testInfo.outputPath("market-introduction.png"), fullPage: true });
-  await page.getByRole("button", { name: "Take over the counter" }).click();
-  await expect(page.getByRole("heading", { name: "Niko and Zuri are ready" })).toBeVisible();
-  await page.screenshot({ path: testInfo.outputPath("market-child-handoff.png"), fullPage: true });
-  await page.getByRole("button", { name: "Serve first customer" }).click();
-  await expect(page.getByRole("heading", { name: "Customer 1 of 5: Miss Maria" })).toBeVisible();
-  await expect(page.getByRole("status")).toContainText("blocked until their approved transparent character layers are supplied");
-  await expect(page.getByText("miss-maria-transparent.png")).toBeVisible();
+  await page.getByRole("button", { name: "Help Mr. Ali" }).click();
+  await expect(page.getByRole("heading", { name: "What is the order total?" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Rice $12" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Flour $8" })).toBeVisible();
+  await page.getByRole("button", { name: "Rice $12" }).click();
+  await expect(page.getByText("Rice costs $12.")).toBeVisible();
+  await page.getByRole("button", { name: "$18", exact: true }).click();
+  await expect(page.locator(".market-feedback.incorrect")).toContainText("Start at $12 and count on $8 more");
+  await page.getByRole("button", { name: "$20", exact: true }).click();
+  await expect(page.getByRole("status")).toContainText("Correct");
   await page.screenshot({ path: testInfo.outputPath("market-serving-customer.png"), fullPage: true });
+  await page.getByRole("button", { name: "Complete transaction" }).click();
+  await expect(page.getByRole("heading", { name: "Ready for the next customer" })).toBeVisible();
+  await expect(page.getByText("Miss Maria and Mr. Thomas still need approved transparent source assets.")).toBeVisible();
+  await page.screenshot({ path: testInfo.outputPath("market-ready-next.png"), fullPage: true });
   await page.reload();
   await expect(page.getByRole("heading", { name: "$12 + $8" })).toBeVisible();
 });

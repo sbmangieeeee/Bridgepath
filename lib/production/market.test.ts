@@ -4,14 +4,14 @@ import { advanceMarketCustomer, MARKET_CUSTOMERS } from "./market";
 describe("Corner Shop customer sequence", () => {
   it("uses five distinct approved mentors as customers", () => {
     expect(MARKET_CUSTOMERS.map((customer) => customer.name)).toEqual([
-      "Miss Maria",
       "Auntie Joy",
       "Coach Devon",
-      "Mr. Thomas",
       "Ms. Leela Maharaj",
+      "Miss Maria",
+      "Mr. Thomas",
     ]);
     expect(new Set(MARKET_CUSTOMERS.map((customer) => customer.id)).size).toBe(5);
-    expect(MARKET_CUSTOMERS.every((customer) => customer.assetPath === null)).toBe(true);
+    expect(MARKET_CUSTOMERS.filter((customer) => customer.assetPath !== null)).toHaveLength(3);
   });
 
   it("advances to the next customer", () => {

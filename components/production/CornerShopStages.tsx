@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { CANONICAL_ASSETS, PENDING_MARKET_CHARACTER_ASSETS } from "@/lib/production/assets";
-import { MARKET_CUSTOMERS, type MarketStage } from "@/lib/production/market";
+import { CANONICAL_ASSETS } from "@/lib/production/assets";
+import type { MarketStage } from "@/lib/production/market";
 import type { Activity } from "@/lib/production/types";
 import { CharacterLayer, ExplorerPairLayer } from "./CharacterLayer";
+import { anchorStyle, CORNER_SHOP_ANCHORS, CORNER_SHOP_ASSET_METADATA, SceneFrame, visibleAssetStyle } from "./SceneFrame";
 
 export function TeacherLessonStage({ lesson, onContinue }: { lesson: NonNullable<Activity["lesson"]>; onContinue: () => void }) {
   const [replay, setReplay] = useState(0);
@@ -49,55 +50,86 @@ export function CommunityTransitionStage({ onGoBack, onContinue }: { onGoBack: (
   </section>;
 }
 
+type CustomerPhase = "entering" | "shopping" | "incorrect" | "correct" | "departing" | "ready-next";
+
 export function CommunityMissionStage({ onContinue }: { onContinue: () => void }) {
   const [marketStage, setMarketStage] = useState<MarketStage>("introduction");
-  const [activeCustomerIndex] = useState(0);
-  const activeCustomer = MARKET_CUSTOMERS[activeCustomerIndex];
-  const background = marketStage === "serving-customer" ? CANONICAL_ASSETS.marketCashierView : CANONICAL_ASSETS.marketEnvironmentStructure;
-  const counter = marketStage === "introduction" ? CANONICAL_ASSETS.marketCounter : CANONICAL_ASSETS.marketCounterChildView;
-  const mrAliRequirement = PENDING_MARKET_CHARACTER_ASSETS[0];
-  const missingCustomers = PENDING_MARKET_CHARACTER_ASSETS.slice(1);
+  const [customerPhase, setCustomerPhase] = useState<CustomerPhase>("entering");
+  const [productNotice, setProductNotice] = useState("");
 
-  return <section className="market-mission-stage" aria-labelledby="mission-title" data-market-stage={marketStage}>
-    <div className="market-scene-frame">
-      {/* Approved full-scene art must preserve its source aspect ratio rather than use an optimizing crop. */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img className="market-scene-background" src={background.runtimePath} alt="" />
-      {marketStage !== "mission-complete" && <>
+  if (marketStage === "introduction") {
+    return <section className="market-mission-stage" aria-labelledby="mission-title" data-market-stage={marketStage}>
+      <SceneFrame scene="corner-shop-entrance" background={CANONICAL_ASSETS.marketEnvironmentStructure}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className={`market-counter-layer market-counter-${marketStage}`} src={counter.runtimePath} alt="" />
-      </>}
-      {marketStage === "child-handoff" && <ExplorerPairLayer />}
-      <section className="market-dialogue-panel">
-        {marketStage === "introduction" && <>
+        <img className="scene-character scene-shopkeeper" style={visibleAssetStyle(CORNER_SHOP_ASSET_METADATA.mrAli, CORNER_SHOP_ANCHORS.entrance.shopkeeper, "height")} src={CANONICAL_ASSETS.mrAli.runtimePath} alt="Mr. Ali" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="scene-anchored-layer entrance-counter" style={visibleAssetStyle(CORNER_SHOP_ASSET_METADATA.entranceCounter, CORNER_SHOP_ANCHORS.entrance.checkout, "width")} src={CANONICAL_ASSETS.marketCounter.runtimePath} alt="" />
+        <section className="market-activity-panel market-introduction-dialogue">
           <p className="stage-kicker">Corner Shop Challenge</p>
           <h2 id="mission-title">Mr. Ali needs help serving customers</h2>
-          <p>Niko and Zuri are ready to take over the counter.</p>
-          <p className="asset-status" role="status">Mr. Ali’s approved transparent character layer is pending: <code>{mrAliRequirement.filename}</code>.</p>
-          <button className="primary" onClick={() => setMarketStage("child-handoff")}>Take over the counter</button>
+          <p>“Could you check Auntie Joy’s order while I organise the shelves?”</p>
+          <button className="primary" onClick={() => setMarketStage("serving-customer")}>Help Mr. Ali</button>
+        </section>
+      </SceneFrame>
+    </section>;
+  }
+
+  if (marketStage === "mission-complete") {
+    return <section className="visual-stage reflection-stage" aria-labelledby="mission-title">
+      <p className="celebration-mark" aria-hidden="true">✓</p>
+      <h2 id="mission-title">Customer served!</h2>
+      <p>The Corner Shop scene is ready for the next approved customer.</p>
+      <button className="primary" onClick={onContinue}>See results</button>
+    </section>;
+  }
+
+  const productsVisible = ["shopping", "incorrect", "correct"].includes(customerPhase);
+  return <section className="market-mission-stage" aria-labelledby="mission-title" data-market-stage={marketStage}>
+    <SceneFrame scene="corner-shop-gameplay" background={CANONICAL_ASSETS.marketCashierView}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        className={`scene-character scene-customer customer-${customerPhase}`}
+        style={anchorStyle(CORNER_SHOP_ANCHORS.gameplay.customer)}
+        src={CANONICAL_ASSETS.auntieJoy.runtimePath}
+        alt="Auntie Joy"
+        onAnimationEnd={() => {
+          if (customerPhase === "entering") setCustomerPhase("shopping");
+          if (customerPhase === "departing") setCustomerPhase("ready-next");
+        }}
+      />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="scene-anchored-layer cashier-counter-layer" style={visibleAssetStyle(CORNER_SHOP_ASSET_METADATA.childViewCounter, CORNER_SHOP_ANCHORS.gameplay.counter, "width")} src={CANONICAL_ASSETS.marketCounterChildView.runtimePath} alt="" />
+      {productsVisible && <div className="checkout-products" aria-label="Auntie Joy’s products">
+        <button className="checkout-product" style={anchorStyle(CORNER_SHOP_ANCHORS.gameplay.rice)} onClick={() => setProductNotice("Rice costs $12.")}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={CANONICAL_ASSETS.rice.runtimePath} alt="" /><span>Rice</span><strong>$12</strong>
+        </button>
+        <button className="checkout-product" style={anchorStyle(CORNER_SHOP_ANCHORS.gameplay.flour)} onClick={() => setProductNotice("Flour costs $8.")}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={CANONICAL_ASSETS.flour.runtimePath} alt="" /><span>Flour</span><strong>$8</strong>
+        </button>
+      </div>}
+      <section className="market-activity-panel gameplay-activity">
+        <p className="stage-kicker">Customer 1: Auntie Joy</p>
+        <h2 id="mission-title">{customerPhase === "ready-next" ? "Ready for the next customer" : "What is the order total?"}</h2>
+        {customerPhase === "entering" && <p role="status">Auntie Joy is walking to the counter…</p>}
+        {["shopping", "incorrect", "correct"].includes(customerPhase) && <>
+          <p>Rice is $12 and flour is $8.</p>
+          <div className="market-answer-options" aria-label="Order total answers">
+            {[18, 20, 22].map((answer) => <button key={answer} onClick={() => setCustomerPhase(answer === 20 ? "correct" : "incorrect")}>${answer}</button>)}
+          </div>
+          <p className="product-notice" aria-live="polite">{productNotice}</p>
         </>}
-        {marketStage === "child-handoff" && <>
-          <p className="stage-kicker">Counter handoff</p>
-          <h2 id="mission-title">Niko and Zuri are ready</h2>
-          <p>They move behind the counter and get ready to serve.</p>
-          <button className="primary" onClick={() => setMarketStage("serving-customer")}>Serve first customer</button>
-        </>}
-        {marketStage === "serving-customer" && <>
-          <p className="stage-kicker">Serving customers</p>
-          <h2 id="mission-title">Customer {activeCustomerIndex + 1} of {MARKET_CUSTOMERS.length}: {activeCustomer.name}</h2>
-          <p>Today’s customers are Miss Maria, Auntie Joy, Coach Devon, Mr. Thomas and Ms. Leela Maharaj.</p>
-          <p className="asset-status" role="status">The mentor sequence is ready, but serving is blocked until their approved transparent character layers are supplied.</p>
-          <ul className="missing-asset-list">{missingCustomers.map((asset) => <li key={asset.filename}><code>{asset.filename}</code></li>)}</ul>
-          <button onClick={() => setMarketStage("child-handoff")}>Back to handoff</button>
-        </>}
-        {marketStage === "mission-complete" && <>
-          <p className="stage-kicker">Corner Shop Challenge</p>
-          <h2 id="mission-title">All customers served</h2>
-          <p>Niko and Zuri have completed the shift.</p>
-          <button className="primary" onClick={onContinue}>See results</button>
+        {customerPhase === "incorrect" && <p className="market-feedback incorrect" role="alert">Not quite. Start at $12 and count on $8 more.</p>}
+        {customerPhase === "correct" && <div className="market-feedback correct" role="status"><span aria-hidden="true">✓</span> Correct — $12 + $8 = $20.<button className="primary" onClick={() => setCustomerPhase("departing")}>Complete transaction</button></div>}
+        {customerPhase === "departing" && <p role="status">Auntie Joy’s products are cleared. She is leaving the counter.</p>}
+        {customerPhase === "ready-next" && <>
+          <p>Auntie Joy’s products are cleared and the checkout is ready.</p>
+          <p className="asset-status">Miss Maria and Mr. Thomas still need approved transparent source assets.</p>
+          <button className="primary" onClick={() => setMarketStage("mission-complete")}>Finish transaction preview</button>
         </>}
       </section>
-    </div>
+    </SceneFrame>
   </section>;
 }
 

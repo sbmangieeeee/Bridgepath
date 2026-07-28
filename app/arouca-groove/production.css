@@ -94,3 +94,42 @@ button:focus-visible,a:focus-visible,input:focus-visible,.journey-map-scroll:foc
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important}}
 @media(min-width:1800px){.map-hotspot{width:82px;height:82px}}
+
+/* Fixed-coordinate Corner Shop game scenes. All layers share the 1672×941 source canvas. */
+.market-mission-stage{position:relative;width:100vw;height:100dvh;padding:0;overflow:hidden;background:#102f2b}
+.scene-frame-shell{position:absolute;inset:0;overflow:hidden;background:#102f2b}
+.scene-frame{position:absolute;left:50%;top:50%;width:max(100vw,177.68dvh);height:max(100dvh,56.28vw);overflow:hidden;background:#d99a4a;transform:translate(-50%,-50%)}
+.scene-environment,.scene-full-foreground{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center center;pointer-events:none}
+.scene-environment{z-index:1}.scene-full-foreground{z-index:3}
+.scene-character,.scene-anchored-layer{position:absolute;width:auto;max-width:none;object-fit:contain;transform-origin:bottom center;pointer-events:none}
+.scene-shopkeeper{filter:drop-shadow(0 .35rem .35rem #38200d44)}
+.entrance-counter{filter:drop-shadow(0 .45rem .4rem #0004)}
+.market-activity-panel{position:absolute;z-index:5;width:min(430px,38%);max-height:84%;overflow:auto;padding:clamp(.75rem,1.7vw,1.25rem);border:3px solid #173d35;border-radius:1rem;background:#fffaf0f2;color:#173d35;box-shadow:0 12px 30px #0005}
+.market-activity-panel h2{margin:.2rem 0 .55rem;font-size:clamp(1.25rem,2.5vw,2rem);line-height:1.1}
+.market-activity-panel p{margin:.4rem 0}.market-activity-panel button{min-height:44px;padding:.6rem .9rem;border:2px solid #704a00;border-radius:.65rem;background:#fff0c5;color:#173d35;font-weight:900;cursor:pointer}
+.market-activity-panel button.primary{background:#ffb51b}
+.market-introduction-dialogue{top:3%;right:max(4%,calc((100% - 100vw)/2 + 2%))}
+.gameplay-activity{top:6%;left:max(3%,calc((100% - 100vw)/2 + 2%));width:min(420px,34%)}
+.cashier-register-layer{filter:drop-shadow(0 .5rem .45rem #0005)}
+.checkout-products{position:absolute;z-index:4;inset:0;pointer-events:none}
+.checkout-product{position:absolute;display:grid;grid-template-columns:1fr auto;align-content:end;align-items:center;width:10%;padding:0!important;border:0!important;background:transparent!important;transform-origin:bottom center;pointer-events:auto!important;filter:drop-shadow(0 .4rem .35rem #0004)}
+.checkout-product img{grid-column:1/-1;display:block;width:100%;height:calc(100% - 2rem);margin:auto;object-fit:contain;pointer-events:none}.checkout-product span,.checkout-product strong{padding:.15rem .35rem;border-radius:.25rem;background:#fffaf0e8;pointer-events:none}
+.market-answer-options{display:flex;gap:.5rem;flex-wrap:wrap;margin:.65rem 0}
+.market-feedback{padding:.6rem;border-radius:.5rem;font-weight:800}.market-feedback.incorrect{background:#fff0c5;border-left:6px solid #c25b16}.market-feedback.correct{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:.5rem;background:#e0f4d8;border-left:6px solid #176e60}.market-feedback.correct>span{font-size:2rem}.market-feedback.correct>button{grid-column:1/-1}
+.customer-entering{animation:customer-enter .8s ease-out both}.customer-departing{animation:customer-exit .8s ease-in both}.customer-ready-next{opacity:0}
+@keyframes customer-enter{from{transform:translateX(85vw) scale(1)}to{transform:translateX(-50%) scale(1)}}
+@keyframes customer-exit{from{transform:translateX(-50%) scale(1)}to{transform:translateX(-95vw) scale(1)}}
+
+@media(max-width:900px){
+  .market-activity-panel{width:42%;padding:.65rem;font-size:.88rem}
+  .market-activity-panel h2{font-size:1.2rem}
+  .market-activity-panel button{min-height:40px;padding:.45rem .65rem}
+  .market-introduction-dialogue{top:6%;right:max(2%,calc((100% - 100vw)/2 + 2%))}
+  .gameplay-activity{top:3%;left:max(2%,calc((100% - 100vw)/2 + 2%));width:36%}
+}
+@media(max-width:600px){
+  .market-activity-panel{width:min(360px,calc(100vw - 2rem));max-height:72%}
+  .market-introduction-dialogue{top:10%;right:calc((100% - 100vw)/2 + 1rem)}
+  .gameplay-activity{top:8%;left:calc((100% - 100vw)/2 + 1rem);width:min(360px,calc(100vw - 2rem))}
+}
+@media(prefers-reduced-motion:reduce){.customer-entering,.customer-departing{animation-duration:.01ms!important}}
