@@ -1,14 +1,16 @@
 # Bridgepath Production Asset Manifest
 
-> **Last updated:** 24 July 2026
+> **Last updated:** 29 July 2026
 > **Status:** Production runtime inventory for draft PR #1
+
+The founder-rejected path-and-star mark is not a production asset. Its only retained copy is archived at `design/archive/rejected-branding/bridgepath-mark.svg`; no replacement logo is approved.
 
 Clean environments are backgrounds only. Characters, dialogue, questions, answers, products, prices, feedback, progress and controls remain separate accessible layers.
 
 ## Production runtime sequence
 
 1. `public/assets/screens/bridgepath-welcome-direction.png`
-2. `public/assets/maps/karina-country-map.png` — internal canonical geography asset; the current user-facing label is StoryPath.
+2. `public/assets/maps/karina-country-map.png` — approved legacy asset filename for the canonical StoryPath country map; it does not make Karina a current product name.
 3. `public/assets/maps/arouca-grove-journey-map.png`
 4. `public/assets/screens/school-instruction-template.png`
 5. `public/assets/screens/guided-exercise-template.png`
@@ -51,6 +53,20 @@ Production selects these through `lib/production/assets.ts`.
 | `products/flour.png` | 564×860 | Genuine RGBA | Separate interactive checkout product |
 
 The untouched Scene Designer market exports are preserved under `design/approved/scene-designer/market/`. The runtime counter copies remove only the supplied green matte to alpha; their approved RGB artwork is otherwise unchanged. The previous market background is retained at `design/archive/superseded-market/market-environment-2026-07-20.png`.
+
+## Shared market compositions
+
+All three current Corner Shop compositions use one cover-scaled **1672×941** coordinate system (`MARKET_ARTBOARD_WIDTH`, `MARKET_ARTBOARD_HEIGHT`) and a shared ground line at **y=875**. Every background, character slot, counter and activity-object slot occupies the same artboard bounds; accessible dialogue and controls remain a separate DOM overlay.
+
+| Composition | Background | Counter foreground | Measured grounding adjustment |
+|---|---|---|---:|
+| Introduction | `market-env-structure.png` | `market-counter.png` | +57 px y (`6.0574%` of artboard height) |
+| Child handoff | `market-env-structure.png` | `market-counter-child-view.png` | +40 px y (`4.2508%`) |
+| Cashier view | `market-cashier-view.png` | `corner-shop-register-cashier-view.png` | Reconstruct source y=86 px, then +15 px ground offset (`1.5941%`) |
+
+The two chroma-derived front-counter exports retain a reported thin green fringe along the keyed edge. It remains unchanged pending visual approval; no unapproved repainting or edge cleanup is authorized.
+
+The current composition-preview intentionally renders **no Mr. Ali, customers, products or other activity objects**. The empty character and activity-object layers remain in the shared scene structure. Ms. Leela is rendered only in the preceding Teacher Lesson, outside these three market compositions. Approved runtime files remain inventoried below but are not evidence that those layers are active.
 
 Other approved reusable backgrounds remain in `public/assets/environments/`: bakery, Mas workshop, community centre and recreation grounds. They are not selected by the current production route.
 

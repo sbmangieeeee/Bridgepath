@@ -1,6 +1,6 @@
 # Bridgepath Project Checkpoint
 
-> **Last updated:** 27 July 2026
+> **Last updated:** 29 July 2026
 > **Current phase:** Production walking-skeleton verification
 > **Overall status:** Draft PR #1 contains the current production implementation; it is not pilot-ready.
 
@@ -17,19 +17,21 @@ Implemented:
 - Welcome, country and town navigation.
 - All 18 semantic Arouca Groove hotspots plus the accessible 18-stop list.
 - Teacher Lesson, Class Challenge and mission choice.
-- Corner Shop entrance and cashier views assembled as layered fixed-coordinate scenes.
-- Approved Ms. Leela beside the Teacher Lesson whiteboard and approved Mr. Ali behind the entrance counter.
-- One complete Auntie Joy transaction with separate rice/flour product layers, incorrect/correct feedback, product clearing and customer exit.
+- Corner Shop introduction, child-handoff and cashier compositions assembled on one shared 1672×941 full-viewport artboard.
+- Approved Ms. Leela beside the Teacher Lesson whiteboard.
+- Empty mentor, customer and activity-object slots are preserved in the reusable market scene while composition is reviewed.
 - Back, home, help and settings controls.
 - Keyboard focus styles and browser-local progress storage.
 - Responsive production routes for mobile, tablet and desktop.
+- The rejected path-and-star mark is archived at `design/archive/rejected-branding/bridgepath-mark.svg` with no active runtime, metadata, manifest, test, stylesheet or brand-guide reference and no replacement logo.
 
-Canonical names are **Karina** (country) and **Arouca Groove** (current town). **StoryPath** is the route experience between Welcome and the town map, not the country name.
+Canonical names are **StoryPath** (country) and **Arouca Groove** (current town). The canonical production route is `/storypath`; `/karina` exists only as a compatibility redirect and is not a current product name.
 
 ## Incomplete work and blockers
 
 - Miss Maria and Mr. Thomas still lack approved Scene Designer source exports and therefore cannot be rendered as customers.
-- Only the first approved transaction (Auntie Joy with rice and flour) is implemented. Later customer task/product sets require founder-approved content and source art.
+- Customer transactions and interactive product layers are intentionally not rendered in the current composition-review flow.
+- Mr. Ali is intentionally omitted from the introduction pending founder approval of the final scene composition.
 - Authentication, server persistence, production settings/help, privacy controls and family isolation are not implemented.
 - Cultural, child-safety, accessibility and production illustration review remain pilot gates.
 
@@ -41,7 +43,7 @@ Exact asset requirements and placements are recorded in `ASSET-MANIFEST.md`.
 - Approved source artwork for Miss Maria and Mr. Thomas.
 - Any change to the supplied Scene Designer compositions.
 
-## Verification — 27 July 2026
+## Verification — 29 July 2026
 
 | Check | Result |
 |---|---|
@@ -49,17 +51,18 @@ Exact asset requirements and placements are recorded in `ASSET-MANIFEST.md`.
 | `npm run lint` | Passed with no warnings or errors |
 | `npm test` | Passed: 8 files, 14 tests |
 | `npm run build` | Passed; all production routes statically generated |
-| `npm run test:e2e` | Passed: 20/20 at 1920×1080, 1366×768, 1280×720, 1024×768 and mobile |
-| Browser widths | Entrance and complete Auntie Joy transaction reviewed at all five widths; cover scaling removes letterboxing while safe-area rules keep controls and DOM text usable |
-| Asset audit | Runtime mentors, rice, flour, Niko/Zuri and register/counter layers have genuine RGBA transparency; approved source files remain untouched |
+| `npm run test:e2e` | Passed: 12/12 at 1440×900, 820×1180 and 390×844, including `/karina` → `/storypath` compatibility redirect coverage |
+| Browser widths | Introduction, child-handoff and cashier compositions reviewed at all three requested widths; one shared cover transform removes blank framing and overlays do not consume scene height |
+| Scene geometry | Viewport coverage, shared layer bounds, absence of horizontal overflow and stage-specific asset selection are asserted in Playwright |
+| Asset audit | Counter alpha bounds were measured without changing the approved source artwork; the two chroma-derived front counters retain a thin green edge fringe that needs asset approval before any cleanup |
 
 ## Approved asset and scene update — 25 July 2026
 
 - Preserved the approved RGB mentor and rice/flour source exports under `design/approved/scene-designer/`.
 - Added separate runtime RGBA derivatives by removing only the flat chroma backgrounds; no visible artwork was redrawn, recoloured or distorted.
 - Added the approved cashier-view register as a tightly bounded runtime foreground.
-- Added named scene-coordinate anchors for the entrance shopkeeper/counter and gameplay customer/register/products.
-- Grounded Mr. Ali behind the entrance counter, Auntie Joy on the cashier-view floor plane, and rice/flour as independent keyboard-accessible buttons.
+- Preserved named scene-coordinate anchors for future character and activity layers, but did not render them in the current composition preview.
+- Mr. Ali, customers and products are temporarily omitted pending visual approval.
 - Confirmed Miss Maria and Mr. Thomas remain blocked on approved source artwork.
 - Kept dialogue, status, customer count, prices, questions, answers and controls as accessible DOM content.
 

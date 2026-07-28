@@ -1,4 +1,31 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
+
+async function expectSharedMarketArtboard(page: Page, backgroundRole: string, counterRole: string) {
+  const viewportSize = page.viewportSize();
+  const viewport = page.locator(".market-scene-viewport");
+  const artboard = page.locator(".market-scene-artboard");
+  const layers = page.locator(".market-visual-layer");
+  const viewportBox = await viewport.boundingBox();
+  const artboardBox = await artboard.boundingBox();
+
+  expect(viewportSize).not.toBeNull();
+  expect(viewportBox).toEqual({ x: 0, y: 0, width: viewportSize!.width, height: viewportSize!.height });
+  expect(artboardBox).not.toBeNull();
+  expect(artboardBox!.width).toBeGreaterThanOrEqual(viewportSize!.width);
+  expect(artboardBox!.height).toBeGreaterThanOrEqual(viewportSize!.height);
+
+  await expect(layers).toHaveCount(4);
+  for (let index = 0; index < 4; index += 1) {
+    expect(await layers.nth(index).boundingBox()).toEqual(artboardBox);
+  }
+
+  await expect(page.locator(`[data-asset-role="${backgroundRole}"]`)).toBeVisible();
+  await expect(page.locator(`[data-asset-role="${counterRole}"]`)).toBeVisible();
+  await expect(page.locator(".market-character-layers img")).toHaveCount(0);
+  await expect(page.locator(".market-activity-object-layers").locator("img, button")).toHaveCount(0);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(viewportSize!.width);
+  expect(await page.evaluate(() => document.documentElement.scrollHeight)).toBeLessThanOrEqual(viewportSize!.height);
+}
 
 test.beforeEach(async ({ page }) => {
   await page.goto("/");
@@ -7,8 +34,8 @@ test.beforeEach(async ({ page }) => {
 });
 
 test("production route connects Welcome, StoryPath, Arouca Groove, and Corner Shop", async ({ page }) => {
-  await page.getByRole("link", { name: "Enter the adventure through the map hut" }).click();
-  await expect(page).toHaveURL(/\/karina$/);
+  await page.getByRole("link", { name: "Enter StoryPath through the map hut" }).click();
+  await expect(page).toHaveURL(/\/storypath$/);
   await expect(page.getByRole("heading", { name: "StoryPath map" })).toBeVisible();
   await page.getByRole("link", { name: "Arouca Groove. Available." }).click();
   await expect(page).toHaveURL(/\/arouca-groove$/);
@@ -32,7 +59,7 @@ test("Arouca Groove exposes all 18 canonical hotspots and the accessible stop li
   await expect(dialog.getByText("5. The Corner Shop Challenge")).toBeVisible();
 });
 
-test("Corner Shop completes Auntie Joy’s layered customer transaction", async ({ page }, testInfo) => {
+test("Corner Shop renders three shared-artboard market compositions", async ({ page }, testInfo) => {
   await page.goto("/arouca-groove/corner-shop-challenge");
   await expect(page.getByRole("heading", { name: "$12 + $8" })).toBeVisible();
   const teacher = page.locator(".character-ms-leela .approved-character-sprite");
@@ -49,37 +76,28 @@ test("Corner Shop completes Auntie Joy’s layered customer transaction", async 
 
   await expect(page.getByRole("heading", { name: "Would you like to go back to class, or are you ready for a mission?" })).toBeVisible();
   await page.getByRole("button", { name: "Start mission" }).click();
-  await expect(page.getByRole("heading", { name: "Mr. Ali needs help serving customers" })).toBeVisible();
-  const sceneFrame = page.locator(".scene-frame");
-  const sceneBox = await sceneFrame.boundingBox();
-  const viewport = page.viewportSize();
-  expect(sceneBox).not.toBeNull();
-  expect(viewport).not.toBeNull();
-  expect(sceneBox!.width).toBeGreaterThanOrEqual(viewport!.width);
-  expect(sceneBox!.height).toBeGreaterThanOrEqual(viewport!.height);
-  await expect(page.locator(".scene-environment")).toHaveCSS("object-fit", "cover");
-  await page.screenshot({ path: testInfo.outputPath("market-introduction.png"), fullPage: true });
-  await page.getByRole("button", { name: "Help Mr. Ali" }).click();
-  await expect(page.getByRole("heading", { name: "What is the order total?" })).toBeVisible();
-  await expect(page.getByRole("button", { name: "Rice $12" })).toBeVisible();
-  await expect(page.getByRole("button", { name: "Flour $8" })).toBeVisible();
-  await page.getByRole("button", { name: "Rice $12" }).click();
-  await expect(page.getByText("Rice costs $12.")).toBeVisible();
-  await page.getByRole("button", { name: "$18", exact: true }).click();
-  await expect(page.locator(".market-feedback.incorrect")).toContainText("Start at $12 and count on $8 more");
-  await page.getByRole("button", { name: "$20", exact: true }).click();
-  await expect(page.getByRole("status")).toContainText("Correct");
-  await page.screenshot({ path: testInfo.outputPath("market-serving-customer.png"), fullPage: true });
-  await page.getByRole("button", { name: "Complete transaction" }).click();
-  await expect(page.getByRole("heading", { name: "Ready for the next customer" })).toBeVisible();
-  await expect(page.getByText("Miss Maria and Mr. Thomas still need approved transparent source assets.")).toBeVisible();
-  await page.screenshot({ path: testInfo.outputPath("market-ready-next.png"), fullPage: true });
+  await expect(page.getByRole("heading", { name: "Corner Shop introduction" })).toBeVisible();
+  await expectSharedMarketArtboard(page, "marketEnvironmentStructure", "marketCounter");
+  await page.screenshot({ path: testInfo.outputPath("market-introduction.png") });
+
+  await page.getByRole("button", { name: "View child handoff" }).click();
+  await expect(page.getByRole("heading", { name: "Child handoff view" })).toBeVisible();
+  await expectSharedMarketArtboard(page, "marketEnvironmentStructure", "marketCounterChildView");
+  await page.screenshot({ path: testInfo.outputPath("market-child-handoff.png") });
+
+  await page.getByRole("button", { name: "View cashier position" }).click();
+  await expect(page.getByRole("heading", { name: "Cashier view" })).toBeVisible();
+  await expectSharedMarketArtboard(page, "marketCashierView", "marketCashierRegister");
+  await page.screenshot({ path: testInfo.outputPath("market-cashier-view.png") });
+  await page.getByRole("button", { name: "Finish composition preview" }).click();
+  await expect(page.getByRole("heading", { name: "Mission complete!" })).toBeVisible();
   await page.reload();
   await expect(page.getByRole("heading", { name: "$12 + $8" })).toBeVisible();
 });
 
-test("navigation controls and keyboard focus remain available", async ({ page }) => {
+test("legacy Karina redirect, navigation controls, and keyboard focus remain available", async ({ page }) => {
   await page.goto("/karina");
+  await expect(page).toHaveURL(/\/storypath$/);
   await expect(page.getByRole("link", { name: "Back to Bridgepath" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Bridgepath home" })).toBeVisible();
   await page.getByRole("button", { name: "Help" }).click();

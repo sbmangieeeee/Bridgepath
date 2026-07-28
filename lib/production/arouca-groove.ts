@@ -1,8 +1,8 @@
 import type { Activity, Country, LearningStop, Town } from "./types";
 
-export const KARINA: Country = {
-  id: "karina",
-  name: "Karina",
+export const STORYPATH: Country = {
+  id: "storypath",
+  name: "StoryPath",
   towns: [
     { id: "arouca-groove", name: "Arouca Groove" },
     { id: "gasparillo", name: "Gasparillo" },
@@ -66,6 +66,6 @@ export const CORNER_SHOP_ACTIVITIES: readonly Activity[] = [
 export const AROUCA_GROOVE: Town = {
   id: "arouca-groove",
   name: "Arouca Groove",
-  countryId: KARINA.id,
+  countryId: STORYPATH.id,
   stops: AROUCA_GROOVE_STOPS.map((stop) => stop.order === 5 ? { ...stop, activities: CORNER_SHOP_ACTIVITIES } : stop),
 };

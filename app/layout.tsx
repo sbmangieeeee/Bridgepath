@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bridgepath | Karina",
+  title: "Bridgepath | StoryPath",
   description: "Understand it, use it, and carry it into the adventure.",
 };
 

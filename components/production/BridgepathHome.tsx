@@ -18,7 +18,7 @@ export function BridgepathHome() {
   return <main className="bridgepath-home">
     <img className="home-art" src={CANONICAL_ASSETS.home.runtimePath} alt="" />
     <h1 className="sr-only">Bridgepath Adventures</h1>
-    <Link className="illustrated-hotspot home-hotspot-adventure" href="/karina" aria-label="Enter the adventure through the map hut"><span className="sr-only">Enter adventure</span></Link>
+    <Link className="illustrated-hotspot home-hotspot-adventure" href="/storypath" aria-label="Enter StoryPath through the map hut"><span className="sr-only">Enter StoryPath</span></Link>
     {PREVIEW_DESTINATIONS.map((destination) => <button className={`illustrated-hotspot ${destination.className}`} key={destination.id} type="button" aria-label={`${destination.label}. Coming later.`} onClick={() => setNotice(`${destination.label} — Coming later.`)}><span className="sr-only">{destination.label}</span></button>)}
     <p className="scene-notice" aria-live="polite">{notice}</p>
   </main>;

@@ -1,6 +1,6 @@
 # Bridgepath Product Specification — Approval Draft
 
-> **Geography correction (17 July 2026):** `BRIDGEPATH-CANONICAL-GEOGRAPHY.md` controls. Karina contains six named towns; Arouca Groove is the current playable town and contains all 18 Standard 3 Mathematics stops. Earlier Market Village, Storypath Country, twelve-stop, and one-town-per-Standard-and-subject assumptions are superseded.
+> **Geography correction (29 July 2026):** `BRIDGEPATH-CANONICAL-GEOGRAPHY.md` controls. StoryPath contains six named towns; Arouca Groove is the current playable town and contains all 18 Standard 3 Mathematics stops. Earlier Karina/Kairana, Market Village, twelve-stop, and one-town-per-Standard-and-subject assumptions are superseded.
 
 **Status:** Product discovery draft for founder approval  
 **Date:** 14 July 2026  
@@ -10,7 +10,7 @@
 
 Bridgepath is a Caribbean educational adventure platform for children in Standards 3–5. Its purpose is not simply to prepare children to answer SEA-style questions. It should help a child understand curriculum concepts early, use them in unfamiliar situations, and give parents a trustworthy view of what the child has covered, can apply independently, and may need help with before the end-of-term report.
 
-The child experiences one persistent fictional country called Karina. Its country map shows Arouca Groove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia together in one frame. Arouca Groove is the current playable Standard 3 Mathematics town and contains all 18 curriculum-derived stops. The other five towns are reserved for future learning journeys and have no approved curriculum assignments yet.
+The child experiences one persistent fictional country called StoryPath. Its country map shows Arouca Groove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia together in one frame. Arouca Groove is the current playable Standard 3 Mathematics town and contains all 18 curriculum-derived stops. The other five towns are reserved for future learning journeys and have no approved curriculum assignments yet.
 
 The initial product boundary is Mathematics and English across Standards 3–5 for children, parents, and eventually schools. The first content boundary is the Standard 3 Mathematics town. The first vertical slice is one complete Market Day adventure inside that town, focused on money and multi-step problem solving, subject to exact Ministry objective mapping and local educator approval. Town names, including the prototype name Riverside, remain provisional.
 
@@ -30,10 +30,10 @@ The following decisions are treated as approved unless explicitly revised:
 - The learning promise is: **understand it, use it, and carry it into the adventure**.
 - Explicit teaching and demonstration precede independent performance.
 - The experience is a responsive web product for the first pilot.
-- Storypath is a fictional Caribbean country, not a recreation of Trinidad and Tobago and not a collection of real towns.
+- StoryPath is a fictional Caribbean country, not a recreation of Trinidad and Tobago and not a collection of real towns.
 - The child sees fiction-first town names once approved. The parent sees the formal Standard, subject, strand, objectives, evidence, and coverage.
 - The world is shown at three levels: country overview, detailed town map, and sequential adventure path.
-- The Karina Country Map shows six named towns together in one frame.
+- The StoryPath Country Map shows six named towns together in one frame.
 - Arouca Groove is the current playable Standard 3 Mathematics town and contains all 18 stops.
 - Gasparillo, Lopinot, Barataria, Masara, and Chaconia remain reserved for future learning journeys without Standard, subject, or stop assignments.
 - Future towns are visible but unavailable. They may be muted or closed, but should not create pressure or expose unfinished curriculum promises as if they were complete.
@@ -45,8 +45,8 @@ The following decisions are treated as approved unless explicitly revised:
 
 ### Superseded or reconciled directions
 
-- **Superseded:** Storypath Country and one-town-per-Standard-and-subject geography.  
-  **Current:** Karina contains six named towns; Arouca Groove holds the complete current 18-stop journey and the other towns are unassigned future journeys.
+- **Superseded:** Karina/Kairana naming and one-town-per-Standard-and-subject geography.
+  **Current:** StoryPath contains six named towns; Arouca Groove holds the complete current 18-stop journey and the other towns are unassigned future journeys.
 - **Clarified:** the six approved environment backgrounds are reusable locations inside Arouca Groove, not towns.
 - **Reconciled:** “the child can choose a path” does not mean unrestricted curriculum skipping. The child can choose where to look and, later, which available side activity to take, while core prerequisite learning retains a clear recommended sequence.
 - **Deferred:** Caribbean recorded voice. The pilot is text-first and silent-capable.
@@ -55,7 +55,7 @@ The following decisions are treated as approved unless explicitly revised:
 
 ### Long-term Bridgepath product boundary
 
-- Standards 3–5 Mathematics and English remain the long-term learning scope, but future journeys are not yet assigned to Karina's five reserved towns.
+- Standards 3–5 Mathematics and English remain the long-term learning scope, but future journeys are not yet assigned to StoryPath's five reserved towns.
 - One persistent Caribbean-inspired fictional country.
 - Child learning experience, parent reporting and controls, and later read-only school/class progress visibility.
 - Curriculum coverage, instruction, guided practice, application, remediation, and longitudinal evidence.
@@ -96,7 +96,7 @@ The long-term boundary does not imply that all of this ships in the pilot.
 
 ### Child learner
 
-A Standard 3–5 child who enters Storypath, receives instruction, completes missions, asks for help, resumes progress, and sees only their own adventure and private achievements.
+A Standard 3–5 child who enters StoryPath, receives instruction, completes missions, asks for help, resumes progress, and sees only their own adventure and private achievements.
 
 ### Parent or guardian owner
 
@@ -143,7 +143,7 @@ Curriculum reviewer, writer, editor, illustrator, support agent, privacy adminis
 
 1. **Teach before testing.** A child should not need to guess a new method from feedback alone.
 2. **Application over question rehearsal.** Missions require the child to recognize concepts inside real situations and worded problems.
-3. **Fiction for children, traceability for adults.** Storypath remains coherent while every activity has an auditable curriculum purpose.
+3. **Fiction for children, traceability for adults.** StoryPath remains coherent while every activity has an auditable curriculum purpose.
 4. **Evidence, not score theatre.** Accuracy, support level, context, recency, and independence matter more than a single percentage.
 5. **Mistakes open support.** Errors reduce complexity, restore models, and create a new chance; they do not remove instruction.
 6. **One obvious next action.** Exploration must not create disorientation.
@@ -163,11 +163,11 @@ Curriculum reviewer, writer, editor, illustrator, support agent, privacy adminis
 
 ### Child-facing hierarchy
 
-`Karina Country Map → Arouca Groove Journey Map → Town location → Curriculum stop → Mission → Activity`
+`StoryPath Country Map → Arouca Groove Journey Map → Town location → Curriculum stop → Mission → Activity`
 
 ### Proposed geography
 
-Karina is one country joined by rivers, roads, hills, coast, bridges, and recurring characters. Its six named towns are visible together on the Karina Country Map. Arouca Groove contains the complete current 18-stop Standard 3 Mathematics journey; the other five towns remain unassigned future journeys.
+StoryPath is one country joined by rivers, roads, hills, coast, bridges, and recurring characters. Its six named towns are visible together on the StoryPath Country Map. Arouca Groove contains the complete current 18-stop Standard 3 Mathematics journey; the other five towns remain unassigned future journeys.
 
 The country overview shows all six towns. Arouca Groove is available and the other five are muted, locked, or marked as future journeys with accessible state descriptions and no launch promises. Selecting Arouca Groove opens its detailed 18-stop journey map.
 
@@ -185,7 +185,7 @@ Every town must have a dramatic premise, local relationships, evolving places, a
 
 ## 9. Complete first-time walkthrough
 
-1. **Launch hub.** Full-screen Storypath Village image, Bridgepath Adventures title, Niko and Zuri at the crossroads, and five in-world destinations. Adventure and Parent Area operate; Customize Explorer, Mini-games, and My Achievements open polished private previews. No narration plays.
+1. **Launch hub.** Full-screen StoryPath Village image, Bridgepath Adventures title, Niko and Zuri at the crossroads, and five in-world destinations. Adventure and Parent Area operate; Customize Explorer, Mini-games, and My Achievements open polished private previews. No narration plays.
 2. **Role decision.** Adventure for an unconfigured family explains that an adult needs to set up the first explorer. Parent Area opens the adult path. Sensitive actions require an adult boundary, not child progress.
 3. **Parent registration.** Adult enters email and secure authentication details, country/eligibility, terms acceptance, and guardian attestation. Duplicate email, weak credential, offline, and service-error states preserve safe progress and explain the next action.
 4. **Email verification.** The parent receives a time-limited verification link. Resend is rate-limited and does not disclose whether unrelated emails have accounts.
@@ -196,7 +196,7 @@ Every town must have a dramatic premise, local relationships, evolving places, a
 9. **Parent first view.** Before learning evidence exists, the dashboard confirms the selected Standard, subject, and corresponding town, shows “Not started,” and gives one action: Let [nickname] begin. Formal mapping is expandable. As more towns launch, the parent may enable the appropriate town without changing the child's recorded evidence.
 10. **Child device entry.** On a trusted family device, the child enters a family code, chooses their profile, and enters the picture PIN. Rate limiting, forgotten PIN, wrong profile, and account recovery protect privacy. The system never reveals another family’s names after an invalid code.
 11. **Playable orientation.** Niko and Zuri teach tap/click, keyboard selection, drag alternatives, submit, feedback, help, and returning home through a two-minute fictional task. It can be replayed later.
-12. **Country reveal.** The learner sees all six Storypath towns together in one country frame. The town selected by the parent for the child's Standard and subject is highlighted as the clear next destination; unavailable or unselected towns remain visible but muted.
+12. **Country reveal.** The learner sees all six StoryPath towns together in one country frame. The town selected by the parent for the child's Standard and subject is highlighted as the clear next destination; unavailable or unselected towns remain visible but muted.
 13. **Town selection.** Selecting the available town reveals its eventual fiction-first name, short story premise, and an Enter action. Future towns disclose “More adventures are being prepared” without dates or curriculum pressure. The map does not require the child to travel through a separate subject area.
 14. **Standard 3 Mathematics town map.** The learner sees a detailed Caribbean-inspired town with Market Square available and other future locations visible. A list/map alternative exposes the same locations. The current prototype may use Riverside as a working label, but the final name is undecided.
 15. **Market Day adventure detail.** Child-language goals say, for example, “Work out totals, choose how to pay, and check change.” Estimated time and resumability are clear.
@@ -278,7 +278,7 @@ Historical evidence remains tied to its original version. A child with an active
 
 ### Child adventure hierarchy
 
-`Karina Country Map → Arouca Groove Journey Map → Location → Curriculum stop → Mission → Activity`
+`StoryPath Country Map → Arouca Groove Journey Map → Location → Curriculum stop → Mission → Activity`
 
 ### Mapping rules
 
@@ -495,7 +495,7 @@ W3C guidance emphasizes sufficient time and alternative content for complex info
 
 ## 24. Caribbean context and cultural integrity
 
-Storypath should feel recognizable through ordinary life rather than national symbols pasted onto generic fantasy.
+StoryPath should feel recognizable through ordinary life rather than national symbols pasted onto generic fantasy.
 
 Potential references include mixed residential/shopfront architecture, covered galleries, markets, schoolyards, libraries, workshops, recreation grounds, drains, hills, village roads, gardens, rainy-season light, mango, poui, coconut, immortelle, and flamboyant. Community stories may involve market shopping, doubles ingredients, fruit portions, maxi-taxi planning, cricket scoring, pan-yard preparation, gardening, tailoring, building, libraries, and family events.
 
@@ -589,7 +589,7 @@ The official Ministry Mathematics curriculum guide for Standard 3 includes one- 
 
 - FR-06 Launch hub exposes five accessible destinations; three future modes are previews only.
 - FR-07 Adventure routes new families to adult setup and returning children to their saved state.
-- FR-08 Karina Country Map shows all six named towns together, with Arouca Groove available and the other five reserved for future journeys.
+- FR-08 StoryPath Country Map shows all six named towns together, with Arouca Groove available and the other five reserved for future journeys.
 - FR-09 The available town opens a detailed town map and a sequential adventure path.
 - FR-10 Maps have equivalent semantic/list navigation.
 
@@ -750,7 +750,7 @@ The official Ministry Mathematics curriculum guide for Standard 3 includes one- 
 ### Ready for review
 
 - The core problem, audience, world hierarchy, product/content/slice boundaries, parent value, learning philosophy, first adventure, and major safety principles are defined.
-- The country model is now explicit: Karina has six named towns; Arouca Groove contains all 18 current stops; future towns remain unassigned; the Karina Country Map and Arouca Groove Journey Map are separate pending designs.
+- The country model is now explicit: StoryPath has six named towns; Arouca Groove contains all 18 current stops; future towns remain unassigned; the StoryPath Country Map and Arouca Groove Journey Map are separate implemented screens using approved artwork.
 - The official Standard 3 Mathematics guide provides a credible basis for Market Day.
 - The specification states what the child sees versus what the parent sees.
 

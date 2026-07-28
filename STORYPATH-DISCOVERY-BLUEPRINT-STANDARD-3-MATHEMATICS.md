@@ -1,4 +1,4 @@
-# Storypath Discovery Blueprint: Standard 3 Mathematics
+# StoryPath Discovery Blueprint: Standard 3 Mathematics
 
 > **Superseded discovery stage (15 July 2026):** Parts 3 and 4 of this earlier blueprint explored a possible one-town structure and are not approved. The current educational path proposal is `STANDARD-3-MATHEMATICS-TOWN-LEARNING-JOURNEY.md`, derived from `STANDARD-3-MATHEMATICS-EXPERIENCE-CLUSTERS.md`. Working stops remain educational functions rather than approved geography or names.
 
@@ -33,7 +33,7 @@ These systems repeatedly use more than one strand. A shopkeeper uses Number, Mea
 
 Therefore:
 
-- Standard 3 Mathematics occupies one coherent town—Arouca Groove—within Karina and includes all 18 stops.
+- Standard 3 Mathematics occupies one coherent town—Arouca Groove—within StoryPath and includes all 18 stops.
 - The town should contain several interconnected districts and recurring locations rather than curriculum departments.
 - The town's final name should remain open until the structure, cultural review, and broader country naming system are approved.
 - Progression should be a braided route: concepts are introduced in one context, strengthened in another, and combined later.
@@ -385,7 +385,7 @@ These mechanics recur because the mathematics recurs. They are not lessons or ga
 | Represent and decide | Tallies, scales, graphs, operations, explanation | Change source representation, scale, categories, and decision threshold |
 | Compare and justify | Number size, fractions, best buy, measurement, data | Remove visual cues; include close alternatives; require a reason or counterexample |
 
-# Part 3 - Discover Storypath
+# Part 3 - Discover StoryPath
 
 ## 10. Recommended Standard 3 Mathematics journey
 
@@ -401,7 +401,7 @@ One town is supported because:
 - returning to familiar locations with more sophisticated problems supports transfer and learner attachment; and
 - multiple Mathematics towns would imply false curriculum boundaries and increase art, navigation, and production complexity.
 
-Under the founder-approved geography, Karina contains six towns and Arouca Groove is the current playable town containing all 18 Standard 3 Mathematics stops. Gasparillo, Lopinot, Barataria, Masara, and Chaconia remain unassigned future learning journeys.
+Under the founder-approved geography, StoryPath contains six towns and Arouca Groove is the current playable town containing all 18 Standard 3 Mathematics stops. Gasparillo, Lopinot, Barataria, Masara, and Chaconia remain unassigned future learning journeys.
 
 ### Town identity
 

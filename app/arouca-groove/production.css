@@ -30,7 +30,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,.journey-map-scroll:foc
 .teaching-board{position:absolute;z-index:3;top:13.2%;left:19.4%;width:59%;height:74%;padding:clamp(1rem,3vw,2.5rem);overflow:auto;color:#173d35}.teaching-board h2{font-size:clamp(2.6rem,7vw,6rem);text-align:center;margin:.4rem}.stage-kicker{text-transform:uppercase;letter-spacing:.08em;font-weight:900;color:#376058}.math-demo{display:grid;gap:.25rem;font-size:clamp(1rem,1.8vw,1.35rem)}.math-demo p{margin:.35rem 0}
 .character-layer{position:absolute;z-index:4;bottom:11%;width:clamp(100px,16vw,220px);margin:0;text-align:center}.character-layer.position-left{left:1.5%}.character-layer.position-right{right:1.5%}.character-layer.position-centre{left:50%;transform:translateX(-50%)}.character-placeholder{display:grid;place-items:center;width:100%;aspect-ratio:3/4;border:5px solid #fff2bf;border-radius:48% 48% 20% 20%;background:linear-gradient(#246f66,#173e38);box-shadow:0 10px 28px #0005}.character-placeholder span{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#fff8dc;color:#17483f;font-weight:900;font-size:1.3rem}.character-layer figcaption{display:inline-block;margin-top:.25rem;padding:.35rem .7rem;border-radius:999px;background:#173e38;color:#fff;font-weight:900}.explorer-sprite{position:relative;width:100%;aspect-ratio:3/4;overflow:hidden}.explorer-sprite img{position:absolute;bottom:0;width:200%;max-width:none;height:auto}.explorer-sprite.niko img{left:0}.explorer-sprite.zuri img{right:0}
 
-/* Real controls sit over the blank environment templates as independent DOM layers. */
+/* Real controls sit over blank environment templates as independent DOM layers. */
 .template-controls button,.mission-choice-actions button,.register-controls button,.results-action button{min-width:44px;min-height:44px;border:2px solid #704a00;border-radius:.8rem;background:#fff0c5;color:#173d35;font-weight:900;cursor:pointer}.template-controls .primary,.mission-choice-actions .primary,.register-controls .primary,.results-action .primary{background:#ffb51b;color:#102f2b}.template-controls button:disabled,.register-controls button:disabled{background:#cfd4d1;color:#56605d;cursor:not-allowed}
 .teacher-template-controls button,.challenge-template-controls button{position:absolute;z-index:12;bottom:3%;height:7%;padding:.6rem 1.4rem;font-size:clamp(1rem,1.7vw,1.4rem);box-shadow:0 3px 8px #0004}.template-replay{left:37%;width:12%}.template-continue{right:37%;width:12%}.template-hint{left:38%;width:10%}.template-check{right:38%;width:13%}
 
@@ -70,66 +70,24 @@ button:focus-visible,a:focus-visible,input:focus-visible,.journey-map-scroll:foc
   .classroom-stage .math-demo{font-size:.95rem}
 }
 
-/* Approved Scene Designer Corner Shop compositions. Dynamic copy and controls stay in the DOM. */
-.market-mission-stage{min-height:100dvh;padding-top:64px;background:#173d35;display:grid;place-items:center;overflow-x:hidden}
-.market-scene-frame{position:relative;width:min(100vw,1672px);aspect-ratio:1672/941;overflow:hidden;background:#f2d49b}
-.market-scene-background{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
-.market-counter-layer{position:absolute;z-index:3;inset:auto 0 0;width:100%;height:100%;object-fit:contain;pointer-events:none}
-.market-counter-introduction{transform:translateY(6%)}
-.market-counter-child-handoff,.market-counter-serving-customer{transform:translateY(8%)}
-.market-scene-frame>.explorer-pair-layer{z-index:4;right:3%;bottom:12%;width:clamp(180px,24vw,390px)}
-.market-dialogue-panel{position:absolute;z-index:6;top:5%;left:4%;width:min(440px,43%);max-height:88%;overflow:auto;padding:clamp(.8rem,2vw,1.4rem);border:3px solid #173d35;border-radius:1rem;background:#fffaf0f2;color:#173d35;box-shadow:0 12px 30px #0005}
-.market-dialogue-panel h2{margin:.2rem 0 .55rem;font-size:clamp(1.25rem,2.5vw,2rem);line-height:1.1}
-.market-dialogue-panel p{margin:.4rem 0}.market-dialogue-panel button{min-height:44px;margin-top:.6rem;padding:.7rem 1rem}
-.asset-status{font-size:.88rem}.missing-asset-list{max-height:8rem;overflow:auto;margin:.45rem 0;padding-left:1.3rem;font-size:.78rem}
-.missing-asset-list code,.asset-status code{overflow-wrap:anywhere}
-
-@media(max-width:760px){
-  .market-mission-stage{display:block;padding-top:64px;overflow-y:auto;background:#f7e8c8}
-  .market-scene-frame{display:flex;flex-direction:column;width:100%;min-height:calc(100dvh - 64px);aspect-ratio:auto;overflow:visible}
-  .market-scene-background{position:relative;width:100%;height:auto;aspect-ratio:1672/941}
-  .market-counter-layer{top:0;bottom:auto;height:auto;aspect-ratio:1672/941}
-  .market-scene-frame>.explorer-pair-layer{top:4%;right:2%;bottom:auto;width:30%}
-  .market-dialogue-panel{position:relative;top:auto;left:auto;width:auto;max-height:none;margin:.75rem;border-width:2px;background:#fffaf0}
-}
+/* Corner Shop: one cover-scaled 1672×941 artboard drives every visual layer. */
+.market-mission-stage,.market-scene-viewport{position:relative;width:100vw;height:100dvh;margin:0;padding:0;overflow:hidden;background:#102f2b}
+.market-scene-artboard{position:absolute;top:50%;left:50%;width:max(100vw,177.69dvh);aspect-ratio:1672/941;overflow:hidden;transform:translate(-50%,-50%)}
+.market-visual-layer{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.market-background-visual{z-index:1}.market-character-layers{z-index:2}.market-counter-visual{z-index:3}.market-activity-object-layers{z-index:4}
+.market-background-layer,.market-counter-art{position:absolute;display:block;max-width:none;object-fit:fill}
+.market-background-layer{inset:0;width:100%;height:100%}
+.market-counter-art{width:100%;height:100%}
+/* Visible counter bottoms are aligned to artboard groundY 875, not the PNG box edge. */
+.market-counter-introduction{--counter-ground-offset-y:6.0574%}.market-counter-child-handoff{--counter-ground-offset-y:4.2508%}
+.market-counter-introduction .market-counter-art,.market-counter-child-handoff .market-counter-art{top:var(--counter-ground-offset-y);left:0}
+/* Trimmed cashier image reconstructs source position (380,86), then adds the exact 15px ground offset. */
+.market-counter-cashier{--counter-ground-offset-y:1.5941%}
+.market-counter-cashier .market-counter-art{top:calc(9.1392% + var(--counter-ground-offset-y));left:22.7273%;width:53.1699%;height:auto}
+.market-composition-overlay{position:absolute;z-index:5;inset:0;pointer-events:none}
+.market-dialogue-overlay{position:absolute;top:max(4.5rem,5dvh);right:clamp(1rem,4vw,4rem);width:min(420px,calc(100vw - 2rem));max-height:calc(100dvh - 6rem);overflow:auto;padding:clamp(.75rem,1.6vw,1.25rem);border:3px solid #173d35;border-radius:1rem;background:#fffaf0f2;color:#173d35;box-shadow:0 12px 30px #0005;pointer-events:auto}
+.market-dialogue-overlay h2{margin:.2rem 0 .55rem;font-size:clamp(1.2rem,2.4vw,2rem);line-height:1.1}
+.market-dialogue-overlay p{margin:.35rem 0}.market-dialogue-overlay button{min-height:44px;margin-top:.55rem;padding:.65rem .9rem}
+@media(max-width:600px){.market-dialogue-overlay{top:4.25rem;right:.75rem;width:min(320px,calc(100vw - 1.5rem));max-height:42dvh;padding:.65rem}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important}}
 @media(min-width:1800px){.map-hotspot{width:82px;height:82px}}
-
-/* Fixed-coordinate Corner Shop game scenes. All layers share the 1672×941 source canvas. */
-.market-mission-stage{position:relative;width:100vw;height:100dvh;padding:0;overflow:hidden;background:#102f2b}
-.scene-frame-shell{position:absolute;inset:0;overflow:hidden;background:#102f2b}
-.scene-frame{position:absolute;left:50%;top:50%;width:max(100vw,177.68dvh);height:max(100dvh,56.28vw);overflow:hidden;background:#d99a4a;transform:translate(-50%,-50%)}
-.scene-environment,.scene-full-foreground{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center center;pointer-events:none}
-.scene-environment{z-index:1}.scene-full-foreground{z-index:3}
-.scene-character,.scene-anchored-layer{position:absolute;width:auto;max-width:none;object-fit:contain;transform-origin:bottom center;pointer-events:none}
-.scene-shopkeeper{filter:drop-shadow(0 .35rem .35rem #38200d44)}
-.entrance-counter{filter:drop-shadow(0 .45rem .4rem #0004)}
-.market-activity-panel{position:absolute;z-index:5;width:min(430px,38%);max-height:84%;overflow:auto;padding:clamp(.75rem,1.7vw,1.25rem);border:3px solid #173d35;border-radius:1rem;background:#fffaf0f2;color:#173d35;box-shadow:0 12px 30px #0005}
-.market-activity-panel h2{margin:.2rem 0 .55rem;font-size:clamp(1.25rem,2.5vw,2rem);line-height:1.1}
-.market-activity-panel p{margin:.4rem 0}.market-activity-panel button{min-height:44px;padding:.6rem .9rem;border:2px solid #704a00;border-radius:.65rem;background:#fff0c5;color:#173d35;font-weight:900;cursor:pointer}
-.market-activity-panel button.primary{background:#ffb51b}
-.market-introduction-dialogue{top:3%;right:max(4%,calc((100% - 100vw)/2 + 2%))}
-.gameplay-activity{top:6%;left:max(3%,calc((100% - 100vw)/2 + 2%));width:min(420px,34%)}
-.cashier-register-layer{filter:drop-shadow(0 .5rem .45rem #0005)}
-.checkout-products{position:absolute;z-index:4;inset:0;pointer-events:none}
-.checkout-product{position:absolute;display:grid;grid-template-columns:1fr auto;align-content:end;align-items:center;width:10%;padding:0!important;border:0!important;background:transparent!important;transform-origin:bottom center;pointer-events:auto!important;filter:drop-shadow(0 .4rem .35rem #0004)}
-.checkout-product img{grid-column:1/-1;display:block;width:100%;height:calc(100% - 2rem);margin:auto;object-fit:contain;pointer-events:none}.checkout-product span,.checkout-product strong{padding:.15rem .35rem;border-radius:.25rem;background:#fffaf0e8;pointer-events:none}
-.market-answer-options{display:flex;gap:.5rem;flex-wrap:wrap;margin:.65rem 0}
-.market-feedback{padding:.6rem;border-radius:.5rem;font-weight:800}.market-feedback.incorrect{background:#fff0c5;border-left:6px solid #c25b16}.market-feedback.correct{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:.5rem;background:#e0f4d8;border-left:6px solid #176e60}.market-feedback.correct>span{font-size:2rem}.market-feedback.correct>button{grid-column:1/-1}
-.customer-entering{animation:customer-enter .8s ease-out both}.customer-departing{animation:customer-exit .8s ease-in both}.customer-ready-next{opacity:0}
-@keyframes customer-enter{from{transform:translateX(85vw) scale(1)}to{transform:translateX(-50%) scale(1)}}
-@keyframes customer-exit{from{transform:translateX(-50%) scale(1)}to{transform:translateX(-95vw) scale(1)}}
-
-@media(max-width:900px){
-  .market-activity-panel{width:42%;padding:.65rem;font-size:.88rem}
-  .market-activity-panel h2{font-size:1.2rem}
-  .market-activity-panel button{min-height:40px;padding:.45rem .65rem}
-  .market-introduction-dialogue{top:6%;right:max(2%,calc((100% - 100vw)/2 + 2%))}
-  .gameplay-activity{top:3%;left:max(2%,calc((100% - 100vw)/2 + 2%));width:36%}
-}
-@media(max-width:600px){
-  .market-activity-panel{width:min(360px,calc(100vw - 2rem));max-height:72%}
-  .market-introduction-dialogue{top:10%;right:calc((100% - 100vw)/2 + 1rem)}
-  .gameplay-activity{top:8%;left:calc((100% - 100vw)/2 + 1rem);width:min(360px,calc(100vw - 2rem))}
-}
-@media(prefers-reduced-motion:reduce){.customer-entering,.customer-departing{animation-duration:.01ms!important}}

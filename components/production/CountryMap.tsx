@@ -5,7 +5,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { CANONICAL_ASSETS } from "@/lib/production/assets";
-import { KARINA } from "@/lib/production/arouca-groove";
+import { STORYPATH } from "@/lib/production/arouca-groove";
 
 const TOWN_PINS = [
   [21, 31], [44.6, 21], [63.7, 22], [85.3, 31], [34.3, 63], [73.5, 64],
@@ -24,7 +24,7 @@ export function CountryMap() {
     <div className="country-pan" tabIndex={0} aria-label="Scrollable StoryPath map">
       <div className="country-artboard">
         <img className="country-background" src={CANONICAL_ASSETS.country.runtimePath} alt="" />
-        {KARINA.towns.map((town, index) => {
+        {STORYPATH.towns.map((town, index) => {
           const style = { left: `${TOWN_PINS[index][0]}%`, top: `${TOWN_PINS[index][1]}%` };
           return town.id === "arouca-groove"
             ? <Link className="town-pin-hotspot" style={style} href="/arouca-groove" aria-label="Arouca Groove. Available." key={town.id}><span className="sr-only">Arouca Groove</span></Link>

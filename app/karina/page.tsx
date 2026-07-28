@@ -1,7 +1,5 @@
-import { CountryMap } from "@/components/production/CountryMap";
-import "./karina.css";
-import "./focus.css";
+import { redirect } from "next/navigation";
 
-export default function KarinaPage() {
-  return <CountryMap />;
+export default function LegacyKarinaRedirect() {
+  redirect("/storypath");
 }

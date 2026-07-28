@@ -29,7 +29,7 @@ export type CanonicalAsset = {
 
 export const CANONICAL_ASSETS: Readonly<Record<CanonicalAssetRole, CanonicalAsset>> = {
   home: { role: "home", runtimePath: "/assets/screens/bridgepath-welcome-direction.png", sourcePath: "design/approved/bridgepath-welcome-direction.png", description: "Bridgepath illustrated entrance" },
-  country: { role: "country", runtimePath: "/assets/maps/karina-country-map.png", sourcePath: "public/assets/maps/karina-country-map.png", description: "Karina illustrated country environment" },
+  country: { role: "country", runtimePath: "/assets/maps/karina-country-map.png", sourcePath: "public/assets/maps/karina-country-map.png", description: "StoryPath illustrated country environment (approved legacy filename)" },
   town: { role: "town", runtimePath: "/assets/maps/arouca-grove-journey-map.png", sourcePath: "public/assets/maps/arouca-grove-journey-map.png", description: "Arouca Groove 18-stop map" },
   schoolInstruction: { role: "schoolInstruction", runtimePath: "/assets/screens/school-instruction-template.png", sourcePath: "public/assets/screens/school-instruction-template.png", description: "Classroom lesson environment with a blank teaching surface" },
   classChallenge: { role: "classChallenge", runtimePath: "/assets/screens/guided-exercise-template.png", sourcePath: "public/assets/screens/guided-exercise-template.png", description: "Notebook exercise environment with blank pages" },

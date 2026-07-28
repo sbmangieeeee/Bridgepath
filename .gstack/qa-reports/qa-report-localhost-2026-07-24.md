@@ -1,8 +1,9 @@
 # Bridgepath production route QA
 
-- Date: 24 July 2026
+- Last verified: 29 July 2026
 - Branch: `agent/update-bridgepath-visual-environments`
-- Route: Welcome → Karina → Arouca Groove → Corner Shop Challenge
+- Current route: Welcome → StoryPath → Arouca Groove → Corner Shop Challenge
+- Canonical URL: `/storypath`; `/karina` is redirect-only compatibility
 - Viewports: mobile 390×844, tablet 820×1180, desktop 1440×900
 - Framework: Next.js 16 / React 19
 
@@ -12,10 +13,10 @@ The complete production walking skeleton is navigable and the five Corner Shop p
 
 ## Findings
 
-1. **High — approved mentor sprites are absent.** Mr. Ali and Ms. Leela remain labelled placeholders because the repository contains model sheets but no approved transparent runtime cut-outs.
-2. **High — customer artwork is absent.** A larger grounded Corner Shop customer cannot be composed without inventing art.
-3. **High — product artwork is absent.** Rice, fruit and juice now have separate accessible interactive DOM layers, but approved transparent product images are not present.
-4. **Medium — Welcome has no help/settings controls.** Utility controls begin on the Karina route.
+1. **High — market character layers await visual approval.** Approved runtime mentor files exist, but Mr. Ali and every customer are intentionally omitted from the three current market compositions.
+2. **High — two customer source exports remain missing.** Miss Maria and Mr. Thomas cannot be composed without approved Scene Designer source artwork.
+3. **High — market activity layers await visual approval.** Approved rice/flour runtime files exist, but products and other activity objects are intentionally omitted from the current composition-preview state.
+4. **Medium — Welcome has no help/settings controls.** Utility controls begin on the StoryPath route.
 5. **Medium — persistence is browser-local only.** This is suitable for the walking skeleton, not the production account/evidence model.
 6. **Medium — dependency audit reports four high-severity findings.** These need a focused dependency/security review before pilot release.
 
@@ -28,7 +29,8 @@ The complete production walking skeleton is navigable and the five Corner Shop p
 - Moved Niko and Zuri away from the register controls and behind the mobile activity surface.
 - Converted products into separate accessible interactive DOM layers while preserving names and prices as text.
 - Added a high-visibility focus ring to the scrollable country map.
-- Replaced stale Storypath Village E2E coverage with production route tests at mobile, tablet and desktop sizes.
+- Replaced stale StoryPath Village E2E coverage with production route tests at mobile, tablet and desktop sizes.
+- Canonicalized navigation and assertions on `/storypath` and added direct E2E coverage for the `/karina` compatibility redirect.
 - Added a Windows-safe E2E production-server runner.
 
 ## Screenshots

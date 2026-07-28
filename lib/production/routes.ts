@@ -1,6 +1,7 @@
 export const PRODUCTION_ROUTES = {
   entrance: "/",
-  country: "/karina",
+  country: "/storypath",
+  legacyCountry: "/karina",
   town: "/arouca-groove",
   cornerShop: "/arouca-groove/corner-shop-challenge",
 } as const;

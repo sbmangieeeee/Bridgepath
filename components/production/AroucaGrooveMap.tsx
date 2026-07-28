@@ -31,7 +31,7 @@ export function AroucaGrooveMap() {
   return <main className="town-map-stage">
     <h1 className="sr-only">Arouca Groove</h1>
     <nav className="town-map-hud" aria-label="Town map controls">
-      <Link href="/karina" aria-label="Back to Karina">←</Link>
+      <Link href="/storypath" aria-label="Back to StoryPath">←</Link>
       <Link href="/" aria-label="Bridgepath home">⌂</Link>
       <button type="button" aria-label="Help" onClick={() => setNotice("Choose an illustrated numbered stop. Stop 5 is open now.")}>?</button>
       <button type="button" aria-label="Settings" onClick={() => setNotice("Settings are coming later.")}>⚙</button>

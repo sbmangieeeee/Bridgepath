@@ -2,7 +2,7 @@
 
 > **Educational architecture:** This document remains the locked curriculum source. The proposed child-facing places, motivations, mentors, and experience framing are developed separately in `STANDARD-3-MATHEMATICS-TOWN-EXPERIENCE-DESIGN.md` so that experience revisions cannot silently change curriculum coverage or progression.
 
-> **Character and flow integration:** `STANDARD-3-MATHEMATICS-CHARACTER-EXPERIENCE-INTEGRATION-BLUEPRINT.md` applies the approved Storypath Primary School-to-town pattern and recurring cast without modifying this sequence.
+> **Character and flow integration:** `STANDARD-3-MATHEMATICS-CHARACTER-EXPERIENCE-INTEGRATION-BLUEPRINT.md` applies the approved StoryPath Primary School-to-town pattern and recurring cast without modifying this sequence.
 
 ## Status
 

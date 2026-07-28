@@ -8,9 +8,9 @@ This blueprint preserves:
 
 - the curriculum objectives, dependencies, order, and evidence requirements in `STANDARD-3-MATHEMATICS-TOWN-LEARNING-JOURNEY.md`;
 - the approved child-facing destinations in `STANDARD-3-MATHEMATICS-TOWN-EXPERIENCE-DESIGN.md`, including **Water Park Adventure** at Stop 14;
-- Karina as one country containing six named towns, with all 18 current Standard 3 Mathematics stops inside Arouca Groove and the other five towns reserved for future journeys;
+- StoryPath as one country containing six named towns, with all 18 current Standard 3 Mathematics stops inside Arouca Groove and the other five towns reserved for future journeys;
 - one complete Standard 3 Mathematics town;
-- explicit teaching at Storypath Primary School followed by application in the town;
+- explicit teaching at StoryPath Primary School followed by application in the town;
 - a small recurring cast whose community roles exist independently of curriculum delivery; and
 - the evidence rule that one successful mission cannot establish mastery.
 
@@ -1070,7 +1070,7 @@ Independent integration across N1–N13, G1–G4, M1–M7, and S1–S4 using acc
 ### Character continuity
 
 - **Previous appearances:** every recurring relationship and visible town improvement contributes materials, information, or constraints.
-- **Future appearances:** the fair is a reflection and launch point for targeted review, optional return missions, and later Storypath continuity—not an ending that erases the town.
+- **Future appearances:** the fair is a reflection and launch point for targeted review, optional return missions, and later StoryPath continuity—not an ending that erases the town.
 - **Relationship development:** residents address the learner as a known contributor. Niko and Zuri reflect on how their contrasting approaches have become complementary habits: try, organise, check, adapt, and explain.
 
 ### Progression
@@ -1164,11 +1164,11 @@ These descriptions record visual continuity, not personality, belief, accent, cl
 - **Dialogue style:** concise, attentive, and invitational: “These two labels tell different stories. Which one fits the record?” Her speech is contemporary and locally natural without phonetic accent writing or making formality her entire personality.
 - **Boundaries:** never perfect, parental, timid, humourless, “bossy,” Niko's supervisor, or the default correct child. Never use her to deliver instructions the teacher or interface should own.
 
-## Storypath Primary School staff
+## StoryPath Primary School staff
 
 ### Main Mathematics Teacher — Ms. Leela Maharaj [FOUNDER-APPROVED WORKING NAME]
 
-- **Role:** primary instructional anchor at Storypath Primary School and the adult who maintains conceptual continuity across the town journey.
+- **Role:** primary instructional anchor at StoryPath Primary School and the adult who maintains conceptual continuity across the town journey.
 - **Personality:** calm, intellectually lively, observant, direct without severity, and genuinely interested in children's explanations. She treats a wrong answer as evidence about a model, not a lapse in character.
 - **Educational function:** introduces concepts through concrete and pictorial meaning before procedure; connects new learning to earlier representations; models precise vocabulary; fades prompts; distinguishes guided practice from independent evidence.
 - **Recurring destinations:** active school segments for Stops 1–2, 4–7, 9, 11–14, and 17; co-leads Stop 18. She may be referenced between stops but does not follow the learner around town as a narrator.
@@ -1359,7 +1359,7 @@ Every chapter must vary at least three of these: school opener, representation, 
 
 The Corner Shop Challenge remains the strongest product-validation slice because it demonstrates Bridgepath's complete promise in a context immediately understandable to children and parents:
 
-- a short Storypath Primary School lesson establishes addition/subtraction relationships, estimation, money representation, and inverse checking;
+- a short StoryPath Primary School lesson establishes addition/subtraction relationships, estimation, money representation, and inverse checking;
 - Mr. Ali has a believable community need rather than becoming a teacher;
 - the learner has agency through basket and value choices;
 - the mission supports concrete, pictorial, symbolic, and worded forms;
