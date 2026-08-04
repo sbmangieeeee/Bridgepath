@@ -22,7 +22,7 @@ Implemented:
 - Empty mentor, customer and activity-object slots are preserved in the reusable market scene while composition is reviewed.
 - Back, home, help and settings controls.
 - Keyboard focus styles and browser-local progress storage.
-- Responsive production routes for mobile, tablet and desktop.
+- Responsive production routes for desktop, tablet landscape and mobile landscape; mobile portrait gameplay presents an accessible rotate-device prompt without resetting lesson state.
 - The rejected path-and-star mark is archived at `design/archive/rejected-branding/bridgepath-mark.svg` with no active runtime, metadata, manifest, test, stylesheet or brand-guide reference and no replacement logo.
 
 Canonical names are **StoryPath** (country) and **Arouca Groove** (current town). The canonical production route is `/storypath`; `/karina` exists only as a compatibility redirect and is not a current product name.
@@ -51,8 +51,8 @@ Exact asset requirements and placements are recorded in `ASSET-MANIFEST.md`.
 | `npm run lint` | Passed with no warnings or errors |
 | `npm test` | Passed: 8 files, 14 tests |
 | `npm run build` | Passed; all production routes statically generated |
-| `npm run test:e2e` | Passed: 12/12 at 1440×900, 820×1180 and 390×844, including `/karina` → `/storypath` compatibility redirect coverage |
-| Browser widths | Introduction, child-handoff and cashier compositions reviewed at all three requested widths; one shared cover transform removes blank framing and overlays do not consume scene height |
+| `npm run test:e2e` | Passed: 12/12 at 1440×900, 1180×820 and 844×390, plus a 390×844 portrait rotation/state-preservation transition and `/karina` → `/storypath` compatibility redirect coverage |
+| Browser widths | Teacher Lesson reviewed at desktop, tablet landscape and mobile landscape plus the mobile portrait prompt; existing introduction, child-handoff and cashier compositions remain covered by the shared-artboard assertions without scene redesign |
 | Scene geometry | Viewport coverage, shared layer bounds, absence of horizontal overflow and stage-specific asset selection are asserted in Playwright |
 | Asset audit | Counter alpha bounds were measured without changing the approved source artwork; the two chroma-derived front counters retain a thin green edge fringe that needs asset approval before any cleanup |
 

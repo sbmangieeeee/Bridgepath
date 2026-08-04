@@ -82,22 +82,43 @@ test("Corner Shop renders three shared-artboard market compositions", async ({ p
   expect(teacherBox!.y).toBeGreaterThanOrEqual(0);
   expect(teacherBox!.x + teacherBox!.width).toBeLessThanOrEqual(viewport!.width);
   expect(teacherBox!.y + teacherBox!.height).toBeLessThanOrEqual(viewport!.height);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(viewport!.width);
+  expect(await page.evaluate(() => document.documentElement.scrollHeight)).toBeLessThanOrEqual(viewport!.height);
+  await expect(page.getByRole("button", { name: "Replay" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Continue" })).toBeVisible();
+  await expect(page.getByRole("navigation", { name: "Lesson controls" })).toBeVisible();
   const overlapsLessonCopy = teacherBox!.x < lessonCopyBox.right
     && teacherBox!.x + teacherBox!.width > lessonCopyBox.left
     && teacherBox!.y < lessonCopyBox.bottom
     && teacherBox!.y + teacherBox!.height > lessonCopyBox.top;
   expect(overlapsLessonCopy).toBe(false);
-  expect(await page.locator(".classroom-stage").evaluate((node) => ({
+  const placementVariables = await page.locator(".classroom-stage").evaluate((node) => ({
     left: getComputedStyle(node).getPropertyValue("--teacher-scene-left").trim(),
     bottom: getComputedStyle(node).getPropertyValue("--teacher-scene-bottom").trim(),
     height: getComputedStyle(node).getPropertyValue("--teacher-scene-height").trim(),
-  }))).toEqual(expect.objectContaining({ left: expect.any(String), bottom: expect.any(String), height: expect.any(String) }));
+  }));
+  expect(placementVariables.left).not.toBe("");
+  expect(placementVariables.bottom).not.toBe("");
+  expect(placementVariables.height).not.toBe("");
   await page.screenshot({ path: testInfo.outputPath("teacher-lesson.png"), fullPage: true });
   await page.getByRole("button", { name: "Continue" }).click();
 
   await expect(page.getByText("Class Challenge", { exact: true })).toBeVisible();
   await page.getByLabel("Estimate ($)").fill("20");
   await page.getByLabel("Exact total ($)").fill("21");
+  if (page.viewportSize()?.width === 844) {
+    await page.setViewportSize({ width: 390, height: 844 });
+    const orientationPrompt = page.getByRole("dialog", { name: "Turn your device sideways to continue." });
+    await expect(orientationPrompt).toBeVisible();
+    await expect(orientationPrompt).toBeFocused();
+    await expect(page.locator(".gameplay-orientation-content")).toHaveAttribute("aria-hidden", "true");
+    await page.screenshot({ path: testInfo.outputPath("mobile-portrait-rotation-prompt.png") });
+    await page.setViewportSize({ width: 844, height: 390 });
+    await expect(orientationPrompt).toHaveCount(0);
+    await expect(page.getByText("Class Challenge", { exact: true })).toBeVisible();
+    await expect(page.getByLabel("Estimate ($)")).toHaveValue("20");
+    await expect(page.getByLabel("Exact total ($)")).toHaveValue("21");
+  }
   await page.getByRole("button", { name: "Check answer" }).click();
   await page.getByRole("button", { name: "Continue" }).click();
 

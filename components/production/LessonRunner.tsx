@@ -7,6 +7,7 @@ import { EMPTY_PROGRESS } from "@/lib/production/progress";
 import { LocalStorageProgressAdapter } from "@/lib/production/storage";
 import type { Activity, EvidenceEvent, LessonPhase } from "@/lib/production/types";
 import { CommunityMissionStage, CommunityTransitionStage, NotebookStage, ReflectionStage, TeacherLessonStage } from "./CornerShopStages";
+import { GameplayOrientationGuard } from "./GameplayOrientationGuard";
 
 export function LessonRunner({ title, activities }: { title: string; activities: readonly Activity[] }) {
   const [phase, setPhase] = useState<LessonPhase>(LESSON_PHASES[0]);
@@ -17,7 +18,7 @@ export function LessonRunner({ title, activities }: { title: string; activities:
 
   if (!activity) return <p role="alert">This lesson phase has not been configured.</p>;
 
-  return <section className="lesson-runner" aria-labelledby="lesson-title">
+  return <GameplayOrientationGuard><section className="lesson-runner" aria-labelledby="lesson-title">
     <h1 className="sr-only" id="lesson-title">{title}</h1>
     <nav className="lesson-hud" aria-label="Lesson controls">
       {previous
@@ -33,7 +34,7 @@ export function LessonRunner({ title, activities }: { title: string; activities:
     {phase === "community-transition" && <CommunityTransitionStage onGoBack={() => setPhase("school-introduction")} onContinue={() => next && setPhase(next)} />}
     {phase === "community-mission" && <CommunityMissionStage onContinue={() => advance("applied")} />}
     {phase === "reflection-results" && <ReflectionStage onReturn={completeAndReturn} />}
-  </section>;
+  </section></GameplayOrientationGuard>;
 
   function advance(stage: EvidenceEvent["stage"]) {
     const currentActivity = activities.find((item) => item.phase === phase);

@@ -1,6 +1,8 @@
 :root{--ink:#173d35;--cream:#fff8e8;--gold:#ffb51b;--focus:#fff4a8}
 *{box-sizing:border-box}
 .production-shell{min-height:100dvh;background:#102f2b;color:var(--ink);font-family:Arial,sans-serif}
+.gameplay-orientation-shell,.gameplay-orientation-content{width:100%;height:100dvh;min-height:0}
+.gameplay-orientation-prompt{display:none}
 .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 button,a,input{font:inherit}
 button:focus-visible,a:focus-visible,input:focus-visible,.journey-map-scroll:focus-visible{outline:5px solid var(--focus);outline-offset:4px;box-shadow:0 0 0 8px #155d52}
@@ -71,11 +73,30 @@ button:focus-visible,a:focus-visible,input:focus-visible,.journey-map-scroll:foc
   .classroom-stage{--teacher-scene-left:max(.75rem,1.5vw);--teacher-scene-bottom:2.2dvh;--teacher-scene-height:min(52dvh,614px)}
 }
 
+@media(orientation:landscape) and (max-width:900px) and (max-height:500px){
+  .lesson-runner,.visual-stage{height:100dvh;min-height:0;overflow:hidden}
+  .classroom-stage{--teacher-scene-left:max(.5rem,1.5vw);--teacher-scene-bottom:2.2dvh;--teacher-scene-height:min(80dvh,312px);background-size:cover}
+  .classroom-stage .teaching-board{top:13.2%;left:19.4%;width:59%;height:74%;padding:clamp(.65rem,2.2vw,1.2rem);background:transparent;border:0;border-radius:0}
+  .classroom-stage .teaching-board h2{font-size:clamp(2.6rem,7vw,3.7rem)}
+  .classroom-stage .math-demo{font-size:clamp(.9rem,1.8vw,1rem)}
+  .teacher-template-controls button{position:absolute;bottom:3%;height:44px;padding:.35rem .8rem;font-size:1rem}
+  .template-replay{left:37%;width:12%}.template-continue{right:37%;width:12%}
+}
+
 @media(max-width:760px){
   .classroom-stage{--teacher-scene-left:max(.5rem,2.5vw);--teacher-scene-bottom:8dvh;--teacher-scene-height:min(39dvh,330px);background-size:auto 100%}
   .classroom-stage .teaching-board{left:25%;width:71%;padding:.85rem;background:#fffdf5ed}
   .classroom-stage .teaching-board h2{font-size:clamp(2rem,11vw,3.4rem)}
   .classroom-stage .math-demo{font-size:.95rem}
+}
+
+@media(orientation:portrait) and (max-width:600px){
+  .gameplay-orientation-shell.is-portrait-blocked{position:fixed;z-index:100;inset:0;width:100vw;height:100dvh;overflow:hidden;background:#102f2b}
+  .gameplay-orientation-shell.is-portrait-blocked .gameplay-orientation-content{visibility:hidden;pointer-events:none}
+  .gameplay-orientation-prompt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.65rem;width:100%;height:100%;margin:0;padding:max(1.25rem,env(safe-area-inset-top)) max(1.25rem,env(safe-area-inset-right)) max(1.25rem,env(safe-area-inset-bottom)) max(1.25rem,env(safe-area-inset-left));background:linear-gradient(160deg,#173d35,#0d2925);color:#fff;text-align:center;outline:0}
+  .gameplay-orientation-prompt .orientation-symbol{display:grid;place-items:center;width:4rem;height:4rem;margin:0;border:3px solid #fff3bf;border-radius:50%;color:#fff3bf;font-size:2.4rem;line-height:1}
+  .gameplay-orientation-prompt h2{max-width:19rem;margin:0;font-size:clamp(1.75rem,8vw,2.4rem);line-height:1.08}
+  .gameplay-orientation-prompt p:last-child{max-width:21rem;margin:0;color:#fff8dc;font-size:1.05rem;line-height:1.45}
 }
 
 /* Corner Shop: one cover-scaled 1672×941 artboard drives every visual layer. */
