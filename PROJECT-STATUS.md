@@ -18,7 +18,7 @@ Implemented:
 - All 18 semantic Arouca Groove hotspots plus the accessible 18-stop list.
 - Teacher Lesson, Class Challenge and mission choice.
 - Corner Shop introduction, child-handoff and cashier compositions assembled on one shared 1672×941 full-viewport artboard.
-- Approved Ms. Leela beside the Teacher Lesson whiteboard.
+- Approved Ms. Leela beside the Teacher Lesson whiteboard, full-body grounded with scene-relative desktop, tablet and mobile anchors that do not obstruct lesson content.
 - Empty mentor, customer and activity-object slots are preserved in the reusable market scene while composition is reviewed.
 - Back, home, help and settings controls.
 - Keyboard focus styles and browser-local progress storage.

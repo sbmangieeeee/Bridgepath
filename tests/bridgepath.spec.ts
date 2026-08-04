@@ -65,6 +65,33 @@ test("Corner Shop renders three shared-artboard market compositions", async ({ p
   const teacher = page.locator(".character-ms-leela .approved-character-sprite");
   await expect(teacher).toBeVisible();
   await expect(teacher).toHaveAttribute("src", "/assets/characters/mentors/ms-leela-maharaj-transparent.png");
+  const teacherBox = await page.locator(".character-ms-leela").boundingBox();
+  const lessonCopyBox = await page.locator(".teaching-board").locator(".stage-kicker, h2, .math-demo").evaluateAll((nodes) => {
+    const boxes = nodes.map((node) => node.getBoundingClientRect());
+    return {
+      left: Math.min(...boxes.map((box) => box.left)),
+      top: Math.min(...boxes.map((box) => box.top)),
+      right: Math.max(...boxes.map((box) => box.right)),
+      bottom: Math.max(...boxes.map((box) => box.bottom)),
+    };
+  });
+  const viewport = page.viewportSize();
+  expect(teacherBox).not.toBeNull();
+  expect(viewport).not.toBeNull();
+  expect(teacherBox!.x).toBeGreaterThanOrEqual(0);
+  expect(teacherBox!.y).toBeGreaterThanOrEqual(0);
+  expect(teacherBox!.x + teacherBox!.width).toBeLessThanOrEqual(viewport!.width);
+  expect(teacherBox!.y + teacherBox!.height).toBeLessThanOrEqual(viewport!.height);
+  const overlapsLessonCopy = teacherBox!.x < lessonCopyBox.right
+    && teacherBox!.x + teacherBox!.width > lessonCopyBox.left
+    && teacherBox!.y < lessonCopyBox.bottom
+    && teacherBox!.y + teacherBox!.height > lessonCopyBox.top;
+  expect(overlapsLessonCopy).toBe(false);
+  expect(await page.locator(".classroom-stage").evaluate((node) => ({
+    left: getComputedStyle(node).getPropertyValue("--teacher-scene-left").trim(),
+    bottom: getComputedStyle(node).getPropertyValue("--teacher-scene-bottom").trim(),
+    height: getComputedStyle(node).getPropertyValue("--teacher-scene-height").trim(),
+  }))).toEqual(expect.objectContaining({ left: expect.any(String), bottom: expect.any(String), height: expect.any(String) }));
   await page.screenshot({ path: testInfo.outputPath("teacher-lesson.png"), fullPage: true });
   await page.getByRole("button", { name: "Continue" }).click();
 

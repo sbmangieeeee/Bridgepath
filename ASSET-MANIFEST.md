@@ -36,7 +36,7 @@ The complete nine-mentor approval, transparency, bounding-box, variant and edge 
 | `bridgepath-welcome-direction.png` | 1536×1024 | No | Welcome |
 | `karina-country-map.png` | 1536×1024 | No | StoryPath country navigation |
 | `arouca-grove-journey-map.png` | 2752×1536 | No | Arouca Groove 18-stop map |
-| `school-instruction-template.png` | 1536×1024 | No | Teacher Lesson |
+| `school-instruction-template.png` | 1672×941 | No | Teacher Lesson classroom and whiteboard environment |
 | `guided-exercise-template.png` | 1536×1024 | No | Class Challenge |
 | `classroom-environment.png` | 1536×1024 | No | Mission choice |
 | `market-env-structure.png` | 1672×941 | No | Corner Shop introduction background |
@@ -55,6 +55,10 @@ The complete nine-mentor approval, transparency, bounding-box, variant and edge 
 | `products/flour.png` | 564×860 | Genuine RGBA | Separate interactive checkout product |
 
 The untouched Scene Designer market exports are preserved under `design/approved/scene-designer/market/`. The runtime counter copies remove only the supplied green matte to alpha; their approved RGB artwork is otherwise unchanged. The previous market background is retained at `design/archive/superseded-market/market-environment-2026-07-20.png`.
+
+## Teacher Lesson composition
+
+The Teacher Lesson preserves the 1672×941 classroom plate at its native aspect ratio and renders the verified `ms-leela-maharaj-transparent.png` as a separate full-body layer. The visible figure is grounded from the scene bottom and kept left of the accessible lesson copy using the named CSS anchors `--teacher-scene-left`, `--teacher-scene-bottom` and `--teacher-scene-height`. Desktop uses a maximum 723 px figure height; portrait tablet uses a maximum 614 px; mobile uses a maximum 330 px with the higher floor-line offset required by the cover crop. The source artwork, whiteboard, lesson text, controls and HUD remain independent and unchanged.
 
 ## Shared market compositions
 
