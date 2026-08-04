@@ -11,12 +11,13 @@ export function TeacherLessonStage({ lesson, onContinue }: { lesson: NonNullable
   const [replay, setReplay] = useState(0);
   return <section className="visual-stage template-stage classroom-stage" style={{ backgroundImage: `url(${CANONICAL_ASSETS.schoolInstruction.runtimePath})` }} aria-labelledby="teacher-stage-title">
     <CharacterLayer name="Ms. Leela" position="left" />
+    <div className="teacher-whiteboard-frame" aria-hidden="true" />
     <div className="teaching-board" key={replay}>
       <p className="stage-kicker">{lesson.topic}</p>
       <h2 id="teacher-stage-title">{lesson.equation}</h2>
       <div className="math-demo"><p><strong>Estimate:</strong> {lesson.estimate}</p><p><strong>Exact total:</strong> {lesson.exactTotal}</p><p><strong>Inverse check:</strong> {lesson.inverseCheck}</p></div>
     </div>
-    <div className="template-controls teacher-template-controls"><button className="template-replay" onClick={() => setReplay((value) => value + 1)}>Replay</button><button className="template-continue" onClick={onContinue}>Continue</button></div>
+    <nav className="template-controls teacher-template-controls" aria-label="Teacher lesson navigation"><button className="template-replay" onClick={() => setReplay((value) => value + 1)}>Replay</button><button className="template-continue" onClick={onContinue}>Continue</button></nav>
   </section>;
 }
 

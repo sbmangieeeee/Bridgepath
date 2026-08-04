@@ -34,6 +34,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,.journey-map-scroll:foc
 
 /* Real controls sit over blank environment templates as independent DOM layers. */
 .template-controls button,.mission-choice-actions button,.register-controls button,.results-action button{min-width:44px;min-height:44px;border:2px solid #704a00;border-radius:.8rem;background:#fff0c5;color:#173d35;font-weight:900;cursor:pointer}.template-controls .primary,.mission-choice-actions .primary,.register-controls .primary,.results-action .primary{background:#ffb51b;color:#102f2b}.template-controls button:disabled,.register-controls button:disabled{background:#cfd4d1;color:#56605d;cursor:not-allowed}
+.teacher-template-controls{position:absolute;z-index:12;inset:0;pointer-events:none}.teacher-template-controls button{pointer-events:auto}
 .teacher-template-controls button,.challenge-template-controls button{position:absolute;z-index:12;bottom:3%;height:7%;padding:.6rem 1.4rem;font-size:clamp(1rem,1.7vw,1.4rem);box-shadow:0 3px 8px #0004}.template-replay{left:37%;width:12%}.template-continue{right:37%;width:12%}.template-hint{left:38%;width:10%}.template-check{right:38%;width:13%}
 
 /* Dynamic Class Challenge content sits directly on the illustrated book. */
@@ -66,6 +67,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,.journey-map-scroll:foc
   min-height:100dvh;overflow:hidden;background-position:center;background-size:cover
 }
 .classroom-stage>.character-ms-leela{left:var(--teacher-scene-left);bottom:var(--teacher-scene-bottom);width:auto;height:var(--teacher-scene-height);pointer-events:none}
+.teacher-whiteboard-frame{position:absolute;z-index:2;top:11.7%;left:19%;width:62%;height:77.2%;pointer-events:none}
 .approved-character-sprite{display:block;width:auto;height:100%;object-fit:contain}
 .classroom-stage>.character-ms-leela figcaption{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 
@@ -75,12 +77,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,.journey-map-scroll:foc
 
 @media(orientation:landscape) and (max-width:900px) and (max-height:500px){
   .lesson-runner,.visual-stage{height:100dvh;min-height:0;overflow:hidden}
-  .classroom-stage{--teacher-scene-left:max(.5rem,1.5vw);--teacher-scene-bottom:2.2dvh;--teacher-scene-height:min(80dvh,312px);background-size:cover}
-  .classroom-stage .teaching-board{top:13.2%;left:19.4%;width:59%;height:74%;padding:clamp(.65rem,2.2vw,1.2rem);background:transparent;border:0;border-radius:0}
-  .classroom-stage .teaching-board h2{font-size:clamp(2.6rem,7vw,3.7rem)}
-  .classroom-stage .math-demo{font-size:clamp(.9rem,1.8vw,1rem)}
-  .teacher-template-controls button{position:absolute;bottom:3%;height:44px;padding:.35rem .8rem;font-size:1rem}
-  .template-replay{left:37%;width:12%}.template-continue{right:37%;width:12%}
+  .classroom-stage{--teacher-scene-left:calc(50% - 322px);--teacher-scene-bottom:20px;--teacher-scene-height:292px;background-color:#b78e5f;background-position:center top;background-size:auto 370px}
+  .classroom-stage::before{position:absolute;z-index:0;right:0;bottom:0;left:0;height:20px;background:#755030;content:""}
+  .classroom-stage .teacher-whiteboard-frame{top:44px;left:calc(50% - 198px);width:396px;height:285px}
+  .classroom-stage .teaching-board{top:54px;left:calc(50% - 190px);width:380px;height:258px;padding:.6rem .75rem;background:transparent;border:0;border-radius:0}
+  .classroom-stage .teaching-board h2{font-size:clamp(2.35rem,6.2vw,3.25rem)}
+  .classroom-stage .math-demo{font-size:.88rem}
+  .teacher-template-controls{position:absolute;z-index:12;top:337px;left:50%;display:flex;gap:.75rem;align-items:center;justify-content:center;width:max-content;height:44px;transform:translateX(-50%)}
+  .teacher-template-controls button{position:static;width:auto;min-width:102px;height:44px;padding:.35rem .9rem;font-size:1rem}
 }
 
 @media(max-width:760px){

@@ -87,6 +87,16 @@ test("Corner Shop renders three shared-artboard market compositions", async ({ p
   await expect(page.getByRole("button", { name: "Replay" })).toBeVisible();
   await expect(page.getByRole("button", { name: "Continue" })).toBeVisible();
   await expect(page.getByRole("navigation", { name: "Lesson controls" })).toBeVisible();
+  await expect(page.getByRole("navigation", { name: "Teacher lesson navigation" })).toBeVisible();
+  if (viewport!.width === 844) {
+    const whiteboardFrameBox = await page.locator(".teacher-whiteboard-frame").boundingBox();
+    const navigationRowBox = await page.getByRole("navigation", { name: "Teacher lesson navigation" }).boundingBox();
+    expect(whiteboardFrameBox).not.toBeNull();
+    expect(navigationRowBox).not.toBeNull();
+    expect(navigationRowBox!.y).toBeGreaterThanOrEqual(whiteboardFrameBox!.y + whiteboardFrameBox!.height + 6);
+    expect(navigationRowBox!.y).toBeLessThanOrEqual(whiteboardFrameBox!.y + whiteboardFrameBox!.height + 10);
+    expect(navigationRowBox!.y + navigationRowBox!.height).toBeLessThanOrEqual(viewport!.height);
+  }
   const overlapsLessonCopy = teacherBox!.x < lessonCopyBox.right
     && teacherBox!.x + teacherBox!.width > lessonCopyBox.left
     && teacherBox!.y < lessonCopyBox.bottom
