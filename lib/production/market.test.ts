@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { advanceMarketCustomer, MARKET_CUSTOMERS } from "./market";
 
 describe("Corner Shop customer sequence", () => {
-  it("uses five distinct approved mentors as customers", () => {
+  it("keeps customer variants unregistered until their exact use is approved", () => {
     expect(MARKET_CUSTOMERS.map((customer) => customer.name)).toEqual([
       "Auntie Joy",
       "Coach Devon",
@@ -11,7 +11,8 @@ describe("Corner Shop customer sequence", () => {
       "Mr. Thomas",
     ]);
     expect(new Set(MARKET_CUSTOMERS.map((customer) => customer.id)).size).toBe(5);
-    expect(MARKET_CUSTOMERS.filter((customer) => customer.assetPath !== null)).toHaveLength(3);
+    expect(MARKET_CUSTOMERS.filter((customer) => customer.assetPath !== null)).toHaveLength(0);
+    expect(MARKET_CUSTOMERS.every((customer) => customer.requiredAssetFilename.endsWith("-customer-transparent.png"))).toBe(true);
   });
 
   it("advances to the next customer", () => {

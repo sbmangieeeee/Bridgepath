@@ -15,6 +15,12 @@ The mentor exports are 1024 × 1536 RGB source images. They must not be used as
 runtime transparent character layers until their backgrounds are removed and
 the resulting alpha edges are visually approved.
 
+Verified RGBA derivatives use canonical `*-transparent.png` filenames under
+`public/assets/characters/mentors/`. Miss Maria, Mr. Thomas and Ms. Keisha
+Ramoutar have approved model-sheet references but no approved isolated Scene
+Designer source export, so no runtime cut-out exists for them. See
+`MENTOR-ASSET-INVENTORY.md` for the complete audit.
+
 ## Corner Shop sources
 
 - `market/products/rice-source.png`

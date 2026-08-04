@@ -1,6 +1,6 @@
 # Bridgepath Production Asset Manifest
 
-> **Last updated:** 29 July 2026
+> **Last updated:** 4 August 2026
 > **Status:** Production runtime inventory for draft PR #1
 
 The founder-rejected path-and-star mark is not a production asset. Its only retained copy is archived at `design/archive/rejected-branding/bridgepath-mark.svg`; no replacement logo is approved.
@@ -27,6 +27,8 @@ Clean environments are backgrounds only. Characters, dialogue, questions, answer
 
 Production selects these through `lib/production/assets.ts`.
 
+The complete nine-mentor approval, transparency, bounding-box, variant and edge audit is recorded in `MENTOR-ASSET-INVENTORY.md`. The review contact sheet is `design/review/mentor-runtime-contact-sheet.png`.
+
 ## Approved runtime inventory
 
 | Asset | Dimensions | Alpha | Production role |
@@ -42,12 +44,12 @@ Production selects these through `lib/production/assets.ts`.
 | `market-counter-child-view.png` | 1672×941 | Genuine RGBA | Child handoff and serving counter foreground |
 | `market-cashier-view.png` | 1672×941 | No | Serving-customer background |
 | `niko-zuri-v2.png` | 2048×1536 | Genuine RGBA | Niko and Zuri pair |
-| `characters/mentors/ms-leela-maharaj.png` | 422×1326 | Genuine RGBA | Ground-anchored Teacher Lesson character layer beside the whiteboard |
-| `characters/mentors/mr-kareem-joseph.png` | 488×1419 | Genuine RGBA | Approved mentor runtime layer |
-| `characters/mentors/mr-ali.png` | 517×1395 | Genuine RGBA | Entrance-view shopkeeper behind the counter |
-| `characters/mentors/auntie-joy.png` | 450×1345 | Genuine RGBA | First cashier-view customer |
-| `characters/mentors/coach-devon.png` | 477×1340 | Genuine RGBA | Approved mentor/customer runtime layer |
-| `characters/mentors/ms-alana-pierre.png` | 440×1405 | Genuine RGBA | Approved mentor runtime layer |
+| `characters/mentors/ms-leela-maharaj-transparent.png` | 422×1326 | Genuine RGBA | Teaching/professional mentor; Teacher Lesson runtime layer |
+| `characters/mentors/mr-kareem-joseph-transparent.png` | 488×1419 | Genuine RGBA | Standard mathematics mentor runtime layer |
+| `characters/mentors/mr-ali-transparent.png` | 517×1395 | Genuine RGBA | Shopkeeper mentor runtime layer; scene use deferred |
+| `characters/mentors/auntie-joy-transparent.png` | 450×1345 | Genuine RGBA | Maker/practical mentor runtime layer; not an approved customer variant |
+| `characters/mentors/coach-devon-transparent.png` | 477×1340 | Genuine RGBA | Sports mentor runtime layer; not an approved customer variant |
+| `characters/mentors/ms-alana-pierre-transparent.png` | 440×1405 | Genuine RGBA | Librarian/professional mentor runtime layer |
 | `foregrounds/corner-shop-register-cashier-view.png` | 889×789 | Genuine RGBA | Tightly bounded cashier-view register |
 | `products/rice.png` | 554×834 | Genuine RGBA | Separate interactive checkout product |
 | `products/flour.png` | 564×860 | Genuine RGBA | Separate interactive checkout product |
@@ -70,15 +72,16 @@ The current composition-preview intentionally renders **no Mr. Ali, customers, p
 
 Other approved reusable backgrounds remain in `public/assets/environments/`: bakery, Mas workshop, community centre and recreation grounds. They are not selected by the current production route.
 
-## Exact missing Corner Shop assets
+## Exact missing mentor assets
 
-- `miss-maria-source.png`
-- `mr-thomas-source.png`
+- `miss-maria-transparent.png` — requires an approved isolated Scene Designer export
+- `mr-thomas-transparent.png` — requires an approved isolated Scene Designer export
+- `ms-keisha-ramoutar-transparent.png` — requires an approved isolated Scene Designer export
 
 Each customer layer must be minimum 1200 px tall with genuine RGBA transparency and render one at a time opposite the counter, full figure grounded on the cashier-view floor. The approved production model sheets establish character appearance but are opaque reference sheets, not runtime cut-outs.
 - Separate transparent grocery/product layers for every approved customer task. Filenames, products and dimensions require founder-approved task content and therefore are not invented here.
 
-Miss Maria and Mr. Thomas still lack approved Scene Designer source exports. They must not be invented or cut from model sheets.
+Miss Maria, Mr. Thomas and Ms. Keisha Ramoutar still lack approved isolated Scene Designer source exports. They must not be invented or cut from model sheets. No mentor currently has an approved casual or Corner Shop customer-specific runtime export; role variants must not be substituted for those missing assets.
 
 The runtime mentor and product derivatives remove only the flat chroma-key backgrounds from the approved sources listed in `design/approved/scene-designer/ASSET-NOTES.md`. Their visible artwork is unchanged. The cashier-view register source already has genuine alpha; its runtime copy trims only invisible padding.
 

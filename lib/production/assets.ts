@@ -39,18 +39,28 @@ export const CANONICAL_ASSETS: Readonly<Record<CanonicalAssetRole, CanonicalAsse
   marketCounterChildView: { role: "marketCounterChildView", runtimePath: "/assets/foregrounds/market-counter-child-view.png", sourcePath: "design/approved/scene-designer/market/market-counter-child-view.png", description: "Transparent child-handoff counter and register foreground" },
   marketCashierView: { role: "marketCashierView", runtimePath: "/assets/environments/market-cashier-view.png", sourcePath: "design/approved/scene-designer/market/market-cashier-view.png", description: "Corner Shop serving-customer environment" },
   marketCashierRegister: { role: "marketCashierRegister", runtimePath: "/assets/foregrounds/corner-shop-register-cashier-view.png", sourcePath: "design/approved/scene-designer/market/corner-shop-register-cashier-view-transparent.png", description: "Transparent cashier-view register foreground" },
-  msLeela: { role: "msLeela", runtimePath: "/assets/characters/mentors/ms-leela-maharaj.png", sourcePath: "design/approved/scene-designer/mentors/ms-leela-maharaj-source.png", description: "Transparent Ms. Leela mentor layer" },
-  mrKareem: { role: "mrKareem", runtimePath: "/assets/characters/mentors/mr-kareem-joseph.png", sourcePath: "design/approved/scene-designer/mentors/mr-kareem-joseph-source.png", description: "Transparent Mr. Kareem Joseph mentor layer" },
-  mrAli: { role: "mrAli", runtimePath: "/assets/characters/mentors/mr-ali.png", sourcePath: "design/approved/scene-designer/mentors/mr-ali-source.png", description: "Transparent Mr. Ali shopkeeper layer" },
-  auntieJoy: { role: "auntieJoy", runtimePath: "/assets/characters/mentors/auntie-joy.png", sourcePath: "design/approved/scene-designer/mentors/auntie-joy-source.png", description: "Transparent Auntie Joy customer layer" },
-  coachDevon: { role: "coachDevon", runtimePath: "/assets/characters/mentors/coach-devon.png", sourcePath: "design/approved/scene-designer/mentors/coach-devon-source.png", description: "Transparent Coach Devon mentor layer" },
-  msAlana: { role: "msAlana", runtimePath: "/assets/characters/mentors/ms-alana-pierre.png", sourcePath: "design/approved/scene-designer/mentors/ms-alana-pierre-source.png", description: "Transparent Ms. Alana Pierre mentor layer" },
+  msLeela: { role: "msLeela", runtimePath: "/assets/characters/mentors/ms-leela-maharaj-transparent.png", sourcePath: "design/approved/scene-designer/mentors/ms-leela-maharaj-source.png", description: "Transparent full-body Ms. Leela teaching/professional mentor layer" },
+  mrKareem: { role: "mrKareem", runtimePath: "/assets/characters/mentors/mr-kareem-joseph-transparent.png", sourcePath: "design/approved/scene-designer/mentors/mr-kareem-joseph-source.png", description: "Transparent full-body Mr. Kareem Joseph standard mentor layer" },
+  mrAli: { role: "mrAli", runtimePath: "/assets/characters/mentors/mr-ali-transparent.png", sourcePath: "design/approved/scene-designer/mentors/mr-ali-source.png", description: "Transparent full-body Mr. Ali shopkeeper mentor layer" },
+  auntieJoy: { role: "auntieJoy", runtimePath: "/assets/characters/mentors/auntie-joy-transparent.png", sourcePath: "design/approved/scene-designer/mentors/auntie-joy-source.png", description: "Transparent full-body Auntie Joy maker mentor layer" },
+  coachDevon: { role: "coachDevon", runtimePath: "/assets/characters/mentors/coach-devon-transparent.png", sourcePath: "design/approved/scene-designer/mentors/coach-devon-source.png", description: "Transparent full-body Coach Devon sports mentor layer" },
+  msAlana: { role: "msAlana", runtimePath: "/assets/characters/mentors/ms-alana-pierre-transparent.png", sourcePath: "design/approved/scene-designer/mentors/ms-alana-pierre-source.png", description: "Transparent full-body Ms. Alana Pierre librarian mentor layer" },
   rice: { role: "rice", runtimePath: "/assets/products/rice.png", sourcePath: "design/approved/scene-designer/market/products/rice-source.png", description: "Transparent interactive rice product" },
   flour: { role: "flour", runtimePath: "/assets/products/flour.png", sourcePath: "design/approved/scene-designer/market/products/flour-source.png", description: "Transparent interactive flour product" },
   explorers: { role: "explorers", runtimePath: "/niko-zuri-v2.png", sourcePath: "public/niko-zuri-v2.png", description: "Transparent Niko and Zuri pair" },
 } as const;
 
-export const PENDING_MARKET_CHARACTER_ASSETS = [
-  { role: "missMaria", filename: "miss-maria-source.png", dimensions: "1024 × 1536 source export", transparency: "flat chroma RGB source suitable for a verified RGBA runtime derivative", placement: "opposite the cashier-view register, full figure grounded on the floor" },
-  { role: "mrThomas", filename: "mr-thomas-source.png", dimensions: "1024 × 1536 source export", transparency: "flat chroma RGB source suitable for a verified RGBA runtime derivative", placement: "opposite the cashier-view register, full figure grounded on the floor" },
+export const MENTOR_RUNTIME_ASSETS = [
+  CANONICAL_ASSETS.msLeela,
+  CANONICAL_ASSETS.mrKareem,
+  CANONICAL_ASSETS.mrAli,
+  CANONICAL_ASSETS.auntieJoy,
+  CANONICAL_ASSETS.coachDevon,
+  CANONICAL_ASSETS.msAlana,
+] as const;
+
+export const PENDING_MENTOR_RUNTIME_ASSETS = [
+  { role: "missMaria", filename: "miss-maria-transparent.png", reason: "No approved single-character Scene Designer export" },
+  { role: "mrThomas", filename: "mr-thomas-transparent.png", reason: "No approved single-character Scene Designer export" },
+  { role: "msKeisha", filename: "ms-keisha-ramoutar-transparent.png", reason: "No approved single-character Scene Designer export" },
 ] as const;

@@ -64,7 +64,7 @@ test("Corner Shop renders three shared-artboard market compositions", async ({ p
   await expect(page.getByRole("heading", { name: "$12 + $8" })).toBeVisible();
   const teacher = page.locator(".character-ms-leela .approved-character-sprite");
   await expect(teacher).toBeVisible();
-  await expect(teacher).toHaveAttribute("src", "/assets/characters/mentors/ms-leela-maharaj.png");
+  await expect(teacher).toHaveAttribute("src", "/assets/characters/mentors/ms-leela-maharaj-transparent.png");
   await page.screenshot({ path: testInfo.outputPath("teacher-lesson.png"), fullPage: true });
   await page.getByRole("button", { name: "Continue" }).click();
 
