@@ -27,7 +27,7 @@ Accessed 14 July 2026. Public documentation, product pages, and reviews were exa
 
 ## Originality guardrails
 
-Do not reproduce reference characters, copy, screen composition, icons, path geometry, sounds, reward vocabulary, or proprietary content. The Storypath visual asset in this repository was generated specifically for Bridgepath from an original prompt and contains no logos or reference characters.
+Do not reproduce reference characters, copy, screen composition, icons, path geometry, sounds, reward vocabulary, or proprietary content. The StoryPath visual asset in this repository was generated specifically for Bridgepath from an original prompt and contains no logos or reference characters.
 
 ## Required follow-up research
 

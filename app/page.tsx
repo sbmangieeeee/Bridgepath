@@ -1,5 +1,6 @@
-import BridgepathApp from "@/components/BridgepathApp";
+import { BridgepathHome } from "@/components/production/BridgepathHome";
+import "./welcome.css";
 
 export default function Home() {
-  return <BridgepathApp />;
+  return <BridgepathHome />;
 }

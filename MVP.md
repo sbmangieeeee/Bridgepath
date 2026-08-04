@@ -5,7 +5,7 @@
 ## Implemented vertical slice
 
 - Responsive launch, role choice, parent consent/profile setup, family code and picture PIN.
-- Playable orientation, Storypath Village, Market Day path, six learning stops.
+- Playable orientation, StoryPath Village, Market Day path, six learning stops.
 - Optional browser narration, progressive feedback and remediation, local persistence.
 - Derived learning status, coverage, support signals, recent evidence, export and erase.
 

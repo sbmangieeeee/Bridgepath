@@ -19,7 +19,7 @@ All expression, pose, and context-wardrobe plates are clearly labelled construct
 - [ ] Props visibly contact hands and stay on their assigned side.
 - [ ] Emotional reactions never shame, rush, or mock the learner.
 - [ ] No Niko or Zuri expression uses a visible tongue or tongue-out gesture.
-- [ ] Both characters feel natural in the approved Storypath world.
+- [ ] Both characters feel natural in the approved StoryPath world.
 - [ ] Hair, skin, wardrobe, and accessories pass local cultural review.
 - [ ] The painterly treatment remains readable on light and dark UI surfaces.
 

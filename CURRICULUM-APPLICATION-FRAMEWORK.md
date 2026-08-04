@@ -97,7 +97,7 @@ Child-facing names describe places, people, needs, and discoveries. Parent-facin
 | Measurement Module | Measure and Make | Measurement: length, perimeter, and area |
 | Statistics Unit | Ask the Village | Statistics: tally charts, bar graphs, interpretation, and decisions |
 
-These adventure names are provisional. Final names should be reviewed for clarity, age fit, cultural naturalness, and continuity with the complete 18-stop Arouca Grove journey.
+These adventure names are provisional. Final names should be reviewed for clarity, age fit, cultural naturalness, and continuity with the complete 18-stop Arouca Groove journey.
 
 ## Assessment design implications
 

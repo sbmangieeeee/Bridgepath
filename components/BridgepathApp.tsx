@@ -20,9 +20,9 @@ type HubDestination = {
 };
 
 const HUB_DESTINATIONS: HubDestination[] = [
-  { id: "customize", name: "Customize Explorer", description: "Choose your explorer's look and travel gear.", asset: "/hub-customize.png", state: "preview", position: "hub-customize", animation: "animate-open", previewTitle: "Customize Explorer", previewMessage: "Soon you’ll be able to choose outfits, colours, and adventure gear that travel with you through Storypath Village." },
+  { id: "customize", name: "Customize Explorer", description: "Choose your explorer's look and travel gear.", asset: "/hub-customize.png", state: "preview", position: "hub-customize", animation: "animate-open", previewTitle: "Customize Explorer", previewMessage: "Soon you’ll be able to choose outfits, colours, and adventure gear that travel with you through StoryPath Village." },
   { id: "minigames", name: "Mini-games", description: "Replay quick learning games you have unlocked.", asset: "/hub-minigames.png", state: "preview", position: "hub-minigames", animation: "animate-flags", previewTitle: "Mini-games", previewMessage: "Quick village games will appear here after you discover them in an adventure. They will always connect to something you have learned." },
-  { id: "adventure", name: "Adventure", description: "Enter Storypath Village and continue your learning journey.", asset: "/hub-adventure.png", state: "active", position: "hub-adventure", animation: "animate-glow" },
+  { id: "adventure", name: "Adventure", description: "Enter StoryPath Village and continue your learning journey.", asset: "/hub-adventure.png", state: "active", position: "hub-adventure", animation: "animate-glow" },
   { id: "achievements", name: "My Achievements", description: "See your own milestones and village badges.", asset: "/hub-achievements.png", state: "preview", position: "hub-achievements", animation: "animate-shimmer", previewTitle: "My Achievements", previewMessage: "Your private board will collect personal bests, completed missions, and village badges. It will not rank you against children outside your family." },
   { id: "parent", name: "Parent Area", description: "Adults can manage profiles, privacy, and learning progress.", asset: "/hub-parent.png", state: "adult", position: "hub-parent", animation: "animate-lantern" },
 ];
@@ -96,7 +96,7 @@ function Launch({ setScreen, returning, hasParent, childName }: { setScreen: (s:
   const [preview, setPreview] = useState<HubDestination | null>(null);
 
   function enter(destination: HubDestination) {
-    if (destination.id === "adventure") setScreen(returning ? "village" : "roles");
+    if (destination.id === "adventure") window.location.assign("/storypath");
     else if (destination.id === "parent") setScreen(hasParent ? "dashboard" : "parent-setup");
     else setPreview(destination);
   }
@@ -110,7 +110,7 @@ function Launch({ setScreen, returning, hasParent, childName }: { setScreen: (s:
       </div>
       {returning && <p className="launch-returning">Welcome back, {childName}</p>}
       <div className="hub-paths" aria-hidden="true"><i /><i /><i /><i /><i /></div>
-      <nav className="hub-destinations" aria-label="Choose an area of Storypath Village">
+      <nav className="hub-destinations" aria-label="Choose an area of StoryPath Village">
         {HUB_DESTINATIONS.map((destination) => (
           <button
             key={destination.id}
@@ -123,9 +123,9 @@ function Launch({ setScreen, returning, hasParent, childName }: { setScreen: (s:
           </button>
         ))}
       </nav>
-      <img className="launch-guides" src="/niko-zuri-v2.png" alt="Niko and Zuri welcome you to Storypath Village" />
+      <img className="launch-guides" src="/niko-zuri-v2.png" alt="Niko and Zuri welcome you to StoryPath Village" />
       <p className="hub-instruction">Choose a path</p>
-      {preview && <div className="preview-backdrop" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target) setPreview(null); }}><section className="hub-preview" role="dialog" aria-modal="true" aria-labelledby="hub-preview-title"><button className="preview-close" onClick={() => setPreview(null)} aria-label="Close preview">×</button><img src={preview.asset} alt="" /><p className="eyebrow">Coming to Storypath Village</p><h2 id="hub-preview-title">{preview.previewTitle}</h2><p>{preview.previewMessage}</p><Button onClick={() => setPreview(null)}>Back to the village</Button></section></div>}
+      {preview && <div className="preview-backdrop" role="presentation" onMouseDown={(event) => { if (event.currentTarget === event.target) setPreview(null); }}><section className="hub-preview" role="dialog" aria-modal="true" aria-labelledby="hub-preview-title"><button className="preview-close" onClick={() => setPreview(null)} aria-label="Close preview">×</button><img src={preview.asset} alt="" /><p className="eyebrow">Coming to StoryPath Village</p><h2 id="hub-preview-title">{preview.previewTitle}</h2><p>{preview.previewMessage}</p><Button onClick={() => setPreview(null)}>Back to the village</Button></section></div>}
     </section>
   );
 }
@@ -170,7 +170,7 @@ function Orientation({ setScreen, activeChild }: Shared) {
 }
 
 function Village({ setScreen, activeChild, state, progress }: Shared) {
-  return <section className="village page"><div className="village-heading"><div><p className="eyebrow">Welcome back, {activeChild?.name}</p><h1>Storypath Village</h1><p>{state.completedStops ? `Your place is saved after “${STOPS[Math.max(0, state.completedStops - 1)]}”.` : "Riverside Market needs a quick-thinking helper."}</p></div><div className="progress-orb"><strong>{progress}%</strong><span>Market path</span></div></div><div className="map" role="group" aria-label="Village locations"><button className="map-place market" onClick={() => setScreen("path")}><span>🧺</span><strong>Riverside Market</strong><small>{state.completedStops ? "Continue adventure" : "New mission"}</small></button><button className="map-place library" disabled><span>📚</span><strong>Village Library</strong><small>Future path</small></button><button className="map-place workshop" disabled><span>🪚</span><strong>Workshop</strong><small>Future path</small></button></div><details className="map-list"><summary>Use a simple location list</summary><button onClick={() => setScreen("path")}>Riverside Market — available</button><span>Village Library — future</span><span>Workshop — future</span></details></section>;
+  return <section className="village page"><div className="village-heading"><div><p className="eyebrow">Welcome back, {activeChild?.name}</p><h1>StoryPath Village</h1><p>{state.completedStops ? `Your place is saved after “${STOPS[Math.max(0, state.completedStops - 1)]}”.` : "Riverside Market needs a quick-thinking helper."}</p></div><div className="progress-orb"><strong>{progress}%</strong><span>Market path</span></div></div><div className="map" role="group" aria-label="Village locations"><button className="map-place market" onClick={() => setScreen("path")}><span>🧺</span><strong>Riverside Market</strong><small>{state.completedStops ? "Continue adventure" : "New mission"}</small></button><button className="map-place library" disabled><span>📚</span><strong>Village Library</strong><small>Future path</small></button><button className="map-place workshop" disabled><span>🪚</span><strong>Workshop</strong><small>Future path</small></button></div><details className="map-list"><summary>Use a simple location list</summary><button onClick={() => setScreen("path")}>Riverside Market — available</button><span>Village Library — future</span><span>Workshop — future</span></details></section>;
 }
 
 function AdventurePath({ setScreen, state, progress }: Shared) {
@@ -227,7 +227,7 @@ function DemoLesson({ onDone }: { onDone: () => void }) {
 }
 
 function Results({ setScreen, status, state }: Shared) {
-  return <section className="page centered results"><div className="celebration" aria-hidden="true">🌟 🧺 🌟</div><p className="eyebrow">Market Day complete</p><h1>You carried the learning into the adventure.</h1><p>Auntie Anisa’s orders are ready and the village evening can begin.</p><div className="result-grid"><div><strong>{state.evidence.filter((e) => e.correct).length}</strong><span>successful moments</span></div><div><strong>{status}</strong><span>current evidence stage</span></div><div><strong>100%</strong><span>Market path covered</span></div></div><p className="notice">Mastery takes successful independent evidence across more than one context. Finishing once does not automatically mark mastery.</p><Button onClick={() => setScreen("village")}>Return to Storypath Village</Button></section>;
+  return <section className="page centered results"><div className="celebration" aria-hidden="true">🌟 🧺 🌟</div><p className="eyebrow">Market Day complete</p><h1>You carried the learning into the adventure.</h1><p>Auntie Anisa’s orders are ready and the village evening can begin.</p><div className="result-grid"><div><strong>{state.evidence.filter((e) => e.correct).length}</strong><span>successful moments</span></div><div><strong>{status}</strong><span>current evidence stage</span></div><div><strong>100%</strong><span>Market path covered</span></div></div><p className="notice">Mastery takes successful independent evidence across more than one context. Finishing once does not automatically mark mastery.</p><Button onClick={() => setScreen("village")}>Return to StoryPath Village</Button></section>;
 }
 
 function Dashboard({ state, update, setScreen, activeChild, status, progress, onReset }: Shared & { onReset: () => void }) {

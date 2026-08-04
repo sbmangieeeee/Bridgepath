@@ -164,7 +164,7 @@ Before people can plan, share, purchase, travel, or decide, they need trustworth
 
 Home storage, a school office, library, storeroom, garden shed, shop back room, recreation desk, community noticeboard, or event registration table.
 
-These are recurring setting types, not proposed Storypath locations.
+These are recurring setting types, not proposed StoryPath locations.
 
 ### Mentor functions
 
@@ -686,7 +686,7 @@ The clusters form a network rather than a sequence.
 
 This analysis does not decide:
 
-- how many towns, districts, neighbourhoods, or recurring locations Storypath needs;
+- how many towns, districts, neighbourhoods, or recurring locations StoryPath needs;
 - which clusters deserve persistent geography;
 - the names of any world, place, chapter, mentor, or mission;
 - whether a market, school, garden, workshop, or recreation ground is a permanent location;

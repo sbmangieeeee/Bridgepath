@@ -20,7 +20,7 @@ Replace local adapters with parent auth, adult verification, Supabase persistenc
 
 ## Gate 3 — Content and game production
 
-Commission reviewed art/audio and finalize the six-stop learning loop, idempotent evidence, resume and parent projections.
+Commission reviewed art/audio and finalize the five-phase learning loop, idempotent evidence, resume and parent projections.
 
 **Pass:** correct, incorrect, interrupted, remediated and completed paths reconcile.
 
