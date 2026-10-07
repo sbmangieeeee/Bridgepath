@@ -1,60 +1,49 @@
-# Bridgepath Canonical Geography
+# Storypath Geography — Rebuild Status
 
-> **Effective:** 17 July 2026  
-> **Status:** Founder-approved controlling geography  
-> **Supersedes:** earlier Storypath Country, Market Village, twelve-stop, and one-town-per-Standard-and-subject geography assumptions
+> **Updated:** 6 October 2026  
+> **Status:** Previous geography superseded; Paralin is the working first community  
+> **Current identity source:** `STORYPATH-WORLD-IDENTITY.md`
 
-This document controls Bridgepath country, town, location, and journey-map hierarchy. If another document conflicts with it, this document takes precedence until that document is corrected.
+This file previously defined Kairana as a country with six towns and Arouca Grove as the Standard 3 Mathematics town. That structure is **no longer controlling canon** during the Storypath rebuild.
 
-## Hierarchy
+## Current working geography
 
-1. **Kairana** is the country.
-2. Kairana contains exactly six towns:
-   - **Arouca Grove**
-   - **Gasparillo**
-   - **Lopinot**
-   - **Barataria**
-   - **Masara**
-   - **Chaconia**
-3. **Arouca Grove** is the current playable Standard 3 Mathematics town.
-4. Arouca Grove contains the complete 18-stop Standard 3 Mathematics journey.
-5. Classroom, market, bakery, Mas workshop, community centre, and recreation grounds are reusable locations inside Arouca Grove. They are not towns.
-6. Gasparillo, Lopinot, Barataria, Masara, and Chaconia are reserved for future learning journeys. No curriculum stops or Standard-and-subject assignments are approved for them yet.
+1. **Paralin** is the working name of Storypath's first living community.
+2. Paralin is fictional and Caribbean-inspired, with Trinidad and Tobago as an important cultural reference.
+3. Its world-building may contain subtle environmental DNA inspired by **Arouca, Gasparillo, and Lopinot** without reproducing any of them literally.
+4. The complete protected 18-stop Standard 3 Mathematics journey occurs through the connected Storypath community experience.
+5. The learning stops remain curriculum functions first. Their child-facing names, exact buildings, neighbourhood placement, and visual treatment may evolve.
+6. A country layer above Paralin is **not currently required**. The larger world hierarchy remains an open design decision.
 
-## Required map levels
+## Protected location principles
 
-### Kairana Country Map — pending design
+- A location exists because something meaningful happens there, not because the curriculum needs a chapter container.
+- A location may support multiple mathematical concepts and may be revisited for transfer.
+- Earlier concepts should reappear in new places and situations.
+- Characters, dialogue, prices, recipes, scores, progress, activity objects, and accessible controls remain dynamic layers rather than baked into environment art.
+- The community should feel interconnected: residents, businesses, services, events, routes, and consequences may cross between learning experiences.
+- The world is the interface; navigation should feel like returning to a place rather than opening an LMS dashboard.
 
-- Displays all six towns in one country view.
-- Arouca Grove is currently available.
-- Gasparillo, Lopinot, Barataria, Masara, and Chaconia may be shown as locked or labelled as future journeys without launch promises.
-- Selecting Arouca Grove opens the Arouca Grove Journey Map.
-- Country, town, availability, and future-journey labels remain dynamic accessible UI layers rather than baked raster text.
+## Historical geography
 
-### Arouca Grove Journey Map — pending design
+The following names remain useful only for tracing earlier design decisions and must not be treated as current Storypath canon:
 
-- Evolves the visual composition principles of the earlier Market Village map concept without retaining Market Village as the world or town name.
-- Displays all 18 curriculum-derived Standard 3 Mathematics stops inside Arouca Grove.
-- Replaces every twelve-stop map or chapter assumption.
-- Shows progress dynamically, including states such as `0/18`.
-- Includes an accessible control for returning to the Kairana Country Map.
-- Country, town, subject, stop, availability, and progress labels remain dynamic UI layers rather than baked raster text.
+- Kairana
+- Arouca Grove
+- Arouca Groove
+- Gasparillo as a separate future Storypath town
+- Lopinot as a separate future Storypath town
+- Barataria as a separate future Storypath town
+- Masara
+- Chaconia
+- Market Village
 
-## Location and production rules
+Gasparillo and Lopinot may still influence Paralin's hidden geographic DNA; that is different from using the real place names as fictional Storypath towns.
 
-- Reusable environment backgrounds represent locations within Arouca Grove, not separate towns.
-- A location may support more than one stop when the curriculum journey returns with a new purpose.
-- Characters, dialogue, questions, answers, products, prices, recipes, scores, progress, activity objects, and accessible controls remain separate dynamic layers.
-- Neither map is approved artwork or implemented functionality yet. Both remain pending design work.
-- The five future towns must not receive curriculum-stop allocations until a later founder-approved learning-journey decision.
+## Maps
 
-## Superseded statements
+Do not build the old Kairana Country Map or Arouca Grove Journey Map as production canon.
 
-The following are not current Bridgepath geography:
+The next map/navigation design should begin with **Paralin as a connected living community** and determine the appropriate hierarchy from the player experience outward.
 
-- dividing the 18 Standard 3 Mathematics stops across six towns;
-- assigning three stops to each town;
-- treating 18 stops as the total learning capacity of Kairana;
-- treating Market Village as the overall world or current town name;
-- treating the six approved environment backgrounds as six towns;
-- assigning each of Kairana's six towns to a Standard-and-subject combination.
+The protected requirement is not a specific map shape. It is that the learner can understand where they are, where meaningful activity is available, how the community changes, and how progress opens or revisits experiences.
