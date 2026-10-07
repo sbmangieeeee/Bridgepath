@@ -1,118 +1,92 @@
-# Bridgepath Core Companion Guide
+# Storypath Core Companion Guide — Rebuild Baseline
 
-## Start here
+> **Updated:** 6 October 2026  
+> **Working protagonists:** Aaliyah and Theo  
+> **Identity source:** `STORYPATH-WORLD-IDENTITY.md`
 
-This is the shared daily reference for Niko and Zuri. Their individual bibles control character-specific details. `DESIGN.md` controls the world; curriculum documents control teaching and evidence. The approved welcome image is a mood reference, not a model sheet.
+This guide preserves the strongest interaction principles from the previous companion system while reopening character identity and visual design.
 
-> **Niko helps the team begin. Zuri helps the team notice. The learner makes the consequential choice.**
+## Core rule
 
-They are nine-year-old Caribbean friends and fellow learners, not teachers or mascots. Both are capable, fallible, funny, caring, and able to revise. Never reduce them to reckless/correct, funny/smart, or boy/girl opposites.
+> **Aaliyah and Theo can help the adventure begin and help the learner notice. The learner makes the consequential choice.**
 
-## Story and learning rules
+Aaliyah and Theo are Caribbean children and fellow learners, not teachers, mascots, answer dispensers, or curriculum narrators.
 
-They may notice a community need, ask a genuine question, offer plausible approaches, make mistakes, model checking, and celebrate the learner's reasoning and its community result.
+They are **new characters**, not Niko and Zuri with different names. Previous Niko/Zuri personality assignments, palettes, silhouettes, wardrobes, props, model sheets, and biographies are historical references only.
+
+## What is retained
+
+Both children should be:
+
+- capable and fallible;
+- curious in different but overlapping ways;
+- able to initiate and observe;
+- able to make mistakes and revise;
+- funny without becoming comic relief;
+- caring without becoming parental;
+- active participants without replacing the learner.
+
+They may notice a community need, ask a genuine question, offer plausible approaches, disagree about strategy, make mistakes, model checking, and celebrate the learner's reasoning and its community result.
 
 They never:
 
-- teach the concept before the mentor;
 - give the answer required as evidence;
-- replace a teacher or resident;
+- replace a teacher, resident, or the learner;
 - shame, rush, rank, threaten, or laugh at mistakes;
 - praise speed, fixed intelligence, or perfection;
 - tie friendship, safety, energy, or story access to correctness.
 
-Niko and Zuri can disagree about approach, never worth. Either can lead or be mistaken. Their scene is incomplete until the learner chooses, builds, tests, compares, explains, or requests support.
+A scene is incomplete until the learner chooses, builds, tests, compares, explains, investigates, or requests support.
 
-## Visual system
+## Character differentiation
 
-| Area | Shared rule |
-|---|---|
-| Age/proportion | Clearly 9; about 5.25 heads; expressive, never toddler or teenager |
-| Style | Premium hand-painted 2D with believable weight, fabric, hair, and object contact |
-| Recognition | Works as a black silhouette at 96 px and avatar at 40 px |
-| Expression | Face, hands, shoulders, and centre of gravity all contribute |
-| Placement | Never cover instructions, numerals, targets, or focus states |
+Do **not** assign one child permanently to “action” and the other to “thinking.”
 
-Recognition comes from silhouette, hair, stance, colour blocking, and bag, not skin tone or a printed name.
+Their eventual personalities should create a complementary friendship without encoding:
 
-| Character | Identity | Companion | Utility |
-|---|---|---|---|
-| Niko | Coral `#D85A43` | Teal `#087D78` | Khaki `#8D805F` |
-| Zuri | Violet `#704A9E` | Ochre `#D79A2B` | Indigo `#394C68` |
-| Shared | Cream `#FFF4D8` | Cocoa `#2C211C` | Brass `#A97835` |
+- smart vs funny;
+- careful vs reckless;
+- correct vs mistaken;
+- leader vs follower;
+- boy vs girl learning styles.
 
-Outfits are roughly 55% neutral, 30% identity colour, 15% accent and remain distinct in greyscale.
+Across a chapter, both should initiate, notice, err, revise, help, and receive help.
 
-## Wardrobe
+## Identity still to design
 
-Clothing is practical, breathable, timeless, owned, and used. Every outfit preserves hair silhouette, identity colour near the face/torso, signature bag or substitute, and footwear blocking.
+The following are intentionally open:
 
-| Context | Rule |
-|---|---|
-| Rain | light shell, water-safe shoes, believable damp details; no winter styling |
-| Sports | school/community kit and secured accessories; no professional costume |
-| Library | ordinary clothing; no glasses-as-intelligence cue |
-| Market | hands-free, washable layer, reusable bag/list |
-| Mas camp | maker wear and supervised protection; no unreviewed masquerade costume |
-| Gardening | older shoes, rolled cuffs, task gloves, hair-aware sun protection |
-| Celebration | polished personal silhouette and reviewed textile detail; no adult formalwear |
+- exact age within the target-player range;
+- full names;
+- family structures;
+- home lives and relationships within Paralin;
+- interests and hobbies;
+- fears, frustrations, strengths, and quirks;
+- voice and speech patterns;
+- visual silhouettes;
+- hair, clothing, bags, props, palettes, and wardrobe;
+- animation and expression libraries.
 
-Wardrobe changes serve the story, not collectible costumes.
+These should be developed from the needs of Storypath and Paralin rather than inherited from old artwork.
 
-## Expressions
+## Founder connection
 
-Niko and Zuri never stick out their tongues. Playfulness is communicated through a warm grin, wink, head angle, eye expression, or friendly gesture—never a tongue-out face.
+The initials **A + T** quietly reflect Storypath's founders. This is an internal Easter egg, not a requirement for public explanation.
 
-| State | Read and use |
-|---|---|
-| Excited | lifted face, contained energy; meaningful reveal only |
-| Curious | focused eyes, inclined head, ready hands; before investigation |
-| Thinking | settled body, eyes on representation; authentic pause |
-| Confused | calm uncertainty between relevant parts; invite inspection |
-| Surprised | brief recoil then reorientation; changed condition |
-| Determined | grounded feet, focused eyes; retry or multi-step mission |
-| Proud | warm smile shared with work/team; care or revision |
-| Celebrating | brief physical release and open team gesture; resolution |
-| Disappointed | small energy drop, still connected; reversible setback |
-| Encouraging | soft brow, open palm, same eye level; support |
-| Empathetic | quiet face, still hands, respectful space; frustration |
-| Playful | asymmetric smile and harmless timing; never distress/safety |
+Additional founder-inspired details may appear subtly in the characters or community under the rules in `STORYPATH-WORLD-IDENTITY.md`.
 
-No permanent smiles, exaggerated tears, floating punctuation, or face-only feedback.
+## Inclusion and learning safeguards
 
-## Pose and motion library
-
-Build reusable neutral, wave, open-hand point, listening, learner-facing, shared-map, reading, sorting, measuring, carrying, checking, walking, short-run, crouch, object-examination, help-giving/receiving, mistake/revision, encouragement, celebration, rest, and farewell poses.
-
-Hands contact props correctly; eye lines show attention. Do not mirror blindly when maps, text, handedness, or roads matter.
-
-- Story motion is expressive, then holds calmly.
-- Learning reactions are short and never block interaction.
-- Idle uses breath, gaze, fabric, and occasional weight shift; no bobbing.
-- Mistakes lead into checking, never slapstick collapse.
-- Waiting shows availability, never impatience or pressure.
-- Reduced motion uses pose changes and short fades.
-
-## Voice and inclusion
-
-- Standard English with natural Trinidad and Tobago rhythm and lightly reviewed expressions.
-- One idea per unit: usually 4–12 words, up to 18 for reflection.
-- Niko leans toward actions, estimates, possibilities, and people.
-- Zuri leans toward relationships, conditions, patterns, and fairness.
-- Neither repeats instructions or asks questions the learner cannot act on.
+- Use natural, contemporary Trinidad and Tobago/Caribbean cultural grounding without caricature.
 - Humour never targets accent, name, family, body, ability, poverty, mistakes, or adults.
 - Encouragement names strategy, revision, care, evidence, or help requested.
-
-Emotion is never the only feedback. Include calm and low-energy states. Do not code intelligence, morality, gender, class, ethnicity, or neurodivergence through clothing, posture, neatness, speech, or learning style. Characters do not tower or stare during support. Meaningful reactions receive text/semantic support.
-
-## Non-negotiables and approval
-
-- Niko never drifts into reckless comic relief.
-- Zuri never drifts into perfect, parental, timid, or controlling.
-- Both initiate, notice, err, revise, help, and receive help across a chapter.
-- Mentors keep authority; the learner remains necessary.
+- Emotion is never the only feedback.
+- Do not code intelligence, morality, gender, class, ethnicity, or neurodivergence through clothing, posture, neatness, speech, or learning style.
 - Characters appear for story or learning purpose, not decoration.
+- Mentors keep appropriate authority; the learner remains necessary.
 
-Before final art, approve turnarounds, facial construction, twelve expressions, height/silhouette, avatar, colour/lighting, outfit materials, hands/prop contact, wardrobe modules, pair compositions, and three animation tests: shared map, mistake/revision, quiet encouragement.
+## Visual reset
 
-Trinidad and Tobago adults and children must review names, hair, clothing, and contemporary life. Reject designs that read as toddler, teenager, tourist, superhero, “smart one,” or “wild one.” After model-sheet approval, changes to silhouette, age, skin-tone family, face, handedness, everyday colours, signature bag, or educational role require a dated decision.
+No previous companion image, palette, model sheet, wardrobe, or expression sheet is authoritative during the Storypath visual reset.
+
+Before final character art is approved, Storypath should define Aaliyah and Theo's narrative identities and relationship to Paralin first, then develop silhouettes, model sheets, expressions, wardrobe, animation, and accessibility requirements from that foundation.
