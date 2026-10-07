@@ -4,7 +4,11 @@ Updated: 7 October 2026
 
 ## Current status
 
-No production visual assets or visual references are approved or retained in the current checkout. The user requested removal of all visuals for a conceptual rebuild. The previous July approval manifest is superseded and recoverable in Git history.
+The previous visual library was removed for the conceptual reset. The user subsequently supplied 15 new Paralin PNGs for audit and import. All 15 are APPROVED WITH NOTES as complete decorative building assemblies, not clean modular bases or a final visual direction. The July approval manifest remains superseded.
+
+- [Detailed per-file audit](design/storypath/environments/paralin/AUDIT.md)
+- [Machine-readable manifest](design/storypath/environments/paralin/asset-manifest.json)
+- [Local development review sheet](design/storypath/environments/paralin/review.html)
 
 Removed: character art and wardrobe/model/expression sheets; environment backgrounds; hub and village art; screen and onboarding references; the Bridgepath logo and HTML brand guide. This includes prior material under `design/characters/`, `design/references/`, and `public/`.
 
@@ -17,4 +21,4 @@ The illustrated homepage, character gallery, and their styling were retired. The
 - All 18 Standard 3 Mathematics stops, mathematical purposes, sequence, dependencies, transfer, and evidence requirements.
 - Curriculum source PDFs in `references/curriculum/` and educational documentation.
 
-No new assets were received, imported, altered, or approved. Future artwork requires a fresh review against the agreed concept, not comparison with superseded visuals.
+15 new assets were imported byte-for-byte under `design/storypath/environments/paralin/architecture/`: three each of small, raised, two-storey, hillside houses, and corner shops. Duplicate `.png` extensions were normalized. No images were altered; none are referenced by the live application. Future scene integration must address camera, scale, padding and baked-in decoration as detailed in the audit.

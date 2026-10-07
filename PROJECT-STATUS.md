@@ -21,7 +21,7 @@ Storypath is not restarting its educational concept. The rebuild preserves the s
 | Founder inspiration | Subtle Easter eggs may draw from meaningful people, places and memories |
 | Geographic inspiration | Arouca, Gasparillo and Lopinot may inform Paralin without being copied literally |
 | Visual direction | Conceptual rebuild; all previous visuals removed; no approved replacement |
-| Design references | Previous visual references removed; curriculum source PDFs retained |
+| Design references | Previous references removed; 15 newly supplied building assemblies audited with notes; see `ASSET-MANIFEST.md` |
 | Country/world layer | Open design decision; no Kairana map requirement |
 | Experience principle | The world is the interface |
 | Learning principle | Learn it → understand why it matters → use it → practise → transfer → demonstrate mastery |
@@ -103,3 +103,4 @@ Older Bridgepath documents may contain valuable reasoning alongside superseded n
 | 6 October 2026 | Established **Paralin** as the working first community and **Aaliyah & Theo** as the working protagonists. |
 | 6 October 2026 | Reopened adult cast identities, larger geography, navigation, and visual system; retained cast functions and the protected 18-stop Mathematics journey. |
 | 7 October 2026 | User directed removal of all visuals for a conceptual rebuild. Removed artwork and references, retired the old illustrated prototype and gallery, and retained Paralin, Aaliyah, Theo, and all 18 curriculum stops. Earlier retention of visual references is superseded. |
+| 7 October 2026 | Audited and imported 15 new user-supplied Paralin PNGs as decorated assemblies, all APPROVED WITH NOTES; source bytes preserved, duplicate extensions normalized. No world construction or gameplay changes. |

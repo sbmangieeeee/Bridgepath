@@ -1,0 +1,576 @@
+{
+  "audit_date": "2026-10-07",
+  "scope": "User-supplied new assets after visual reset; no previous art restored",
+  "assets": [
+    {
+      "name": "paralin-house-hillside-01-base.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 381737,
+      "opaque": 0,
+      "partial": 1191127,
+      "border": 160,
+      "alphaBounds": [
+        0,
+        14,
+        1535,
+        1023
+      ],
+      "strongBounds": [
+        9,
+        17,
+        1526,
+        1007
+      ],
+      "source_filename": "paralin-house-hillside-01-base.png.png",
+      "filename": "paralin-house-hillside-01-base.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/hillside/paralin-house-hillside-01-base.png",
+      "category": "residential",
+      "subtype": "hillside",
+      "variant": "base",
+      "observed_color": "yellow",
+      "sha256": "48260271dc2d6b84b7785e1536b888fdf9955e473bfebc5fdf2bf145ad7d6633",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House, stepped terrain, retaining walls, stairs, tank and dense planting form one inseparable assembly. Requires a matching slope; not a free-standing house base. Side vegetation is very tightly framed."
+    },
+    {
+      "name": "paralin-house-hillside-01-pink.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 372933,
+      "opaque": 0,
+      "partial": 1199931,
+      "border": 196,
+      "alphaBounds": [
+        0,
+        10,
+        1535,
+        1010
+      ],
+      "strongBounds": [
+        1,
+        15,
+        1528,
+        1007
+      ],
+      "source_filename": "paralin-house-hillside-01-pink.png.png",
+      "filename": "paralin-house-hillside-01-pink.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/hillside/paralin-house-hillside-01-pink.png",
+      "category": "residential",
+      "subtype": "hillside",
+      "variant": "pink",
+      "observed_color": "pink",
+      "sha256": "1db0bed829488492f837b5320c66ca67f54388ba72a7f26e86a7f86f22350654",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House, stepped terrain, retaining walls, stairs, tank and dense planting form one inseparable assembly. Requires a matching slope; not a free-standing house base. Side vegetation is very tightly framed."
+    },
+    {
+      "name": "paralin-house-hillside-02-blue.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 377706,
+      "opaque": 0,
+      "partial": 1195158,
+      "border": 158,
+      "alphaBounds": [
+        0,
+        10,
+        1535,
+        1023
+      ],
+      "strongBounds": [
+        2,
+        15,
+        1527,
+        1006
+      ],
+      "source_filename": "paralin-house-hillside-02-blue.png.png",
+      "filename": "paralin-house-hillside-02-blue.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/hillside/paralin-house-hillside-02-blue.png",
+      "category": "residential",
+      "subtype": "hillside",
+      "variant": "blue",
+      "observed_color": "blue",
+      "sha256": "6682b55afe222f4d2a74f01680dc1438bf894def8a1a3dcea4454669bdfceee4",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House, stepped terrain, retaining walls, stairs, tank and dense planting form one inseparable assembly. Requires a matching slope; not a free-standing house base. Side vegetation is very tightly framed."
+    },
+    {
+      "name": "paralin-house-raised-01-base.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 570108,
+      "opaque": 0,
+      "partial": 1002756,
+      "border": 12,
+      "alphaBounds": [
+        29,
+        0,
+        1519,
+        977
+      ],
+      "strongBounds": [
+        32,
+        10,
+        1512,
+        970
+      ],
+      "source_filename": "paralin-house-raised-01-base.png.png",
+      "filename": "paralin-house-raised-01-base.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/raised/paralin-house-raised-01-base.png",
+      "category": "residential",
+      "subtype": "raised",
+      "variant": "base",
+      "observed_color": "green",
+      "sha256": "c10dba97e0e5c6334e7020c1c6a0c15bd1bacee79ab44fe17ba9a1328a2a69dd",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House includes tank/stand, porch furniture, plants, stairs and supports. Open undercroft largely cuts out correctly. Place as a complete assembly; no separate occlusion or movable props."
+    },
+    {
+      "name": "paralin-house-raised-02-base.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 595167,
+      "opaque": 0,
+      "partial": 977697,
+      "border": 0,
+      "alphaBounds": [
+        32,
+        10,
+        1508,
+        999
+      ],
+      "strongBounds": [
+        36,
+        15,
+        1505,
+        965
+      ],
+      "source_filename": "paralin-house-raised-02-base.png.png",
+      "filename": "paralin-house-raised-02-base.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/raised/paralin-house-raised-02-base.png",
+      "category": "residential",
+      "subtype": "raised",
+      "variant": "base",
+      "observed_color": "purple",
+      "sha256": "57726a28132e83030751d97ce9513f491cbe600f7493792d17b50d42b5c5b99a",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House includes tank/stand, porch furniture, plants, stairs and supports. Open undercroft largely cuts out correctly. Place as a complete assembly; no separate occlusion or movable props."
+    },
+    {
+      "name": "paralin-house-raised-03-base.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 604515,
+      "opaque": 0,
+      "partial": 968349,
+      "border": 0,
+      "alphaBounds": [
+        31,
+        12,
+        1502,
+        999
+      ],
+      "strongBounds": [
+        38,
+        16,
+        1499,
+        959
+      ],
+      "source_filename": "paralin-house-raised-03-base.png.png",
+      "filename": "paralin-house-raised-03-base.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/raised/paralin-house-raised-03-base.png",
+      "category": "residential",
+      "subtype": "raised",
+      "variant": "base",
+      "observed_color": "pink",
+      "sha256": "0d3980303b28160ae90923df136dc7ed8cbeac47218a3e0dbbd2fd122c587bf3",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House includes tank/stand, porch furniture, plants, stairs and supports. Open undercroft largely cuts out correctly. Place as a complete assembly; no separate occlusion or movable props."
+    },
+    {
+      "name": "paralin-house-small-01-base.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 610783,
+      "opaque": 0,
+      "partial": 962081,
+      "border": 34,
+      "alphaBounds": [
+        0,
+        9,
+        1521,
+        1023
+      ],
+      "strongBounds": [
+        24,
+        63,
+        1516,
+        921
+      ],
+      "source_filename": "paralin-house-small-01-base.png.png",
+      "filename": "paralin-house-small-01-base.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/small-single-storey/paralin-house-small-01-base.png",
+      "category": "residential",
+      "subtype": "small-single-storey",
+      "variant": "base",
+      "observed_color": "yellow",
+      "sha256": "a3805c4fbdeed088cbf0cd4b44b0d61e737fcab5d3330680957a0e8605fd5417",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House includes tank, foundation, porch furniture, pots and dense perimeter planting. Readable silhouette; repeated planting limits modular variety."
+    },
+    {
+      "name": "paralin-house-small-02-base.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 581609,
+      "opaque": 0,
+      "partial": 991255,
+      "border": 43,
+      "alphaBounds": [
+        0,
+        47,
+        1519,
+        1023
+      ],
+      "strongBounds": [
+        25,
+        63,
+        1516,
+        942
+      ],
+      "source_filename": "paralin-house-small-02-base.png.png",
+      "filename": "paralin-house-small-02-base.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/small-single-storey/paralin-house-small-02-base.png",
+      "category": "residential",
+      "subtype": "small-single-storey",
+      "variant": "base",
+      "observed_color": "blue",
+      "sha256": "f5129ef1578e8ad4f2e0dc9ceeb8a42ad55c6eb192704f7209bf6410dec5e298",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House includes tank, foundation, porch furniture, pots and dense perimeter planting. Readable silhouette; repeated planting limits modular variety."
+    },
+    {
+      "name": "paralin-house-small-03-base.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 568570,
+      "opaque": 0,
+      "partial": 1004294,
+      "border": 29,
+      "alphaBounds": [
+        0,
+        21,
+        1523,
+        1023
+      ],
+      "strongBounds": [
+        24,
+        62,
+        1518,
+        941
+      ],
+      "source_filename": "paralin-house-small-03-base.png.png",
+      "filename": "paralin-house-small-03-base.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/small-single-storey/paralin-house-small-03-base.png",
+      "category": "residential",
+      "subtype": "small-single-storey",
+      "variant": "base",
+      "observed_color": "coral",
+      "sha256": "0e18832a30df7a635dfaff761414013f1aa65707fb8c7d4782f97958501596f3",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House includes tank, foundation, porch furniture, pots and dense perimeter planting. Readable silhouette; repeated planting limits modular variety."
+    },
+    {
+      "name": "paralin-house-two-storey-01-base.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 412593,
+      "opaque": 0,
+      "partial": 1160271,
+      "border": 61,
+      "alphaBounds": [
+        0,
+        0,
+        1509,
+        1023
+      ],
+      "strongBounds": [
+        43,
+        10,
+        1492,
+        989
+      ],
+      "source_filename": "paralin-house-two-storey-01-base.png.png",
+      "filename": "paralin-house-two-storey-01-base.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/two-storey/paralin-house-two-storey-01-base.png",
+      "category": "residential",
+      "subtype": "two-storey",
+      "variant": "base",
+      "observed_color": "yellow",
+      "sha256": "e92620f1b7322cc1b6910919946e44f833262d08c2af7da518f456c2fafd9b7f",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House includes both galleries, plants, steps and lamps. Roof has little top padding. Near-eye-level facade perspective needs matching scene camera; not an aerial map sprite."
+    },
+    {
+      "name": "paralin-house-two-storey-02-pink.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 410264,
+      "opaque": 0,
+      "partial": 1162600,
+      "border": 39,
+      "alphaBounds": [
+        0,
+        0,
+        1493,
+        994
+      ],
+      "strongBounds": [
+        36,
+        5,
+        1489,
+        991
+      ],
+      "source_filename": "paralin-house-two-storey-02-pink.png.png",
+      "filename": "paralin-house-two-storey-02-pink.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/two-storey/paralin-house-two-storey-02-pink.png",
+      "category": "residential",
+      "subtype": "two-storey",
+      "variant": "pink",
+      "observed_color": "pink",
+      "sha256": "6be512aaf3b59ebd56d52658d61e4b957a8c96eab52d739899f8a37570639794",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House includes both galleries, plants, steps and lamps. Roof has little top padding. Near-eye-level facade perspective needs matching scene camera; not an aerial map sprite."
+    },
+    {
+      "name": "paralin-house-two-storey-03-blue.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 406669,
+      "opaque": 0,
+      "partial": 1166195,
+      "border": 43,
+      "alphaBounds": [
+        25,
+        0,
+        1515,
+        1005
+      ],
+      "strongBounds": [
+        32,
+        6,
+        1491,
+        991
+      ],
+      "source_filename": "paralin-house-two-storey-03-blue.png.png",
+      "filename": "paralin-house-two-storey-03-blue.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/residential/two-storey/paralin-house-two-storey-03-blue.png",
+      "category": "residential",
+      "subtype": "two-storey",
+      "variant": "blue",
+      "observed_color": "blue",
+      "sha256": "c70a4bfa48d8a6246c26afd32e6058675c33995a8fab8d7bc2eac4cc6c75e27a",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "House includes both galleries, plants, steps and lamps. Roof has little top padding. Near-eye-level facade perspective needs matching scene camera; not an aerial map sprite."
+    },
+    {
+      "name": "paralin-shop-corner-01-base.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 453851,
+      "opaque": 0,
+      "partial": 1119013,
+      "border": 42,
+      "alphaBounds": [
+        0,
+        14,
+        1535,
+        1023
+      ],
+      "strongBounds": [
+        15,
+        17,
+        1527,
+        972
+      ],
+      "source_filename": "paralin-shop-corner-01-base.png.png",
+      "filename": "paralin-shop-corner-01-base.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/commercial/corner-shop/paralin-shop-corner-01-base.png",
+      "category": "commercial",
+      "subtype": "corner-shop",
+      "variant": "base",
+      "observed_color": "yellow/teal",
+      "sha256": "56d4d37f24294af57bb44a45289c577f226b73f0bdbb23223d9fc810153261a9",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "Shop includes pavement/curb, plants, counter, stocked shelves, refrigerator and lit lamps. Stock cannot serve as dynamic countable learning objects. Blank sign supports a separate accessible label. Awning is close to the right edge."
+    },
+    {
+      "name": "paralin-shop-corner-02-green.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 438897,
+      "opaque": 0,
+      "partial": 1133967,
+      "border": 190,
+      "alphaBounds": [
+        0,
+        0,
+        1535,
+        1001
+      ],
+      "strongBounds": [
+        12,
+        11,
+        1529,
+        980
+      ],
+      "source_filename": "paralin-shop-corner-02-green.png.png",
+      "filename": "paralin-shop-corner-02-green.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/commercial/corner-shop/paralin-shop-corner-02-green.png",
+      "category": "commercial",
+      "subtype": "corner-shop",
+      "variant": "green",
+      "observed_color": "green",
+      "sha256": "f933ad5f4dfdf31b3c0ed5061baea275769d7315c133f94e9424516379a416d6",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "Shop includes pavement/curb, plants, counter, stocked shelves, refrigerator and lit lamps. Stock cannot serve as dynamic countable learning objects. Blank sign supports a separate accessible label. Awning is close to the right edge."
+    },
+    {
+      "name": "paralin-shop-corner-03-blue.png.png",
+      "width": 1536,
+      "height": 1024,
+      "zero": 432529,
+      "opaque": 0,
+      "partial": 1140335,
+      "border": 186,
+      "alphaBounds": [
+        0,
+        0,
+        1535,
+        1023
+      ],
+      "strongBounds": [
+        12,
+        4,
+        1531,
+        981
+      ],
+      "source_filename": "paralin-shop-corner-03-blue.png.png",
+      "filename": "paralin-shop-corner-03-blue.png",
+      "repository_path": "design/storypath/environments/paralin/architecture/commercial/corner-shop/paralin-shop-corner-03-blue.png",
+      "category": "commercial",
+      "subtype": "corner-shop",
+      "variant": "blue",
+      "observed_color": "blue",
+      "sha256": "5fcc13c92b57ec86f1ba0ebe4b5f6ed0358b335294e7896d1d07ae8401739683",
+      "png_integrity": "PASS: chunk CRCs and full decode",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparency": "Real RGBA transparency; no fully opaque pixels (maximum 254/255)",
+      "audit_status": "APPROVED WITH NOTES",
+      "intended_usage": "Complete decorative building assembly for environment prototyping; not a clean modular base or interactive lesson object",
+      "notes": "Shop includes pavement/curb, plants, counter, stocked shelves, refrigerator and lit lamps. Stock cannot serve as dynamic countable learning objects. Blank sign supports a separate accessible label. Awning is close to the right edge."
+    }
+  ]
+}
