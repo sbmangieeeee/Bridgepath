@@ -2,6 +2,8 @@
 
 Read `PROJECT-STATUS.md` and `STORYPATH-WORLD-IDENTITY.md` first.
 
+Use `PARALIN-ENVIRONMENT-PRODUCTION-WORKFLOW.md` when auditing, creating, or composing reusable environmental assets. It captures the approved process inspiration without making that video's art or content Storypath canon.
+
 The 7 October 2026 user-directed conceptual reset removes all old visuals and visual references. `DESIGN.md`, `DESIGN-DIRECTION.md`, old character bibles, and the former spatial composition are historical reasoning only, not approved constraints. Do not restore their artwork, palettes, layouts, or character identities as canon.
 
 Preserve Paralin, Aaliyah, and Theo. Preserve all 18 stops and their mathematical purposes, sequence, dependencies, transfer, and evidence requirements in `STANDARD-3-MATHEMATICS-TOWN-LEARNING-JOURNEY.md`. Do not merge, remove, or reinterpret stops.
