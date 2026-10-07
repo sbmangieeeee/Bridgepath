@@ -1,12 +1,18 @@
-# Bridgepath
+# Storypath
 
-> **Current experience-design status (15 July 2026):** Bridgepath now has definitive proposed character documentation for its core companions: the [shared companion guide](./BRIDGEPATH-CORE-COMPANION-CHARACTER-GUIDE.md), [Niko Character Bible](./NIKO-CHARACTER-BIBLE.md), and [Zuri Character Bible](./ZURI-CHARACTER-BIBLE.md). These documents establish character identity, visual construction, wardrobe, expression, animation, educational behaviour, dialogue, accessibility, and production consistency. They are ready for founder and Trinidad and Tobago cultural review—not artwork or implementation.
+Storypath is a 2D gamified educational adventure in which curriculum concepts become meaningful real-world gameplay.
 
-Bridgepath is a responsive, story-led learning adventure for Trinidad and Tobago children in Standards 3–5. The repository currently contains an exploratory Market Day prototype plus the planning and discovery documents needed to define the first curriculum-validated Standard 3 Mathematics slice.
+## Current direction
 
-## Shared project checkpoint
+The product is undergoing a controlled visual reset. The curriculum, pedagogy, learning architecture, progression concepts, research, and useful product documentation are being retained. Previous character art, environment art, classroom art, hub art, and other visual explorations are no longer authoritative and are being removed from the active project.
 
-See [PROJECT-STATUS.md](./PROJECT-STATUS.md) for the concise, living record of where the project stands, current decisions, blockers, and what the team plans to do next.
+The files under `design/references/` are intentionally retained as design references. They are inspiration and interaction references, not production assets.
+
+The next design phase will rebuild Storypath's layout, interaction system, screen relationships, and visual language around the core principle that learning should be experienced and applied rather than presented as worksheets with game decoration.
+
+## Product principle
+
+**Learn the concept → understand why it matters → use it in a meaningful situation → practise → transfer → demonstrate mastery.**
 
 ## Run locally
 
@@ -15,18 +21,11 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`. Prototype progress is stored in the browser. It is intentionally not a production account system.
-
 ## Validation
 
 ```bash
 npm test
 npm run lint
 npm run build
-npx playwright install chromium
 npm run test:e2e
 ```
-
-## Pilot blockers
-
-The current online curriculum has been reviewed through the complete 18-stop journey; no additional educator sign-off is required. Production activation remains blocked on cultural review, legal approval of adult verification, live authentication/Supabase policies, processor review, and child usability testing. See [PLAN.md](./PLAN.md).
