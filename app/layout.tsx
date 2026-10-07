@@ -4,7 +4,7 @@ import "./path.css";
 import "./hub.css";
 
 export const metadata: Metadata = {
-  title: "Bridgepath | Storypath Village",
+  title: "Storypath",
   description: "Understand it, use it, and carry it into the adventure.",
 };
 
