@@ -14,7 +14,7 @@ See `STORYPATH-WORLD-IDENTITY.md` for current identity decisions.
 
 The product is undergoing a controlled experience and visual reset. The curriculum, pedagogy, learning architecture, progression concepts, research, and useful product documentation are being retained. Previous character art, environment art, classroom art, hub art, geography assumptions, and other visual explorations are no longer authoritative.
 
-The files under `design/references/` are intentionally retained as design references. They are inspiration and interaction references, not production assets.
+As of 7 October 2026, all existing artwork and visual references have been removed, including character sheets, environments, hub art, screen mockups, and the brand guide. The homepage is a plain concept checkpoint, not a proposed design. The old visual prototype and character gallery are retired. Curriculum source PDFs and educational documentation remain intact.
 
 The next design phase will rebuild Storypath's world layout, character relationships, interaction system, screen relationships, and visual language around the core principle that learning should be experienced and applied rather than presented as worksheets with game decoration.
 

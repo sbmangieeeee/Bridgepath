@@ -1,3 +1,5 @@
+> **Historical / superseded — 7 October 2026:** All previous visuals and visual approvals have been retired for a conceptual rebuild. This document is retained for reasoning and history only; it does not control current art, layout, geography, or character appearance. Current identity: Paralin, Aaliyah, and Theo. The 18-stop curriculum remains protected. See `PROJECT-STATUS.md`.
+
 # Design Direction
 
 Bridgepath uses an original layered storybook treatment: warm, adventurous, tactile, and recognisably Trinidad and Tobago without preschool styling or tourism shorthand.

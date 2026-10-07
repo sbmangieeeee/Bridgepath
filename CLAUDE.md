@@ -1,9 +1,9 @@
-# Bridgepath Project Guidance
+# Storypath Project Guidance
 
-## Design System
+Read `PROJECT-STATUS.md` and `STORYPATH-WORLD-IDENTITY.md` first.
 
-Always read `DESIGN.md` before making any visual or UI decisions.
+The 7 October 2026 user-directed conceptual reset removes all old visuals and visual references. `DESIGN.md`, `DESIGN-DIRECTION.md`, old character bibles, and the former spatial composition are historical reasoning only, not approved constraints. Do not restore their artwork, palettes, layouts, or character identities as canon.
 
-All aesthetic direction, illustration continuity, typography, colour, spacing, map hierarchy, components, motion, responsive behaviour, and accessibility requirements are defined there. Do not revert to the discarded “Caribbean Pathfinder” editorial direction or use the earlier flat map and floating-destination concepts.
+Preserve Paralin, Aaliyah, and Theo. Preserve all 18 stops and their mathematical purposes, sequence, dependencies, transfer, and evidence requirements in `STANDARD-3-MATHEMATICS-TOWN-LEARNING-JOURNEY.md`. Do not merge, remove, or reinterpret stops.
 
-Do not deviate from `DESIGN.md` without explicit user approval. In design review or QA, flag implementation that does not match the approved Living Adventure World direction.
+No new gameplay, final world construction, or replacement visual direction is authorized by the reset. The plain homepage is only a readable concept checkpoint. Keep curriculum source PDFs and useful educational documentation.

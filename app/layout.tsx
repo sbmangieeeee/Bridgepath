@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "./path.css";
-import "./hub.css";
 
 export const metadata: Metadata = {
   title: "Storypath",

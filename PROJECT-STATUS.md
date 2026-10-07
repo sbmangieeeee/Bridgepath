@@ -1,6 +1,6 @@
 # Storypath Project Checkpoint
 
-> **Last updated:** 6 October 2026  
+> **Last updated:** 7 October 2026
 > **Current phase:** Experience and visual-system rebuild  
 > **Overall status:** Educational architecture retained; world, character, layout, interaction, and visual systems are being rebuilt.
 
@@ -20,8 +20,8 @@ Storypath is not restarting its educational concept. The rebuild preserves the s
 | Recurring cast | Functional cast structure retained; adult names/identities reopened |
 | Founder inspiration | Subtle Easter eggs may draw from meaningful people, places and memories |
 | Geographic inspiration | Arouca, Gasparillo and Lopinot may inform Paralin without being copied literally |
-| Visual direction | Rebuilding; old generated visual concepts are non-authoritative |
-| Design references | `design/references/` retained as references, not production assets |
+| Visual direction | Conceptual rebuild; all previous visuals removed; no approved replacement |
+| Design references | Previous visual references removed; curriculum source PDFs retained |
 | Country/world layer | Open design decision; no Kairana map requirement |
 | Experience principle | The world is the interface |
 | Learning principle | Learn it → understand why it matters → use it → practise → transfer → demonstrate mastery |
@@ -74,7 +74,7 @@ These remain in history or older documents for traceability but are not current 
 4. Rebuild the recurring cast as relationships within Paralin, then assign revised names and identities.
 5. Define the Storypath experience system: entering the world, navigation, teaching, interaction, practice, application, feedback, progression, and return.
 6. Build one high-quality vertical experience before scaling visual production.
-7. Continue removing or isolating old visual assets and dependencies without breaking the prototype.
+7. Keep the plain concept checkpoint until a new experience and visual direction is agreed. Do not implement new gameplay yet.
 
 ## Important source documents
 
@@ -83,7 +83,7 @@ These remain in history or older documents for traceability but are not current 
 - `STANDARD-3-MATHEMATICS-TOWN-EXPERIENCE-DESIGN.md` — experience framing; child-facing names remain revisable.
 - `STORYPATH-DISCOVERY-BLUEPRINT-STANDARD-3-MATHEMATICS.md` — evidence-led connected-community rationale.
 - `README.md` — repository-level reset statement.
-- `design/references/` — retained external/reference visual material.
+- `ASSET-MANIFEST.md` — visual reset record; no current production art.
 
 ## Historical-document rule
 
@@ -102,3 +102,4 @@ Older Bridgepath documents may contain valuable reasoning alongside superseded n
 | 6 October 2026 | Began controlled Storypath visual reset while retaining educational architecture and references. |
 | 6 October 2026 | Established **Paralin** as the working first community and **Aaliyah & Theo** as the working protagonists. |
 | 6 October 2026 | Reopened adult cast identities, larger geography, navigation, and visual system; retained cast functions and the protected 18-stop Mathematics journey. |
+| 7 October 2026 | User directed removal of all visuals for a conceptual rebuild. Removed artwork and references, retired the old illustrated prototype and gallery, and retained Paralin, Aaliyah, Theo, and all 18 curriculum stops. Earlier retention of visual references is superseded. |

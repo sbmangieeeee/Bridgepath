@@ -1,3 +1,5 @@
+> **Concept reset — 7 October 2026:** The spatial layout and referenced mockup below are historical proposals, not constraints on the rebuild. All visual assets have been removed. Preserve the 18 mathematical functions and connected-community principle; reconsider geography conceptually. Paralin remains the community name.
+
 # Paralin Spatial Plan
 
 > **Status:** Working spatial canon for the Storypath rebuild  
