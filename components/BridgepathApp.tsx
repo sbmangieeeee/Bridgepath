@@ -68,8 +68,8 @@ export default function BridgepathApp() {
     <main className={`app-shell ${activeChild?.reducedMotion ? "reduce-motion" : ""}`}>
       <a className="skip-link" href="#main-content">Skip to activity</a>
       {screen !== "launch" && <header className="topbar">
-        <button className="brand" onClick={() => setScreen(state.activeChildId ? "village" : "launch")} aria-label="Bridgepath home">
-          <span className="brand-mark" aria-hidden="true">B</span><span>Bridgepath</span>
+        <button className="brand" onClick={() => setScreen(state.activeChildId ? "village" : "launch")} aria-label="Storypath home">
+          <span className="brand-mark" aria-hidden="true">B</span><span>Storypath</span>
         </button>
         <div className="top-actions">
           {activeChild && screen !== "roles" && <span className="streak" title="Learning rhythm">🔥 {state.streak} day</span>}
@@ -102,10 +102,10 @@ function Launch({ setScreen, returning, hasParent, childName }: { setScreen: (s:
   }
 
   return (
-    <section className="launch-scene" aria-label="Bridgepath Adventures main hub">
+    <section className="launch-scene" aria-label="Storypath main hub">
       <div className="launch-wash" />
-      <div className="launch-title" aria-label="Bridgepath Adventures">
-        <span>Bridgepath</span>
+      <div className="launch-title" aria-label="Storypath">
+        <span>Storypath</span>
         <strong>Adventures</strong>
       </div>
       {returning && <p className="launch-returning">Welcome back, {childName}</p>}
