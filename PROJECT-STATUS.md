@@ -104,3 +104,4 @@ Older Bridgepath documents may contain valuable reasoning alongside superseded n
 | 6 October 2026 | Reopened adult cast identities, larger geography, navigation, and visual system; retained cast functions and the protected 18-stop Mathematics journey. |
 | 7 October 2026 | User directed removal of all visuals for a conceptual rebuild. Removed artwork and references, retired the old illustrated prototype and gallery, and retained Paralin, Aaliyah, Theo, and all 18 curriculum stops. Earlier retention of visual references is superseded. |
 | 7 October 2026 | Audited and imported 15 new user-supplied Paralin PNGs as decorated assemblies, all APPROVED WITH NOTES; source bytes preserved, duplicate extensions normalized. No world construction or gameplay changes. |
+| 7 October 2026 | Added three mixed-use restaurant-residence variants to the reusable Paralin architecture library; 18 assets total, all APPROVED WITH NOTES. |

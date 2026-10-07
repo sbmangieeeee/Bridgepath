@@ -21,4 +21,4 @@ The illustrated homepage, character gallery, and their styling were retired. The
 - All 18 Standard 3 Mathematics stops, mathematical purposes, sequence, dependencies, transfer, and evidence requirements.
 - Curriculum source PDFs in `references/curriculum/` and educational documentation.
 
-15 new assets were imported byte-for-byte under `design/storypath/environments/paralin/architecture/`: three each of small, raised, two-storey, hillside houses, and corner shops. Duplicate `.png` extensions were normalized. No images were altered; none are referenced by the live application. Future scene integration must address camera, scale, padding and baked-in decoration as detailed in the audit.
+18 new assets have now been imported byte-for-byte under `design/storypath/environments/paralin/architecture/`: three each of small, raised, two-storey, hillside houses, corner shops, and mixed-use restaurant-residences. Duplicate `.png` extensions were normalized. No images were altered; none are referenced by the live application. Future scene integration must address camera, scale, padding and baked-in decoration as detailed in the audit.

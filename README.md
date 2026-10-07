@@ -46,4 +46,4 @@ npm run test:e2e
 
 ## New Paralin asset intake
 
-15 newly supplied building PNGs are stored under `design/storypath/environments/paralin/architecture/`, separate from the application. They passed with notes for complete decorative assemblies; they are not clean modular bases or a final art-direction approval. See [the audit](design/storypath/environments/paralin/AUDIT.md) and [asset manifest](ASSET-MANIFEST.md).
+18 newly supplied building PNGs are stored under `design/storypath/environments/paralin/architecture/`, separate from the application. They passed with notes for complete decorative assemblies; they are not clean modular bases or a final art-direction approval. See [the audit](design/storypath/environments/paralin/AUDIT.md) and [asset manifest](ASSET-MANIFEST.md).
