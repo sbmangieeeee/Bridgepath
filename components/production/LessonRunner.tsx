@@ -13,7 +13,7 @@ export function LessonRunner({ title, activities }: { title: string; activities:
   if (!activity) return <p role="alert">This lesson phase has not been configured.</p>;
 
   return <section className="lesson-runner" aria-labelledby="lesson-title">
-    <p className="production-eyebrow">Arouca Groove · Stop 5 of 18</p>
+    <p className="production-eyebrow">Paralin · Stop 5 of 18</p>
     <h1 id="lesson-title">{title}</h1>
     <ol className="phase-list" aria-label="Lesson phases">
       {LESSON_PHASES.map((item, index) => <li key={item} aria-current={item === phase ? "step" : undefined}>{index + 1}. {activities.find((entry) => entry.phase === item)?.title}</li>)}
