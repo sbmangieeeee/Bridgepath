@@ -1,123 +1,104 @@
-# Bridgepath Project Checkpoint
+# Storypath Project Checkpoint
 
-> **Last updated:** 17 July 2026  
-> **Current phase:** Phase 0 — contracts and governance  
-> **Overall status:** Planning is mature; the production build has not started.
+> **Last updated:** 6 October 2026  
+> **Current phase:** Experience and visual-system rebuild  
+> **Overall status:** Educational architecture retained; world, character, layout, interaction, and visual systems are being rebuilt.
 
-This is the shared, living checkpoint for Bridgepath. Keep it concise and update it whenever a decision changes, a milestone is completed, or the immediate priorities move.
+## Current direction
 
-## Where we are
+Storypath is not restarting its educational concept. The rebuild preserves the strongest curriculum, pedagogy, progression, assessment, transfer, and evidence work while removing earlier visual and naming decisions from controlling canon.
 
-- The full project has its first GitHub baseline on `main`.
-- A responsive Next.js Market Day prototype demonstrates the family, child, learning, and parent-reporting loop.
-- The prototype uses browser storage only; it is not a production account system.
-- The current online Standard 3 Mathematics curriculum has been reviewed across the complete 18-stop learning journey.
-- Corner Shop Challenge is the recommended first production vertical slice, pending founder approval.
-- The Living Adventure World is the approved visual direction.
-- The exact 11-character Standard 3 Mathematics reusable cast and four adult working names are founder-approved.
-- `design/approved/bridgepath-master-cast-sheet.png` is the approved visual source of truth for the recurring adult cast; Niko and Zuri's bibles remain authoritative for their detailed construction.
-- The reusable environment library and two screen-composition references are founder-approved and documented in `ASSET-MANIFEST.md`.
-- Kairana is the approved country; its six towns are Arouca Grove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia.
-- Arouca Grove is the current playable Standard 3 Mathematics town and contains all 18 curriculum-derived stops.
-- The Kairana Country Map and Arouca Grove Journey Map are required but remain pending design work.
-- The engineering architecture is ready for founder approval and Phase 0 contract work.
+### Working canon
 
-## Current decisions
-
-| Area | Decision | Status |
-|---|---|---|
-| First curriculum area | Standard 3 Mathematics | Confirmed |
-| Curriculum basis | Current online curriculum reviewed through all 18 stops | Confirmed; no additional educator sign-off required |
-| Current prototype | Six-stop Market Day experience | Implemented, exploratory only |
-| Proposed production slice | Corner Shop Challenge | Approval needed |
-| Complete town | 18 curriculum-linked destinations | Proposed |
-| Visual direction | Living Adventure World | Approved |
-| Core explorers | Child chooses Niko or Zuri; the other is the companion | Approved model |
-| Standard 3 reusable cast | Exactly 11 recurring characters | Founder-approved |
-| Adult working names | Ms. Leela Maharaj, Mr. Kareem Joseph, Ms. Alana Pierre, Ms. Keisha Ramoutar | Founder-approved |
-| Master cast direction | Approved multicultural representation in `design/approved/bridgepath-master-cast-sheet.png` | Founder-approved; adult visual source of truth |
-| Reusable environment library | Classroom, market, bakery, Mas workshop, community centre and recreation grounds | Founder-approved backgrounds; dynamic-layer rule applies |
-| Reusable screen references | School instruction and guided exercise compositions | Founder-approved design references; baked controls are non-production |
-| Canonical geography | Kairana country → six named towns → reusable town locations | Founder-approved in `BRIDGEPATH-CANONICAL-GEOGRAPHY.md` |
-| Current playable town | Arouca Grove contains all 18 Standard 3 Mathematics stops | Confirmed |
-| Future towns | Gasparillo, Lopinot, Barataria, Masara and Chaconia | Reserved; no curriculum stops assigned |
-| Required maps | Kairana Country Map and 18-stop Arouca Grove Journey Map | Pending design; not generated or implemented |
-| Production data model | Server-authoritative evidence with family isolation | Planned |
-| Production platform | Next.js with Supabase-backed persistence and authorization | Recommended |
-
-## Completed
-
-- [x] Product discovery and CEO review
-- [x] Standard 3 Mathematics curriculum and experience discovery drafts
-- [x] Current curriculum reviewed across the complete 18-stop journey
-- [x] Complete-town learning journey proposal
-- [x] Product specification and engineering architecture proposal
-- [x] Approved high-level design direction
-- [x] Niko and Zuri character documentation
-- [x] Authoritative Standard 3 Mathematics reusable-cast guide
-- [x] Founder-approved adult working names and multicultural cast representation
-- [x] Master recurring-cast sheet established under `design/approved/`
-- [x] Reusable production environment backgrounds and screen-composition references approved and manifested
-- [x] Exploratory family-to-learning prototype
-- [x] Initial unit and browser test coverage
-- [x] First GitHub baseline
-
-## Now
-
-- [ ] Design the Kairana Country Map with six towns and Arouca Grove as the available journey
-- [ ] Design the Arouca Grove Journey Map with all 18 stops, dynamic progress, and a country-map return control
-- [ ] Founder approves or revises Corner Shop Challenge as the first production slice
-- [ ] Name owners for curriculum, cultural, privacy/child-safety, and illustration review
-- [ ] Approve the Phase 0 engineering architecture and delivery boundary
-- [ ] Resolve final Niko/Zuri visual and cultural-review questions
-
-## Next
-
-- [ ] Write and approve curriculum, content-bundle, activity-plugin, evidence, and progression schemas
-- [ ] Complete the threat model, data inventory, retention policy, and deletion model
-- [ ] Select adult verification, authentication, hosting-region, email, and monitoring providers
-- [ ] Implement parent authentication, child sessions, Supabase persistence, and RLS tests
-- [ ] Build the production Corner Shop learning loop using reusable activity contracts
-- [ ] Validate the flow with children and parents under approved research consent
-
-## Pilot blockers
-
-- Trinidad and Tobago cultural review
-- Adult-verification and legal/privacy approval
-- Secure authentication and cross-family authorization tests
-- Retention, export, deletion, and incident procedures
-- Reviewed production illustration and accessible content
-- Device, network, accessibility, security, and recovery testing
-- Child and parent usability evidence
-
-## Health snapshot
-
-| Area | State |
+| Area | Current decision |
 |---|---|
-| Product direction | Strong, pending a few founder approvals |
-| Curriculum discovery | Complete for the 18-stop journey; no additional educator sign-off required |
-| Design direction | Approved at system level |
-| Character direction | Reusable cast, working names, and master cast direction founder-approved; detailed continuity rules active |
-| Environment direction | Six reusable backgrounds and two screen-composition references founder-approved; dynamic content remains layered |
-| Geography | Kairana and its six towns approved; Arouca Grove holds all 18 current stops; both map levels pending design |
-| Prototype | Working exploratory slice |
-| Production engineering | Architecture planned; implementation not started |
-| Pilot readiness | Blocked |
+| Product name | **Storypath** |
+| First curriculum area | Standard 3 Mathematics |
+| Core educational architecture | Protected 18-stop spiral journey |
+| First community | **Paralin** — working canon |
+| Core child characters | **Aaliyah and Theo** — working canon |
+| Recurring cast | Functional cast structure retained; adult names/identities reopened |
+| Founder inspiration | Subtle Easter eggs may draw from meaningful people, places and memories |
+| Geographic inspiration | Arouca, Gasparillo and Lopinot may inform Paralin without being copied literally |
+| Visual direction | Rebuilding; old generated visual concepts are non-authoritative |
+| Design references | `design/references/` retained as references, not production assets |
+| Country/world layer | Open design decision; no Kairana map requirement |
+| Experience principle | The world is the interface |
+| Learning principle | Learn it → understand why it matters → use it → practise → transfer → demonstrate mastery |
+
+## Protected foundations
+
+The rebuild must not silently change:
+
+- the 18 Standard 3 Mathematics curriculum functions and their conceptual dependencies;
+- the spiral return of earlier mathematics in later contexts;
+- authentic application before mastery claims;
+- transfer into different representations and situations;
+- evidence-based progression;
+- contextual, non-shaming support;
+- the requirement that the learner makes consequential choices;
+- the distinction between teaching, practice, and meaningful community application.
+
+## Reopened decisions
+
+The following are intentionally being redesigned:
+
+- Aaliyah and Theo's full character identities and artwork;
+- adult cast names, biographies, relationships, and visuals;
+- Paralin's internal geography and neighbourhood structure;
+- final child-facing names and appearances of locations;
+- larger world/country hierarchy;
+- navigation and map design;
+- classroom/teaching presentation;
+- layout, camera, UI, interaction grammar, and art direction;
+- rewards presentation and screen relationships.
+
+## Superseded canon
+
+These remain in history or older documents for traceability but are not current Storypath identity:
+
+- Bridgepath as the product name;
+- Niko and Zuri as required protagonists;
+- previous Niko/Zuri artwork and model-sheet authority;
+- Kairana as a required country;
+- Arouca Grove / Arouca Groove as the Standard 3 Mathematics town;
+- the six-town Kairana structure as a requirement;
+- previous adult names as founder-approved final identities;
+- old generated classroom, hub, environment, character, and map concepts as production authority.
+
+## Current build priorities
+
+1. Consolidate the Storypath source-of-truth documentation.
+2. Design Paralin as a connected community around the protected 18-stop Mathematics architecture.
+3. Develop Aaliyah and Theo as new characters rather than reskins of the old protagonists.
+4. Rebuild the recurring cast as relationships within Paralin, then assign revised names and identities.
+5. Define the Storypath experience system: entering the world, navigation, teaching, interaction, practice, application, feedback, progression, and return.
+6. Build one high-quality vertical experience before scaling visual production.
+7. Continue removing or isolating old visual assets and dependencies without breaking the prototype.
+
+## Important source documents
+
+- `STORYPATH-WORLD-IDENTITY.md` — current community, protagonist, cast, and Easter-egg identity.
+- `STANDARD-3-MATHEMATICS-TOWN-LEARNING-JOURNEY.md` — protected 18-stop educational architecture.
+- `STANDARD-3-MATHEMATICS-TOWN-EXPERIENCE-DESIGN.md` — experience framing; child-facing names remain revisable.
+- `STORYPATH-DISCOVERY-BLUEPRINT-STANDARD-3-MATHEMATICS.md` — evidence-led connected-community rationale.
+- `README.md` — repository-level reset statement.
+- `design/references/` — retained external/reference visual material.
+
+## Historical-document rule
+
+Older Bridgepath documents may contain valuable reasoning alongside superseded names or visual decisions. Do not delete useful thinking merely because terminology changed. When conflicts occur:
+
+1. locked curriculum architecture controls educational coverage;
+2. current Storypath identity documents control names/world identity;
+3. current rebuild decisions control visual and experience design;
+4. older conflicting naming/visual approvals are historical context only.
 
 ## Update log
 
 | Date | Checkpoint |
 |---|---|
-| 16 July 2026 | Created the first GitHub baseline and this shared project checkpoint. |
-| 16 July 2026 | Confirmed the current online curriculum was reviewed through all 18 stops; educator sign-off removed as a gate. |
-| 16 July 2026 | Approved the 11-character reusable cast, four adult working names, multicultural representation, and master cast sheet. |
-| 17 July 2026 | Approved the reusable environment library and school-instruction/guided-exercise composition references; documented background-only and dynamic-layer rules. |
-| 17 July 2026 | Corrected the geography: Kairana contains six named towns; Arouca Grove contains all 18 Standard 3 Mathematics stops; both map levels remain pending design. |
-
-## How to update this document
-
-1. Change the date and current phase at the top.
-2. Move completed work from **Now** or **Next** into **Completed**.
-3. Record decisions in **Current decisions** instead of leaving competing directions unresolved.
-4. Keep **Now** to roughly five active priorities.
-5. Add one short entry to the update log for meaningful checkpoint changes.
+| 16–17 July 2026 | Earlier Bridgepath baseline, cast, geography, and visual direction established. |
+| 6 October 2026 | Began controlled Storypath visual reset while retaining educational architecture and references. |
+| 6 October 2026 | Established **Paralin** as the working first community and **Aaliyah & Theo** as the working protagonists. |
+| 6 October 2026 | Reopened adult cast identities, larger geography, navigation, and visual system; retained cast functions and the protected 18-stop Mathematics journey. |
