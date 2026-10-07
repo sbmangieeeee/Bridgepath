@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { LearningStop } from "@/lib/production/types";
 
-export function AroucaGrooveStopList({ stops }: { stops: readonly LearningStop[] }) {
+export function ParalinStopList({ stops }: { stops: readonly LearningStop[] }) {
   return <ol className="stop-list">
     {stops.map((stop) => {
       const available = stop.slug === "the-corner-shop-challenge";
