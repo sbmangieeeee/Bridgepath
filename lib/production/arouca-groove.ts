@@ -1,16 +1,9 @@
 import type { Activity, Country, LearningStop, Town } from "./types";
 
-export const KARINA: Country = {
-  id: "karina",
-  name: "Karina",
-  towns: [
-    { id: "arouca-groove", name: "Arouca Groove" },
-    { id: "gasparillo", name: "Gasparillo" },
-    { id: "lopinot", name: "Lopinot" },
-    { id: "barataria", name: "Barataria" },
-    { id: "masara", name: "Masara" },
-    { id: "chaconia", name: "Chaconia" },
-  ],
+export const STORYPATH_WORLD: Country = {
+  id: "storypath-world",
+  name: "Storypath",
+  towns: [{ id: "paralin", name: "Paralin" }],
 };
 
 const STOP_NAMES = [
@@ -36,8 +29,8 @@ const STOP_NAMES = [
 
 const slugify = (name: string) => name.toLowerCase().replace(/['’]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
-export const AROUCA_GROOVE_STOPS: readonly LearningStop[] = STOP_NAMES.map((name, index) => ({
-  id: `arouca-groove-stop-${index + 1}`,
+export const PARALIN_STOPS: readonly LearningStop[] = STOP_NAMES.map((name, index) => ({
+  id: `paralin-stop-${index + 1}`,
   order: index + 1,
   name,
   slug: slugify(name),
@@ -46,14 +39,14 @@ export const AROUCA_GROOVE_STOPS: readonly LearningStop[] = STOP_NAMES.map((name
 export const CORNER_SHOP_ACTIVITIES: readonly Activity[] = [
   { id: "corner-shop-school-introduction", phase: "school-introduction", title: "Teacher lesson", placeholder: "Meet your teacher and get ready to learn." },
   { id: "corner-shop-guided-exercise", phase: "guided-exercise", title: "Notebook exercise", placeholder: "Open your notebook and get ready to practise." },
-  { id: "corner-shop-community-transition", phase: "community-transition", title: "Journey into the community", placeholder: "Get ready to carry what you learned into Arouca Groove." },
+  { id: "corner-shop-community-transition", phase: "community-transition", title: "Journey into the community", placeholder: "Get ready to carry what you learned into Paralin." },
   { id: "corner-shop-community-mission", phase: "community-mission", title: "Community mission", placeholder: "Meet your community mentor and get ready for the mission." },
   { id: "corner-shop-reflection-results", phase: "reflection-results", title: "Reflection and results", placeholder: "Look back on your journey and see your results." },
 ];
 
-export const AROUCA_GROOVE: Town = {
-  id: "arouca-groove",
-  name: "Arouca Groove",
-  countryId: KARINA.id,
-  stops: AROUCA_GROOVE_STOPS.map((stop) => stop.order === 5 ? { ...stop, activities: CORNER_SHOP_ACTIVITIES } : stop),
+export const PARALIN: Town = {
+  id: "paralin",
+  name: "Paralin",
+  countryId: STORYPATH_WORLD.id,
+  stops: PARALIN_STOPS.map((stop) => stop.order === 5 ? { ...stop, activities: CORNER_SHOP_ACTIVITIES } : stop),
 };
