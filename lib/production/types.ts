@@ -10,6 +10,13 @@ export type Activity = {
   phase: LessonPhase;
   title: string;
   placeholder: string;
+  lesson?: {
+    topic: string;
+    equation: string;
+    estimate: string;
+    exactTotal: string;
+    inverseCheck: string;
+  };
 };
 
 export type EvidenceEvent = {
@@ -17,6 +24,7 @@ export type EvidenceEvent = {
   stopId: string;
   activityId: string;
   phase: LessonPhase;
+  stage: "introduced" | "guided" | "applied";
   outcome: "completed" | "needs-support";
   occurredAt: string;
 };

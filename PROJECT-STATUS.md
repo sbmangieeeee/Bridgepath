@@ -1,123 +1,77 @@
 # Bridgepath Project Checkpoint
 
-> **Last updated:** 17 July 2026  
-> **Current phase:** Phase 0 — contracts and governance  
-> **Overall status:** Planning is mature; the production build has not started.
+> **Last updated:** 29 July 2026
+> **Current phase:** Production walking-skeleton verification
+> **Overall status:** Draft PR #1 contains the current production implementation; it is not pilot-ready.
 
-This is the shared, living checkpoint for Bridgepath. Keep it concise and update it whenever a decision changes, a milestone is completed, or the immediate priorities move.
+## Production implementation
 
-## Where we are
+Draft PR #1, “Establish Bridgepath visual learning foundation,” on `agent/update-bridgepath-visual-environments` is the production walking skeleton. Do not create a competing implementation, merge it, or mark it ready without explicit founder approval.
 
-- The full project has its first GitHub baseline on `main`.
-- A responsive Next.js Market Day prototype demonstrates the family, child, learning, and parent-reporting loop.
-- The prototype uses browser storage only; it is not a production account system.
-- The current online Standard 3 Mathematics curriculum has been reviewed across the complete 18-stop learning journey.
-- Corner Shop Challenge is the recommended first production vertical slice, pending founder approval.
-- The Living Adventure World is the approved visual direction.
-- The exact 11-character Standard 3 Mathematics reusable cast and four adult working names are founder-approved.
-- `design/approved/bridgepath-master-cast-sheet.png` is the approved visual source of truth for the recurring adult cast; Niko and Zuri's bibles remain authoritative for their detailed construction.
-- The reusable environment library and two screen-composition references are founder-approved and documented in `ASSET-MANIFEST.md`.
-- Kairana is the approved country; its six towns are Arouca Grove, Gasparillo, Lopinot, Barataria, Masara, and Chaconia.
-- Arouca Grove is the current playable Standard 3 Mathematics town and contains all 18 curriculum-derived stops.
-- The Kairana Country Map and Arouca Grove Journey Map are required but remain pending design work.
-- The engineering architecture is ready for founder approval and Phase 0 contract work.
+The implemented route is:
 
-## Current decisions
+Welcome → StoryPath → Arouca Groove → Corner Shop Challenge
 
-| Area | Decision | Status |
-|---|---|---|
-| First curriculum area | Standard 3 Mathematics | Confirmed |
-| Curriculum basis | Current online curriculum reviewed through all 18 stops | Confirmed; no additional educator sign-off required |
-| Current prototype | Six-stop Market Day experience | Implemented, exploratory only |
-| Proposed production slice | Corner Shop Challenge | Approval needed |
-| Complete town | 18 curriculum-linked destinations | Proposed |
-| Visual direction | Living Adventure World | Approved |
-| Core explorers | Child chooses Niko or Zuri; the other is the companion | Approved model |
-| Standard 3 reusable cast | Exactly 11 recurring characters | Founder-approved |
-| Adult working names | Ms. Leela Maharaj, Mr. Kareem Joseph, Ms. Alana Pierre, Ms. Keisha Ramoutar | Founder-approved |
-| Master cast direction | Approved multicultural representation in `design/approved/bridgepath-master-cast-sheet.png` | Founder-approved; adult visual source of truth |
-| Reusable environment library | Classroom, market, bakery, Mas workshop, community centre and recreation grounds | Founder-approved backgrounds; dynamic-layer rule applies |
-| Reusable screen references | School instruction and guided exercise compositions | Founder-approved design references; baked controls are non-production |
-| Canonical geography | Kairana country → six named towns → reusable town locations | Founder-approved in `BRIDGEPATH-CANONICAL-GEOGRAPHY.md` |
-| Current playable town | Arouca Grove contains all 18 Standard 3 Mathematics stops | Confirmed |
-| Future towns | Gasparillo, Lopinot, Barataria, Masara and Chaconia | Reserved; no curriculum stops assigned |
-| Required maps | Kairana Country Map and 18-stop Arouca Grove Journey Map | Pending design; not generated or implemented |
-| Production data model | Server-authoritative evidence with family isolation | Planned |
-| Production platform | Next.js with Supabase-backed persistence and authorization | Recommended |
+Implemented:
 
-## Completed
+- Welcome, country and town navigation.
+- All 18 semantic Arouca Groove hotspots plus the accessible 18-stop list.
+- Teacher Lesson, Class Challenge and mission choice.
+- Corner Shop introduction, child-handoff and cashier compositions assembled on one shared 1672×941 full-viewport artboard.
+- Approved Ms. Leela beside the Teacher Lesson whiteboard, full-body grounded with scene-relative desktop, tablet and mobile anchors that do not obstruct lesson content.
+- Empty mentor, customer and activity-object slots are preserved in the reusable market scene while composition is reviewed.
+- Back, home, help and settings controls.
+- Keyboard focus styles and browser-local progress storage.
+- Responsive production routes for desktop, tablet landscape and mobile landscape; mobile portrait gameplay presents an accessible rotate-device prompt without resetting lesson state.
+- The rejected path-and-star mark is archived at `design/archive/rejected-branding/bridgepath-mark.svg` with no active runtime, metadata, manifest, test, stylesheet or brand-guide reference and no replacement logo.
 
-- [x] Product discovery and CEO review
-- [x] Standard 3 Mathematics curriculum and experience discovery drafts
-- [x] Current curriculum reviewed across the complete 18-stop journey
-- [x] Complete-town learning journey proposal
-- [x] Product specification and engineering architecture proposal
-- [x] Approved high-level design direction
-- [x] Niko and Zuri character documentation
-- [x] Authoritative Standard 3 Mathematics reusable-cast guide
-- [x] Founder-approved adult working names and multicultural cast representation
-- [x] Master recurring-cast sheet established under `design/approved/`
-- [x] Reusable production environment backgrounds and screen-composition references approved and manifested
-- [x] Exploratory family-to-learning prototype
-- [x] Initial unit and browser test coverage
-- [x] First GitHub baseline
+Canonical names are **StoryPath** (country) and **Arouca Groove** (current town). The canonical production route is `/storypath`; `/karina` exists only as a compatibility redirect and is not a current product name.
 
-## Now
+## Incomplete work and blockers
 
-- [ ] Design the Kairana Country Map with six towns and Arouca Grove as the available journey
-- [ ] Design the Arouca Grove Journey Map with all 18 stops, dynamic progress, and a country-map return control
-- [ ] Founder approves or revises Corner Shop Challenge as the first production slice
-- [ ] Name owners for curriculum, cultural, privacy/child-safety, and illustration review
-- [ ] Approve the Phase 0 engineering architecture and delivery boundary
-- [ ] Resolve final Niko/Zuri visual and cultural-review questions
+- Miss Maria and Mr. Thomas still lack approved Scene Designer source exports and therefore cannot be rendered as customers.
+- Customer transactions and interactive product layers are intentionally not rendered in the current composition-review flow.
+- Mr. Ali is intentionally omitted from the introduction pending founder approval of the final scene composition.
+- Authentication, server persistence, production settings/help, privacy controls and family isolation are not implemented.
+- Cultural, child-safety, accessibility and production illustration review remain pilot gates.
 
-## Next
+Exact asset requirements and placements are recorded in `ASSET-MANIFEST.md`.
 
-- [ ] Write and approve curriculum, content-bundle, activity-plugin, evidence, and progression schemas
-- [ ] Complete the threat model, data inventory, retention policy, and deletion model
-- [ ] Select adult verification, authentication, hosting-region, email, and monitoring providers
-- [ ] Implement parent authentication, child sessions, Supabase persistence, and RLS tests
-- [ ] Build the production Corner Shop learning loop using reusable activity contracts
-- [ ] Validate the flow with children and parents under approved research consent
+## Decisions requiring founder approval
+
+- Dialogue and task/product sets for the remaining mentor-customers.
+- Approved source artwork for Miss Maria and Mr. Thomas.
+- Any change to the supplied Scene Designer compositions.
+
+## Verification — 29 July 2026
+
+| Check | Result |
+|---|---|
+| `npm install` | Passed; dependencies are up to date |
+| `npm run lint` | Passed with no warnings or errors |
+| `npm test` | Passed: 8 files, 14 tests |
+| `npm run build` | Passed; all production routes statically generated |
+| `npm run test:e2e` | Passed: 12/12 at 1440×900, 1180×820 and 844×390, plus a 390×844 portrait rotation/state-preservation transition and `/karina` → `/storypath` compatibility redirect coverage |
+| Browser widths | Teacher Lesson reviewed at desktop, tablet landscape and mobile landscape plus the mobile portrait prompt; existing introduction, child-handoff and cashier compositions remain covered by the shared-artboard assertions without scene redesign |
+| Scene geometry | Viewport coverage, shared layer bounds, absence of horizontal overflow and stage-specific asset selection are asserted in Playwright |
+| Asset audit | Counter alpha bounds were measured without changing the approved source artwork; the two chroma-derived front counters retain a thin green edge fringe that needs asset approval before any cleanup |
+
+## Approved asset and scene update — 25 July 2026
+
+- Preserved the approved RGB mentor and rice/flour source exports under `design/approved/scene-designer/`.
+- Added separate runtime RGBA derivatives by removing only the flat chroma backgrounds; no visible artwork was redrawn, recoloured or distorted.
+- Added the approved cashier-view register as a tightly bounded runtime foreground.
+- Preserved named scene-coordinate anchors for future character and activity layers, but did not render them in the current composition preview.
+- Mr. Ali, customers and products are temporarily omitted pending visual approval.
+- Confirmed Miss Maria and Mr. Thomas remain blocked on approved source artwork.
+- Kept dialogue, status, customer count, prices, questions, answers and controls as accessible DOM content.
 
 ## Pilot blockers
 
-- Trinidad and Tobago cultural review
-- Adult-verification and legal/privacy approval
-- Secure authentication and cross-family authorization tests
-- Retention, export, deletion, and incident procedures
-- Reviewed production illustration and accessible content
-- Device, network, accessibility, security, and recovery testing
-- Child and parent usability evidence
-
-## Health snapshot
-
-| Area | State |
-|---|---|
-| Product direction | Strong, pending a few founder approvals |
-| Curriculum discovery | Complete for the 18-stop journey; no additional educator sign-off required |
-| Design direction | Approved at system level |
-| Character direction | Reusable cast, working names, and master cast direction founder-approved; detailed continuity rules active |
-| Environment direction | Six reusable backgrounds and two screen-composition references founder-approved; dynamic content remains layered |
-| Geography | Kairana and its six towns approved; Arouca Grove holds all 18 current stops; both map levels pending design |
-| Prototype | Working exploratory slice |
-| Production engineering | Architecture planned; implementation not started |
-| Pilot readiness | Blocked |
-
-## Update log
-
-| Date | Checkpoint |
-|---|---|
-| 16 July 2026 | Created the first GitHub baseline and this shared project checkpoint. |
-| 16 July 2026 | Confirmed the current online curriculum was reviewed through all 18 stops; educator sign-off removed as a gate. |
-| 16 July 2026 | Approved the 11-character reusable cast, four adult working names, multicultural representation, and master cast sheet. |
-| 17 July 2026 | Approved the reusable environment library and school-instruction/guided-exercise composition references; documented background-only and dynamic-layer rules. |
-| 17 July 2026 | Corrected the geography: Kairana contains six named towns; Arouca Grove contains all 18 Standard 3 Mathematics stops; both map levels remain pending design. |
-
-## How to update this document
-
-1. Change the date and current phase at the top.
-2. Move completed work from **Now** or **Next** into **Completed**.
-3. Record decisions in **Current decisions** instead of leaving competing directions unresolved.
-4. Keep **Now** to roughly five active priorities.
-5. Add one short entry to the update log for meaningful checkpoint changes.
+- Approved Miss Maria and Mr. Thomas source art, plus product/task layers for later transactions.
+- Trinidad and Tobago cultural review.
+- Adult-verification and legal/privacy approval.
+- Secure authentication and cross-family authorization tests.
+- Retention, export, deletion and incident procedures.
+- Child and parent usability evidence.
+- Device, network, accessibility, security and recovery testing.

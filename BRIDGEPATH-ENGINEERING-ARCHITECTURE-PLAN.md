@@ -4,7 +4,7 @@
 
 Engineering review draft for founder approval. This document defines architecture and phased execution only. It does not authorise implementation.
 
-**Review target:** the approved Bridgepath product specification, Standard 3 Mathematics curriculum journey, 18 child-facing destinations, recurring character system, Storypath Primary School-to-town flow, design system, and existing exploratory prototype.
+**Review target:** the approved Bridgepath product specification, Standard 3 Mathematics curriculum journey, 18 child-facing destinations, recurring character system, StoryPath Primary School-to-town flow, design system, and existing exploratory prototype.
 
 **Founder decisions incorporated:**
 
@@ -570,7 +570,7 @@ Welcome hub
  -> create child + picture PIN
  -> child session
  -> country map -> Standard 3 Mathematics town
- -> Storypath School instruction
+ -> StoryPath School instruction
  -> travel to Mr Ali's Corner Shop
  -> story scene
  -> money/number demonstration

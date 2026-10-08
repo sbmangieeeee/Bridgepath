@@ -254,7 +254,7 @@ export default function CharacterDesignLab() {
       <section className="lab-section validation-section" id="validation">
         <div className="section-heading"><div><p className="section-number">09 · Founder review</p><h2>What this prototype must prove</h2></div><p>Use this list before authorising final character art.</p></div>
         <div className="validation-grid">
-          {["They look nine, not preschool or teenage.", "They feel equal in finish, scale, and agency.", "Silhouettes remain distinct without colour.", "Colours remain distinct at avatar size.", "A child would want to play as either explorer.", "The companion never becomes the default teacher.", "They belong naturally in the Storypath world.", "Both explorer choices feel equally complete."].map((item, index) => (
+          {["They look nine, not preschool or teenage.", "They feel equal in finish, scale, and agency.", "Silhouettes remain distinct without colour.", "Colours remain distinct at avatar size.", "A child would want to play as either explorer.", "The companion never becomes the default teacher.", "They belong naturally in the StoryPath world.", "Both explorer choices feel equally complete."].map((item, index) => (
             <label key={item}><input type="checkbox" /><span>{String(index + 1).padStart(2, "0")}</span><strong>{item}</strong></label>
           ))}
         </div>

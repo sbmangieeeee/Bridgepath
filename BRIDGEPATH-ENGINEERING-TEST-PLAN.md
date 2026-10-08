@@ -11,7 +11,7 @@ This plan verifies the production replacement, not the current local-storage pro
 - Public: welcome hub, family explanation, help and privacy.
 - Parent auth: registration, verification, login, recovery, consent and recent reauthentication.
 - Family: child creation, picture PIN, profile selection, switching, linking, export and deletion.
-- Child: entry, country map, Standard 3 Mathematics town, Storypath School, Corner Shop, activity runtime, support, results and resume.
+- Child: entry, country map, Standard 3 Mathematics town, StoryPath School, Corner Shop, activity runtime, support, results and resume.
 - Parent: family overview, child curriculum detail, evidence-backed support recommendations and recent activity.
 - Server: child-session issue/revoke, content manifest, activity session, command/evidence ingestion, resume, projections, rewards and privacy operations.
 
